@@ -10,6 +10,10 @@ simulated, or proven exploitable; that is the next stage's job.
 - **[`CANDIDATE_QUEUE.md`](./CANDIDATE_QUEUE.md)** — the queue. Candidates are grouped into systems
   and families (by shared codebase / fork lineage), each flagged by the exact shape that caught it,
   with on-chain-confirmed anchors where reachable and honestly-named gaps where not.
+- **[`ADDRESS_BOOK.md`](./ADDRESS_BOOK.md)** — a per-candidate address dossier: for each grounded
+  candidate, every useful address (contract, implementation, admin/owner, oracle, markets/pools and
+  their underlyings, plus incident contract + attacker for the exploited entries), each marked
+  ⛓️ resolved-on-chain / 📄 from-registry / 🔎 to-resolve, with the exact selector to reproduce it.
 
 The queue is scored for **convergence** (see §0.5): the strongest candidates trip *more than one*
 independent condition on the same fund path — two+ catalog shapes stacked, plus authority type(s),
