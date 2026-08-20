@@ -11,6 +11,11 @@ low-severity shapes were skipped.
 **Date of pass:** 2026-08-20. All on-chain reads below were performed on that date against live
 state. Creation dates are from the contract-creation transaction, pinned to the block.
 
+**Rerun focus (multi-condition):** this revision hunts *convergence* — contracts that trip more than
+one independent condition on the same fund path. See **§0.5** for the condition rubric and the
+stacked-candidate leaderboard, and families **K–N** (perp/GMX-fork vaults, the KiloEx forwarder+feed
+pattern, LST/LRT mint+NAV, SYMM intent-perp diamonds) added for the multi-shape stacks.
+
 ---
 
 ## 0. How this queue is ranked (read before the candidates)
@@ -54,6 +59,53 @@ granted authority at deploy). Ancient hump = built, funded, walked away from for
 5. Free-to-manufacture eligibility
 6. Live-state conditions (read storage, not just source)
 7. Arbitrary external call + standing authority
+
+---
+
+## 0.5 — Multi-condition scoring (this rerun's lens: catch the stacks)
+
+The single strongest signal in this tier is **convergence**: a contract that trips *more than one*
+independent condition on the same fund path is a far better candidate than one clean flag, because
+each condition is an independent reason it survived un-fixed and an independent path in. Every 2026
+protocol-tier drain I reconstructed was a **stack**, not a single bug: KiloEx chained a forwarder
+signature spoof → a forged trusted-role → a caller-controlled `setPrices` (Shapes 1+2+3); SwapNet
+stacked an arbitrary call over standing approvals on closed-source code (2+7+readability); Radiant
+stacked new-market rounding + oracle + a *second* incident + a fresh unverified impl.
+
+**Condition rubric** — score each candidate by how many of these it trips (each +1):
+
+- **C1 — Shape stack:** ≥2 catalog shapes land on the *same* fund path.
+- **C2 — Authority stack:** ≥2 distinct authority types point at it (standing approvals + mint/burn +
+  registry-resolution + credit/module + a live balance).
+- **C3 — Age extremity:** fresh (<~3 mo) *or* ancient (>~3 yr), and especially a **proxy whose impl is
+  far younger than the shell** (age the impl, not the shell).
+- **C4 — Readability gap w/ money:** unverified impl / closed-source / bytecode-only *while holding
+  funds or authority* (next stage must bytecode-match a twin first).
+- **C5 — Prior-incident / re-exploitation lineage:** the same path was hit before and never fixed, or
+  the code was redeployed byte-for-byte, or a sibling fork carries the unpatched bug.
+- **C6 — Multi-clone / cross-chain replication:** one flawed implementation behind many
+  instances/chains (fingerprint the impl → every clone).
+- **C7 — Unwatched + funded:** no active bounty/team re-checking the *deployed* state, with a live
+  balance or live approvals.
+
+**Stacked-candidate leaderboard** (highest convergence first; ⛓️ = at least one condition confirmed
+on-chain this pass). Detail and addresses are in the family the row points to.
+
+| Candidate (chain) | Conditions tripped | Score | Family |
+|---|---|---|---|
+| **Radiant V2** (ARB/Base/ETH/BNB) ⛓️ | C1 (4+3) · C2 (pool auth + cross-chain OFT) · C3 (impl 2024-10-17 ≪ shell 2023) · C4 (impl **unverified**) · C5 (**two** incidents) · C6 (multi-chain) | **6** | B |
+| **KiloEx caller-settable feed + weak forwarder** (Base/BNB/opBNB) | C1 (1+2+3) · C4 (relaunched code) · C5 (already hit Apr-2025) · C6 (3 chains) · C7 | **5** | L |
+| **SwapNet / Aperture router siblings** (Base/BNB/ARB) | C1 (2+7) · C2 (standing approvals) · C4 (**closed-source**) · C5 (Jan-2026 hit) · C6 (multi-chain) | **5** | C |
+| **Flux Finance** (ETH) ⛓️ | C1 (4+3 RWA-NAV) · C2 (comptroller + oracle) · C4 (**aud=0** at $44.5M) · C7 (funded, thin fFRAX mkt ⛓️) | **4** | A/G |
+| **GMX-V1 GLP-vault forks** (BMX/Vela/Morphex/Level… Base/ARB/BNB) ⛓️ fingerprint | C1 (3+4) · C5 (July-2025 GMX-V1 fix likely un-applied) · C6 (fork family) · C7 (unaudited forks) | **4** | K |
+| **Superform** (ETH/ARB/Base) | C1 (2/7 router + 4 vault) · C2 (approvals + share auth) · C6 (permissionless factory long-tail) | **3** | E/C |
+| **Iron Bank + oracle** (ETH) ⛓️ | C1 (4+3) · C2 (comptroller + single oracle proxy) · C5 (Cream lineage incidents) · C7 (semi-abandoned) | **4** | A |
+| **CRETH2 / Cream LST** (ETH) ⛓️ | C2 (LST mint authority) · C3 (2020, ancient) · C5 (Cream dead) · C7 (abandoned, funded) | **4** | M |
+| **LRT deposit-pool + NAV oracle** (small LRTs, ETH/Base) | C1 (2 mint + 3 NAV) · C3 (fresh) · C6 (OFT cross-chain, Family-D overlap) | **3** | M |
+| **SYMM intent-perp forks** (IntentX/ELFi/SYMMIO, ARB/Base) | C1 (1 signed-intent + 3 price) · C4/C7 (aud=0, funded) · C6 (fork family) | **3** | N |
+
+Everything below feeds this leaderboard: the families carry the addresses, on-chain reads, and the
+per-candidate detail; the score is just "how many independent reasons this one is worth reading first."
 
 ---
 
@@ -473,10 +525,15 @@ without modern guards.
   `0xdc7b90593cafe7a919d22b903fed21bf27da9719`, created **2023-01-30**, Solidity **0.5.17** — same
   toolchain as Compound/Iron Bank, confirming Compound-v2 lineage). $44.5M TVL, **aud=0**, RWA
   (OUSG/OMMF) collateral → **high balance authority + Family-A donation shape + unaudited at scale**.
-  It straddles Family A (resolve `getAllMarkets()` and flag low-supply `fToken` markets + the price
-  oracle that values RWA collateral) and Family G (deprecated-code hump does *not* apply — this is a
-  fresh-ish 2023 deploy, so weight it as unaudited-new-code rather than ancient). · *Disclosure:* Flux
-  (Ondo Finance) has a security contact → reportable.
+  It straddles Family A and Family G. **⛓️ I enumerated its 5 markets this pass:** fOUSG, fUSDC,
+  fDAI, fUSDT all seeded/funded, but **`fFRAX` (`0x1c9a2d6b33b4826757273d47ebee0e2dddcd978b`) is
+  ~1000× thinner than its siblings** (totalSupply 2.78e12 vs 1e15–1e16; cash ≈ 589 FRAX) — a
+  low-liquidity market is exactly where the Compound-v2 donation/exchange-rate manipulation
+  concentrates, and here the collateral values include **fOUSG, an RWA whose NAV Flux reads but does
+  not itself derive** (Shape 3). So the stack is on-chain-visible: Shape 4 (thin market on raw-
+  `balanceOf` accounting) + Shape 3 (external RWA NAV) + aud=0 + funded. Deprecated-code hump does
+  *not* apply — this is a fresh-ish 2023 deploy, so weight it as unaudited-new-code rather than
+  ancient. · *Disclosure:* Flux (Ondo Finance) has a security contact → reportable.
 
 ---
 
@@ -553,6 +610,121 @@ into a contract.
 
 ---
 
+### Family K — Perp DEX / GMX-family & GLP-vault forks: mark-price + share-vault accounting (stacked)
+
+**Lineage & why it stacks:** the GMX-v1 architecture (a `Vault` that custodies a shared liquidity
+pool `GLP`, marks positions off an oracle/keeper price, and lets LPs mint/redeem GLP against
+`getAum()`) was **exploited on GMX v1 itself in July 2025 (~$42M)** — the attacker manipulated the
+global average short price and redeemed GLP at an inflated AUM (Shape 3 mark-price **+** Shape 4
+share-vault accounting, in one path). The many **forks** (BMX/Morphex, Vela, Mummy, Level, El Dorado
+(EDE), MUX, HMX) copied the `Vault`/GLP model; the ones that did **not** back-port the July-2025 fix
+carry the identical stacked bug — **C1 + C5 + C6**, and the smaller forks add **C4/C7** (unaudited,
+unwatched).
+
+**On-chain read:** fingerprint the `Vault` against GMX-v1 (⛓️ **`0x489ee077994B6658eAfA855C308275EAd8097C4A`**,
+Arbitrum, `Vault`, Solidity 0.6.12, created **2021-08-31** — confirmed this pass) via bytecode/selector
+match; then check the mark-price source (`getMinPrice`/`getMaxPrice` → keeper vs. AMM-spot) and the
+GLP mint/redeem path (`getAum`/`getAumInUsdg`) for the reentrancy/averaging fix. A fork whose Vault
+bytecode matches pre-fix GMX-v1 is the candidate.
+
+**Shapes:** 3 + 4 (stacked). Candidates:
+
+- **🔎 resolve — BMX / Morphex (Base + BNB), Vela Exchange (Arbitrum/Base, aud=0), Mummy, Level
+  Finance (BNB — prior 2023 incident), El Dorado/EDE (BNB — prior 2023 incident)** · all GMX-v1 GLP
+  forks, several **already exploited once** (Level, EDE → **C5 re-exploitation**), several **aud=0**
+  (Vela, BMX Classic/Freestyle on Base). Resolve each `Vault` + `GlpManager` + price-feed; bytecode-match
+  to GMX-v1 pre/post-fix. · **Base/BNB deployments sit under the explorer gap** → source via Sourcify,
+  reads via RPC, addresses from post-mortems. · *Disclosure:* larger forks have Immunefi; Level/EDE
+  semi-dormant → outreach.
+
+- **🔎 resolve — unaudited perps at size (Arbitrum): Apex Omni (~$29.7M, aud=0), Antarctic (~$9.5M,
+  aud=0), MUX Perps (~$9.4M, aud=1)** · high balance authority + unaudited/thin-audit + perp
+  mark-price/vault surface (**C1 + C7**, C4 for Apex/Antarctic). Not necessarily GMX-forks, but the
+  same Shape-3+4 fund path. · *Disclosure:* Apex/MUX have programs; Antarctic unclear.
+
+---
+
+### Family L — Caller-settable price feed behind a weak meta-tx / forwarder (KiloEx pattern)
+
+**This is the highest-convergence *shape* in the rerun**, called out on its own because it stacks
+three catalog shapes on one path and is a repeatable pattern, not a single protocol. **KiloEx
+(Apr-2025, ~$7.4M, Base/BNB/opBNB):** the attacker abused an **access-control flaw in a
+`MinimalForwarder`** (ERC-2771 trusted-forwarder) to **spoof a trusted role via a crafted signature**
+(Shape 1 signature verification + Shape 2 caller-supplied identity), which unlocked **`setPrices()` on
+the price feed** — a **caller-controlled oracle** (Shape 3) — then opened at $100 and closed at
+$10,000. KiloEx **relaunched**, so the deployed code + the pattern are live.
+
+**On-chain read (the flag, and it generalizes):** find any privileged setter (`setPrices`,
+`setPrice`, `updatePrice`, `fulfill`, `setRole`) whose access check resolves through `_msgSender()`
+under an ERC-2771 **trusted forwarder** or a `MinimalForwarder`; verify the forwarder's signature
+check covers the full request struct and rejects `address(0)`/replayed/typed-data-mismatched sigs. A
+trusted-forwarder + a price/role setter behind it = the stack. Broadly: **grep deployments for
+OpenZeppelin `MinimalForwarder` / `ERC2771Context` + a permissioned price or role mutator.**
+
+**Shapes:** 1 + 2 + 3 (stacked). **Conditions:** C1 (triple) + C4 (relaunched) + C5 (already hit) +
+C6 (3 chains) + C7.
+
+- **🔎 resolve — KiloEx redeployed contracts (Base, BNB, opBNB)** + **any perp/oracle protocol using a
+  keeper-settable `PriceFeed` behind a trusted forwarder.** KiloEx's own `KiloPriceFeed` +
+  `MinimalForwarder` + `Vault` are named in the post-mortems (bytecode-match the redeploy). The
+  broader candidate set is *every* protocol matching the forwarder+setter fingerprint — a source/
+  bytecode grep the next stage runs across fresh Base/BNB deploys. · **Under the BSC/Base explorer
+  gap for enumeration**, but the fingerprint is source-greppable via Sourcify. · *Disclosure:* KiloEx
+  runs a bounty (offered 10% during the incident) → reportable.
+
+---
+
+### Family M — Liquid (re)staking: mint authority + NAV/exchange-rate oracle (stacked)
+
+**Lineage & why it stacks:** an LST/LRT deposit pool **mints a receipt token** proportional to pool
+share and **values the pool via an oracle/exchange-rate** the protocol often does not itself derive
+(Shape 2 mint authority **+** Shape 3 NAV) — and the receipt token is frequently a **LayerZero OFT**,
+so it also carries Family-D bridge trust (**C6**). Majors (Lido, EtherFi, Renzo, Kelp) are watched;
+the candidates are **small/abandoned LSTs and fresh LRT deposit pools**.
+
+**On-chain read:** resolve the deposit pool's `MINTER_ROLE` holder over the receipt token (an EOA/
+1-key = finding on its face), and the exchange-rate/NAV source (a stored rate settable by a keeper, or
+a `convertToAssets` over a component the pool doesn't price = Shape 3); if the token is an OFT, read
+its DVN config (Family D).
+
+**Shapes:** 2 + 3 (stacked). Candidates:
+
+- **⛓️ confirmed — CRETH2 / CreamETH2 (Ethereum)** `0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd`
+  (`CreamETH2`, Solidity 0.6.11, created **2020-11-18**, verified; ~$1.58M live per DefiLlama). ·
+  *Authority:* Cream's liquid-staking receipt token — **Cream Finance is dead** (multiple 2021 hacks,
+  team gone), so this is **abandoned + funded + mint authority + ancient** (C2 + C3 + C5 + C7 = the
+  strongest ancient-hump LST stack). · *Money logic:* ETH2 staking receipt; resolve the minter/
+  redemption path and whether it is frozen or still live. · *Base:* Cream lineage. · *Disclosure:*
+  no team → outreach / informational only.
+
+- **🔎 resolve — small LRT deposit pools & their receipt-OFTs (Ethereum, Base): Meta Pool ETH
+  (~$24M, aud=0), GETH (~$17.8M, aud=0), GLIF (Base, ~$22M, aud=0), Accumulated Finance (aud=0),
+  Hord (aud=0)** · each: resolve minter authority + NAV source + (if OFT) DVN config. The **aud=0 at
+  8-figure TVL** entries are the C7 standouts. · *Disclosure:* per-project.
+
+---
+
+### Family N — Intent / SYMM-based perp forks: signed-intent auth + price (fork family)
+
+**Lineage:** the SYMM (Symmio) "intentX-style" architecture settles perps on a **party-A/party-B
+signed intent** with a price attested at settlement — signature-gated fund movement (Shape 1) over a
+**price the counterparty supplies** (Shape 3/2). The fork family (SYMMIO, IntentX, ELFi, and other
+SYMM deployments) is **largely aud=0 and funded** (C7), and byte-similar across chains (C6).
+
+**On-chain read:** in the settlement contract, check the intent struct hash field coverage and the
+signer/oracle provenance of the settlement price (a party-supplied or muon-attested price with a weak
+check = the stack).
+
+**Shapes:** 1 + 3 (stacked). Candidates:
+
+- **🔎 resolve — SYMMIO (~$2.76M, aud=0), IntentX (~$5.67M, aud=0), ELFi Protocol (~$1.55M)** on
+  Arbitrum/Base · resolve the shared `Symmio`/`Diamond` settlement contract (SYMM uses a **diamond** —
+  also check for an **uninitialized facet**, Shape 6, a *fourth* condition) + the Muon price-oracle
+  trust. · **Diamond + unaudited + fork-family + funded = C1 + C4/C7 + C6.** · *Disclosure:* SYMM has
+  a program; forks vary.
+
+---
+
 ## 3. Cross-cutting: re-exploitation & silent-patch watchlist
 
 The tier's two highest-signal historical patterns, pulled together so the next stage prioritizes them:
@@ -560,8 +732,13 @@ The tier's two highest-signal historical patterns, pulled together so the next s
 - **Re-exploitation (same unpatched path, again).** **Onyx** (Compound donation, twice — lending now
   drained, exemplar only), **Radiant** (rounding Jan-2024 then key-compromise Oct-2024 — *live*, impl
   swapped 2024-10-17 and unverified), **UwU Lend** (oracle, twice in 2024), **Ionic** (exploited
-  Feb-2025 — check patch vs. redeploy). A contract exploited once through a path never fixed is a prime
-  candidate for the same path again.
+  Feb-2025 — check patch vs. redeploy), **KiloEx** (forwarder+setPrices, Apr-2025, **relaunched** —
+  verify the redeployed forwarder/price-feed actually closed the access-control hole), **SwapNet/
+  Aperture** (arbitrary-call, Jan-2026 — residual approvals + un-redeployed sibling chains),
+  **Level Finance / El Dorado (EDE)** (GMX-fork perps, both hit in 2023 — check whether the GLP/
+  mark-price path was fixed), and **the GMX-v1 GLP-fork family** vs. the **July-2025** GMX-v1 fix. A
+  contract (or a byte-identical sibling) exploited once through a path never fixed is a prime candidate
+  for the same path again — this is the densest source of multi-condition stacks in the queue.
 - **Silent patch / package lag.** Flag any deployed implementation that lags the current upstream of
   the package it came from (a flaw fixed quietly in a newer library release while the deployment still
   runs the old package is reachable until upgraded). Concretely: OZ-4626/`ECDSA`/`SignatureChecker`
@@ -573,7 +750,11 @@ The tier's two highest-signal historical patterns, pulled together so the next s
 
 ## 4. Priority ordering rationale (for the next stage's read budget)
 
-Ranked on **authority × unwatched × live-state-match**, not TVL or headline loss:
+**Read the §0.5 stacked-candidate leaderboard first** — condition-count (convergence) is the primary
+sort, because a candidate tripping 4–6 independent conditions is a better use of the read budget than
+any single-flag entry. Radiant V2, the KiloEx forwarder+feed pattern, and the SwapNet/Aperture router
+siblings top it. Below is the secondary, family-level ordering on **authority × unwatched ×
+live-state-match** (not TVL or headline loss):
 
 1. **Family C routers + Family D wrapTo/OFT minters** — highest weight shapes (2/1), authority wildly
    exceeds balance, and the obscure/forked members are genuinely unwatched. Zero-TVL, so directories
@@ -619,3 +800,8 @@ Ranked on **authority × unwatched × live-state-match**, not TVL or headline lo
 - ARB · `0xF4B1486DD74D07706052A33d31d7c0AAFD0659E1` · shell 2023-03-18 · Radiant V2 Pool; **impl `0x3d4c56cdb9…` created 2024-10-17, UNVERIFIED**
 - BASE · `0x05c9C6417F246600f8f5f49fcA9Ee991bfF73D13` · Ionic Unitroller → impl Comptroller `0xc63Ee58A…` (verified)
 - ETH · `0xA2cd3D43c775978A96BdBf12d733D5A1ED94fb18` · 2022-03 · XCN/"Chain" token (Onyx context; lending side ≈ drained)
+- ARB · `0x489ee077994B6658eAfA855C308275EAd8097C4A` · 2021-08-31 · GMX-v1 `Vault` (GLP-fork fingerprint; July-2025 mark-price/reentrancy lineage)
+- ETH · `0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd` · 2020-11-18 · CreamETH2 / CRETH2 (abandoned Cream LST, mint authority, ~$1.58M)
+- ETH · `0x1c9a2d6b33b4826757273d47ebee0e2dddcd978b` · Flux `fFRAX` market — ⛓️ enumerated thinnest of 5 (totalSupply 2.78e12, cash ≈589 FRAX), donation/exchange-rate concentration point
+
+*Rerun (multi-condition pass) added families K–N, the §0.5 condition rubric + stacked leaderboard, the Flux market enumeration, and the GMX-v1/CRETH2 anchors above. All other §5 structural gaps still apply — the BNB-side perp forks (BMX/Level/EDE), KiloEx redeploys, and SYMM diamonds are the biggest deferred reads.*

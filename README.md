@@ -11,6 +11,12 @@ simulated, or proven exploitable; that is the next stage's job.
   and families (by shared codebase / fork lineage), each flagged by the exact shape that caught it,
   with on-chain-confirmed anchors where reachable and honestly-named gaps where not.
 
+The queue is scored for **convergence** (see §0.5): the strongest candidates trip *more than one*
+independent condition on the same fund path — two+ catalog shapes stacked, plus authority type(s),
+age extremity, a readability gap, a prior-incident lineage, and cross-chain replication. Every recent
+protocol-tier drain reconstructed here was a stack, not a single bug, so the top of the queue is a
+condition-count leaderboard rather than a TVL ranking.
+
 ## How candidates were ranked
 
 - **Authority, not balance** — a zero-balance contract can be the most drainable thing on the chain
