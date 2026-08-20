@@ -14,6 +14,15 @@ simulated, or proven exploitable; that is the next stage's job.
   candidate, every useful address (contract, implementation, admin/owner, oracle, markets/pools and
   their underlyings, plus incident contract + attacker for the exploited entries), each marked
   ⛓️ resolved-on-chain / 📄 from-registry / 🔎 to-resolve, with the exact selector to reproduce it.
+- **[`SCAN_REPORT.md`](./SCAN_REPORT.md)** — a programmatic wide-scan pass that *computes* authority
+  on-chain (standing-approval authority + live-allowance confirmation, cross-chain bytecode
+  fingerprinting, impl-age/verification divergence, empty-market surface). Headline: dead/deprecated/
+  exploited contracts (Multichain, KyberSwap-old, 1inch-v4, dYdX-v1, SwapNet) that still hold
+  **confirmed-live infinite approvals** from hundreds of wallets — zero balance, live drain surface.
+- **[`candidates.csv`](./candidates.csv)** — machine-readable register (chain, address, family, shapes,
+  condition score, authority status, prior incident, disclosure).
+- **[`scanners/`](./scanners/)** — the reproducible, dependency-free scanner tooling (pure-Python
+  Keccak, hardened multi-chain reader, and the five scanners) so the next stage can re-run and extend.
 
 The queue is scored for **convergence** (see §0.5): the strongest candidates trip *more than one*
 independent condition on the same fund path — two+ catalog shapes stacked, plus authority type(s),
