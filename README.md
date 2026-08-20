@@ -10,10 +10,14 @@ simulated, or proven exploitable; that is the next stage's job.
 - **[`CANDIDATE_QUEUE.md`](./CANDIDATE_QUEUE.md)** — the queue. Candidates are grouped into systems
   and families (by shared codebase / fork lineage), each flagged by the exact shape that caught it,
   with on-chain-confirmed anchors where reachable and honestly-named gaps where not.
-- **[`ADDRESS_BOOK.md`](./ADDRESS_BOOK.md)** — a per-candidate address dossier: for each grounded
-  candidate, every useful address (contract, implementation, admin/owner, oracle, markets/pools and
-  their underlyings, plus incident contract + attacker for the exploited entries), each marked
-  ⛓️ resolved-on-chain / 📄 from-registry / 🔎 to-resolve, with the exact selector to reproduce it.
+- **[`ADDRESS_BOOK.md`](./ADDRESS_BOOK.md)** — cumulative per-candidate address dossier: for each
+  grounded candidate, every useful address (contract, implementation, admin/owner, oracle, markets/
+  pools and their underlyings, plus incident contract + attacker for the exploited entries), each
+  marked ⛓️ resolved-on-chain / 📄 from-registry / 🔎 to-resolve, with the exact selector to reproduce
+  it. **Each run also has its own frozen snapshot** — `ADDRESS_BOOK_run1.md` (initial anchors),
+  `ADDRESS_BOOK_run2.md` (GMX Vault, CRETH2), `ADDRESS_BOOK_run3.md` (full resolved dossier),
+  `ADDRESS_BOOK_run4.md` (wide computed scan) — and every future run adds `ADDRESS_BOOK_run<N>.md`
+  (convention recorded in `CLAUDE.md`).
 - **[`SCAN_REPORT.md`](./SCAN_REPORT.md)** — a programmatic wide-scan pass that *computes* authority
   on-chain (standing-approval authority + live-allowance confirmation, cross-chain bytecode
   fingerprinting, impl-age/verification divergence, empty-market surface). Headline: dead/deprecated/

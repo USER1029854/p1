@@ -1,20 +1,11 @@
-# Candidate Address Book — cumulative master
+# Address Book — Run 3 (per-candidate resolved dossier)
+
+Per-run address book. Scope: Run 3 fully **resolved** each grounded candidate (commit `89fb577`) — impl, admin/owner, oracle, every market/pool + underlying, plus the incident contracts (KiloEx, SwapNet, Aperture). This file is the frozen Run-3 snapshot; the same content is carried in the cumulative `ADDRESS_BOOK.md`.
 
 Companion to **[`CANDIDATE_QUEUE.md`](./CANDIDATE_QUEUE.md)** — one block per candidate with **every
 address the next stage needs to start reading**: the named contract, its implementation, its admin/
 owner, its oracle/price authority, its markets/pools and their underlyings, and (for incident-anchored
 entries) the exploited contract + attacker. This is a *starting map*, not a proof of exploitability.
-
-> **Per-run address books.** Each research run also has its own frozen snapshot so runs can be tracked
-> and diffed. This file (`ADDRESS_BOOK.md`) is the **cumulative master** (all runs merged, latest at the
-> bottom). Per-run files:
-> - [`ADDRESS_BOOK_run1.md`](./ADDRESS_BOOK_run1.md) — initial queue anchors
-> - [`ADDRESS_BOOK_run2.md`](./ADDRESS_BOOK_run2.md) — multi-condition additions (GMX Vault, CRETH2)
-> - [`ADDRESS_BOOK_run3.md`](./ADDRESS_BOOK_run3.md) — full resolved dossier (= §Ethereum/Arbitrum/Base/incident blocks below)
-> - [`ADDRESS_BOOK_run4.md`](./ADDRESS_BOOK_run4.md) — wide computed scan (approval-authority, fingerprint, impl-age)
->
-> **Convention (carried forward): every future run gets its own `ADDRESS_BOOK_run<N>.md`, and its new
-> addresses are also merged into this master.** See `CLAUDE.md`.
 
 **How the addresses were obtained (2026-08-20):**
 - ⛓️ **resolved on-chain this pass** — via Etherscan V2 `eth_call`/`eth_getStorageAt` (Ethereum,
@@ -222,34 +213,3 @@ biggest deferred set, and the BSC/Base ones sit under the explorer gap.
 *This address book covers the on-chain-grounded candidates from `CANDIDATE_QUEUE.md`. Every ⛓️ row was
 read live on 2026-08-20; every 🔎 row names the call to resolve it. Market lists truncated to the
 resolved subset are marked "resolve remaining via `getAllMarkets()`."*
-
----
-
-## RUN 4 — programmatic wide computed scan (merged from `ADDRESS_BOOK_run4.md`)
-
-Read live 2026-08-20. "LIVE n/15" = current non-zero `allowance` sampled among recent approvers.
-
-**Dead/deprecated/exploited spenders with confirmed-live infinite approvals (Shape 2/7):**
-
-| Spender | Chain | Address | State | LIVE |
-|---|---|---|---|---|
-| Multichain Router4 | ETH | `0x765277EebeCA2e31912C9946eAe1021199B39C61` | DEAD 2023, keys seized | 14/15 ∞ |
-| Multichain Router6 | ETH | `0x6b7a87899490EcE95443e979cA9485CBE7E71522` | DEAD 2023 | 879 owners/5wk |
-| KyberSwap AggRouter (old) | ETH | `0xDF1A1b60f2D438842916C0aDc43748768353EC25` | exploited 2023 | 15/15 ∞ |
-| 1inch v4 Router | ETH | `0x1111111254fb6c44bAC0beD2854e76F90643097d` | deprecated | 15/15 ∞ |
-| dYdX v1 SoloMargin | ETH | `0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e` | deprecated | 14/15 ∞ |
-| 0x AllowanceTarget (old) | ETH | `0xF740B67dA229f2f10bcBd38A7979992fCC71B8Eb` | deprecated | 12/15 ∞ |
-| SwapNet | ETH·ARB·BASE·BNB | `0x616000e384Ef1C2B52f5f3A88D57a3B64F23757e` | exploited 2026-01 | 5/15 ∞ (ETH) |
-| ~~Aperture~~ | ETH·ARB | `0xD83d960deBEC397fB149b51F8F37DD3B5CFA8913` | exploited | 0/14 → EXCLUDED |
-
-**Bytecode fingerprint:** SwapNet identical (`7d1a6d36…`) on ETH·ARB·BASE·BNB; Aperture differs per
-chain (ETH `efc84c5b…` / ARB `94edcf58…` / no code on Base); KiloEx differs (Base `f18c5691…` / BSC
-`4bd01514…`).
-
-**Impl-age / verification:** Radiant V2 pool impl `0x3d4c56cdb97355807157f5c7d4f54957f0e9af44`
-(2024-10-17, **unverified**); dForce controller impl `0xbd0ed2f6e7d84ac5a74cc29d4585d5179ece7ddd`
-(2024-10-25); Aave V1 Core impl `0x0e26e0bf83b4ec2cb0dcbc037bb01da5bb352eae` (reads 2024-05-02 ⚠).
-
-**Empty-market (only true empty found):** Ionic `ionmsUSD`
-`0x5be1cb6cb3c9bfd16db43ed4f6c081fa9783dd1c` (Base) — totalSupply 0, cash ~32e18, CF 10%; underlying
-msUSD `0x526728dbc96689597f85ae4cd716d4f7fccbae9d`.
