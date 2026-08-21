@@ -24,6 +24,10 @@ simulated, or proven exploitable; that is the next stage's job.
   fingerprinting, impl-age/verification divergence, empty-market surface). Headline: dead/deprecated/
   exploited contracts (Multichain, KyberSwap-old, 1inch-v4, dYdX-v1, SwapNet) that still hold
   **confirmed-live infinite approvals** from hundreds of wallets — zero balance, live drain surface.
+- **[`at_risk_bsc.csv`](./at_risk_bsc.csv)** — run-5 breadth: **253 new, unwatched BNB-Chain protocols**
+  (none repeated from earlier runs), 120 with a resolved contract + `owner_type` (EOA/Safe/timelock —
+  authority concentration), `is_proxy`, `implementation`, `sourcify_verified`. The BNB-Chain explorer
+  gap is closed (NodeReal RPC + Sourcify). Flags obscure funded protocols under single-EOA control.
 - **[`at_risk_protocols.csv`](./at_risk_protocols.csv)** — run-4 breadth: **379 live, funded, mostly-
   unaudited protocols** on the four chains, ranked by profile-risk, **each with its contract**:
   `address`, `address_chain`, `contract_name`, `is_proxy`, `implementation`, `verified` (resolved

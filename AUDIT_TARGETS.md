@@ -1,4 +1,40 @@
-# Audit Targets — start here  (run 4: fresh & at-risk, prevention-first)
+# Audit Targets — start here  (run 5: BNB Chain · run 4: fresh & at-risk)
+
+---
+
+## RUN 5 — BNB Chain, new & unwatched (the explorer gap is closed)
+
+With a NodeReal BSC RPC the BNB-Chain blind spot is gone — full read surface now works
+(`eth_call`/`getCode`/`getStorageAt`/**`getLogs`**) + Sourcify for source. So this run sweeps BNB
+Chain: **253 new, unwatched protocols** (none from runs 1–4; watched majors demoted), **120 with a
+resolved contract**, in **[`at_risk_bsc.csv`](./at_risk_bsc.csv)** — columns `score, tvl, category,
+name, address, contract_name, is_proxy, implementation, owner, owner_type, admin_type,
+sourcify_verified`. Ranking is unwatched-first (BNB-native + obscure + money category); the on-chain
+signal is **authority concentration** — a funded contract whose owner/admin is a single EOA.
+
+**Flagged — obscure + funded + EOA-owned (single-key authority; confirm it's a live protocol first):**
+BTCST `0x78650b139471520656b9e7aa7a5e9276814a38e9` · Titano Swych `0x4e3cABD3AD77420FF9031d19899594041C420aeE` ·
+GIBXSwap `0xae28714390e95b8df1ef847c58aeac23ed457702` · Smoothy (proxy) `0xbf776e4fca664d791c4ee3a71e2722990e003283` ·
+JustMoney `0x388D819724dD6d71760A38F00dc01D310d879771` · DefiBox `0x708c0e1d2417603d9acb0ae04fefbb93a7a322ff` ·
+SteakBank Finance (LST) `0xbb53fcab7a3616c5be33b9c0af612f0462b01734` · PureSwap `0x481F0557FB3BB5eE461FD47F287b1ca944aD89bc` ·
+xWin Finance `0xd88ca08d8eec1E9E09562213Ae83A7853ebB5d28`.
+
+**Breadth (Sourcify-verified → audit-ready; a slice of the 120):** Alpaca Finance 2.0 (Lending $12M,
+contract-owned) `0x8f0528ce5ef7b51152a59745befdd91d97091d2f` · Venus Flux (Lending, Safe) · GoldFinger
+(RWA $24M, Safe) `0xb8a1eD561C914F22BD69b0bb4558ad5A89FeAAE1` · Landshare (RWA) · Sigma Money (CDP) ·
+Sable Finance (CDP) · Mars Ecosystem (CDP) · Horizon Protocol (Synthetics, Safe) · Scientix (Synthetics) ·
+Revault/Swamp/ApeRocket/TEN/Cub/Goose/GrizzlyFi/BearnFi/Planet Farm (yield/farm) · BSCSwap/BabyDogeSwap/
+Nerve/Aequinox/PinkSwap/SheepDex/Narwhalswap/JulSwap/Paraluni (DEXs) · lisAster/Rank Trading · DeepLock
+(launchpad) · ApeSwap Lending. **Full list + every address in `at_risk_bsc.csv`.**
+
+**Honest caveats (BSC-specific):** (1) `sourcify_verified=no`/blank means *not on Sourcify* — **not**
+unverified; BSC contracts are usually verified on BscScan but not mirrored to Sourcify, so check
+BscScan before treating one as a blind spot. (2) An EOA owner is a single point of failure to check,
+not a bug. (3) `owner_type="-"` = role-based (AccessControl) — resolve the minter/admin via
+`RoleGranted` logs (NodeReal `getLogs` works) before auditing.
+
+---
+
 
 **What changed this run.** Prior runs leaned on already-hacked / deprecated contracts. Those are low
 prevention value — the money already left, and everyone's watching. This run pivots to the real

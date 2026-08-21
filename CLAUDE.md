@@ -14,17 +14,20 @@ findings). The user takes a contract address from here and starts an audit.
 - **`ADDRESS_BOOK.md`** — cumulative address reference the worksheet points into (every grounded
   candidate; latest run merged at the bottom).
 - `CANDIDATE_QUEUE.md` — families/shapes reasoning · `SCAN_REPORT.md` — the on-chain scan writeup ·
-  `at_risk_protocols.csv` — the 379-protocol ranked universe (run4) · `candidates.csv` — earlier
-  register · `scanners/` — reproducible, dependency-free on-chain tooling.
+  `at_risk_protocols.csv` — the 379-protocol ranked universe (run4) · `at_risk_bsc.csv` — 253 new BNB
+  Chain candidates w/ authority/verified (run5) · `candidates.csv` — earlier register · `scanners/` —
+  reproducible, dependency-free on-chain tooling.
 
 ## Run convention (IMPORTANT — carry forward)
 
-- **Runs so far = 4 discovery runs:** run1 = initial candidate queue; run2 = multi-condition rerun
+- **Runs so far = 5 discovery runs:** run1 = initial candidate queue; run2 = multi-condition rerun
   (families K–N); run3 = programmatic wide + precise scan (approval-authority live-confirmation,
   bytecode fingerprint, impl-age); run4 = **fresh & at-risk, prevention-first** — pivoted away from
-  already-hacked/deprecated contracts to live/funded/unaudited/complex-mechanic protocols; built the
-  authority-concentration + source dangerous-pattern scanners; produced `at_risk_protocols.csv` (379
-  ranked candidates). **The next discovery run is run5.**
+  already-hacked/deprecated contracts to live/funded/unaudited/complex-mechanic protocols; produced
+  `at_risk_protocols.csv` (379); run5 = **BNB Chain, new & unwatched** — the explorer gap closed via a
+  NodeReal BSC RPC (full read surface incl. `getLogs`), 253 new BSC protocols, authority-concentration
+  signal (owner/admin EOA vs Safe), produced `at_risk_bsc.csv` (120 with resolved contracts).
+  **The next discovery run is run6.** DefiLlama labels BNB Chain **"Binance"** in `chains` (not "BSC").
 - User steer (carry forward): **do not over-index on already-hacked contracts** — the prevention value
   is in live, unexploited, under-reviewed protocols. Give **volume** (conversion is ~1–3%). Think for
   yourself about what makes a protocol risky (authority concentration, fresh unaudited complex money
@@ -40,7 +43,8 @@ findings). The user takes a contract address from here and starts an audit.
 - Develop on branch `claude/protocol-contract-surfacing-sg0eil`; commit + push each run.
 - Never commit the Etherscan/Blockscout API keys — `scanners/chain.py` reads `ETHERSCAN_V2_KEY` from env.
 - On-chain data channels: Etherscan V2 free tier covers **Ethereum, Arbitrum, Polygon** only; **Base**
-  via Blockscout; **BNB** via Sourcify + public RPC (the standing explorer gap). Public RPC does
-  `eth_call`/storage/code/logs on all four.
+  via Blockscout; **BNB Chain** via **NodeReal RPC** (set `BSC_RPC` env — full read surface incl.
+  `getLogs`) + **Sourcify** for source. Public RPC does `eth_call`/storage/code/logs on all four. Never
+  commit the NodeReal URL or any API key — scanners read them from env.
 - Precision discipline: a failed/rate-limited read must never be counted as `0` (see the ghost bug in
   `SCAN_REPORT.md` §1); confirm standing approvals with a **current `allowance` read**, not event volume.

@@ -1,0 +1,254 @@
+score,tvl,audits,category,name,address,contract_name,is_proxy,implementation,owner,owner_type,admin_type,sourcify_verified,listedAt,slug
+7,12085513,0,Lending,Alpaca Finance 2.0,0x8f0528ce5ef7b51152a59745befdd91d97091d2f,AlpacaToken,no,,0xa625ab01b08ce023b2a342dbb12a16f2c8489a8f,contract,,yes,2023-05-25,alpaca-finance-2.0
+7,3266180,0,Lending,Venus Flux,0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63,Venus,no,,0x3a3284dc0faffb0b5f0d074c4c704d14326c98cf,Safe,,yes,2026-03-04,venus-flux
+7,2030949,0,Launchpad,DeepLock,0x60de5f9386b637fe97af1cc05f25548e9baaee19,DeepLock,no,,,,,yes,2022-01-29,deeplock
+7,1121728,0,Yield Aggregator,lisAster,0xFceB31A79F71AC9CBDCF853519c1b12D379EdC46,Lista DAO,no,,,,,yes,2026-05-22,lisaster
+7,891734,0,Yield,BTCST,0x78650b139471520656b9e7aa7a5e9276814a38e9,StandardBTCHashrateToken,yes,0x85d4f83b0bf400d3af6fa12c44a28b490689c091,0xad3784cd071602d6c9c2980d8e0933466c3f0a0a,EOA,contract,no,2021-12-18,btcst
+7,216091,0,Derivatives,Gambit Financial,,,,,,,,,2023-06-08,gambit-financial
+6,23806764,2,RWA,GoldFinger,0xb8a1eD561C914F22BD69b0bb4558ad5A89FeAAE1,Aurum Reserve Token,no,,0x7878cf038bd8e8acebc2f2109a1ccffb09e4bbd4,Safe,,yes,2025-12-02,goldfinger
+6,19547798,2,CDP,BitU Protocol,,,,,,,,,2024-06-26,bitu-protocol
+6,12323504,2,RWA,Paimon,,,,,,,,,2026-02-17,paimon
+6,6275791,0,RWA,Mansory,,,,,,,,,2025-09-08,mansory
+6,4996028,0,Dexs,BSCSwap,0xacc234978a5eb941665fd051ca48765610d82584,BSCswap,no,,,,,yes,2021-11-20,bscswap
+6,3296385,0,Dexs,Dnax,,,,,,,,,2025-11-14,dnax
+6,2197169,2,Yield,Rank Trading,0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952,RankToken,no,,,,,yes,2025-04-23,rank-trading
+6,2077811,0,Dexs,BabyDogeSwap,0xc748673057861a797275CD8A068AbB95A902e8de,Baby Doge Coin,no,,,,,yes,2022-10-08,babydogeswap
+6,2000830,2,Yield,Revault,0x4fdd92bd67acf0676bfc45ab7168b3996f7b4a3b,Reva Token,no,,0x30ec49ef0243c00cf133a133e745c3957d4e28bc,contract,,yes,2021-11-22,revault
+6,1765514,2,Yield,Turbo Loop,,,,,,,,,2026-05-20,turbo-loop
+6,1585322,2,Yield,Planet Farm,0x72b7d61e8fc8cf971960dd9cfa59b8c829d91991,AQUA,no,,0x0ac58fd25f334975b1b61732cf79564b6200a933,contract,,yes,,planet-farm
+6,1495870,0,Dexs,Nerve,0x42F6f551ae042cBe50C739158b4f0CAC0Edb9096,Nerve,no,,0xd94ac9fb78dd9b3feb0ec39f38d86d2ee5ba6b06,Safe,,yes,,nerve
+6,1447660,0,Dexs,KaoyaSwap,,,,,,,,,2024-03-18,kaoyaswap
+6,1308196,2,Yield,Swamp Finance,0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d,Swampy,no,,0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3,contract,,yes,,swamp-finance
+6,1206957,2,CDP,Sigma Money,0x85375d3e9c4a39350f1140280a8b0de6890a40e7,Sigma,no,,,,,yes,2025-07-22,sigma-money
+6,1189741,0,Launchpad,Flap sh,,,,,,,,,2024-08-13,flap-sh
+6,751722,2,Yield,ApeRocket,0xe486a69e432fdc29622bf00315f6b34c99b45e80,Space Token,no,,0x78f28f907d6fb66bde8bc2f0d564bac9c54fce7f,contract,,yes,,aperocket
+6,631122,0,Dexs,Aequinox,0x0ddef12012ed645f12aeb1b845cb5ad61c7423f5,Aequinox,no,,,,,yes,2022-09-14,aequinox
+6,621293,2,RWA,Landshare,0xA73164DB271931CF952cBaEfF9E8F5817b42fA5C,Landshare Token,no,,0x3f9458892fb114328bc675e11e71ff10c847f93b,contract,,yes,2024-07-10,landshare
+6,597977,3,Yield,BearnFi,0x81859801b01764d4f0fa5e64729f5a6c3b91435b,bearn.fi,no,,,,,yes,,bearnfi
+6,573970,2,CDP,Sable Finance,0x1eE098cBaF1f846d5Df1993f7e2d10AFb35A878d,SABLE,no,,,,,yes,2023-08-08,sable-finance
+6,513613,2,Yield,GrizzlyFi Hives,0xa045e37a0d1dd3a45fefb8803d22457abc0a728a,Grizzly Honey,yes,0xb998c33c4cffb696b4a208966d83c5d9c937328d,,,contract,yes,2022-08-22,grizzlyfi-hives
+6,474011,0,Dexs,PinkSwap,0x702b3f41772e321aacCdea91e1FCEF682D21125D,PinkSwap Token,no,,0xe981676633dcf0256aa512f4923a7e8da180c595,contract,,yes,,pinkswap
+6,412603,0,Dexs,SheepDex,0x6a428ff9bfec2c8f676b8c905d49146c6106af90,Sheep Swap Token v2,no,,0x89c00589ec5b5547ae8ea1a5f4b41867635123a5,Safe,,no,2021-12-30,sheepdex
+6,382085,0,Dexs,Narwhalswap,0xa1303e6199b319a891b79685f0537d289af1fc83,NAR Token,no,,,,,yes,2022-02-06,narwhalswap
+6,367741,2,Synthetics,Scientix,0x2CFC48CdFea0678137854F010b5390c5144C0Aa5,Scientix,no,,,,,yes,,scientix
+6,352032,0,Dexs,JulSwap,0x5a41f637c3f7553dba6ddc2d3ca92641096577ea,JulSwap,no,,,,,yes,2022-12-05,julswap
+6,308219,0,Dexs,Paraluni Dex,0x43Feaca246392C23EE5A0Db618fCd81a74b91726,ParalUni Token,no,,0xfad1a38296ac6f26ff9c8c3d46c97fe1d003448e,contract,,yes,2023-01-12,paraluni-dex
+6,302910,2,Farm,Goose Finance,0xf952fc3ca7325cc27d15885d37117676d25bfda6,Goose Golden Egg,no,,0xe70e9185f5ea7ba3c5d63705784d8563017f2e57,contract,,yes,,goose-finance
+6,278722,2,Liquid Staking,SteakBank Finance,0xbb53fcab7a3616c5be33b9c0af612f0462b01734,Steak Bank Finance,no,,0x6083edf1e49969d810794c85dd0e1d2f93f26eb4,EOA,,yes,,steakbank-finance
+6,244835,0,Liquid Restaking,EA Finance,,,,,,,,,2026-01-14,ea-finance
+6,239278,0,Dexs,PureSwap,0x481F0557FB3BB5eE461FD47F287b1ca944aD89bc,PureSwap Token,no,,0x94d112712d024f0453f036050bad0e2869be62ca,EOA,,yes,2021-11-09,pureswap
+6,233311,2,Derivatives,Horizon Protocol,0xc0eff7749b125444953ef89682201fb8c6a917cd,Horizon Protocol,no,,0x81752bc7d54a45bdb9005223d61d2cbd33d04857,Safe,,yes,2022-03-08,horizon-protocol
+6,227295,0,Launchpad,GraFun,,,,,,,,,2024-10-01,grafun
+6,227075,2,CDP,Mars Ecosystem,0x7859b01bbf675d67da8cd128a50d155cd881b576,Mars Ecosystem Token,no,,,,,no,2021-10-14,mars-ecosystem
+6,211328,1,Lending,ApeSwap Lending,0x34294afabcbaffc616ac6614f6d2e17260b78bed,ApeBond,no,,,,,yes,2022-07-28,apeswap-lending
+6,209214,0,Prediction Market,Probable,,,,,,,,,2026-01-24,probable
+6,206879,2,Yield,TEN Finance,0xd15c444f1199ae72795eba15e8c1db44e47abf62,TEN Finance,no,,0x264a1b3f6db28de4d3dd4ed23ab31a468b0c1a96,contract,,yes,,ten-finance
+6,205024,2,Farm,Cub Finance,0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1,Cub Finance,no,,0x227e79c83065edb8b954848c46ca50b96cb33e16,contract,,yes,,cub-finance
+5,9982319,2,Dexs,FstSwap,,,,,,,,,2022-09-20,fstswap
+5,6071621,2,Derivatives,TurboFlow Perps,,,,,,,,,2025-11-05,turboflow-perps
+5,4945399,0,Dexs,DOOAR V2,,,,,,,,,2022-09-23,dooar-v2
+5,3636917,2,Prediction Market,OPINION,,,,,,,,,2025-10-28,opinion
+5,2772038,2,Yield,RateX DEX,,,,,,,,,2024-10-23,ratex-dex
+5,1468508,2,Dexs,BabySwap,0x53e562b9b7e5e94b81f10e96ee70ad06df3d2657,BabySwap Token,no,,0x5da29e4afe94784fde4b7a62c5cd8a8aebcfd6e4,contract,,yes,,babyswap
+5,1354983,2,Dexs,Nomiswap,0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65,Nominex,no,,0x8640082f3472255b064d3e8fa398ae46835821f1,Timelock,,yes,2022-06-14,nomiswap
+5,1173255,0,Dexs,Depth,,,,,,,,,,depth
+5,1170641,2,Dexs,Unchain X,0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f,Unchain X,no,,,,,yes,2025-03-19,unchain-x
+5,729788,2,Dexs,Topaz CL,0xdf002282C1474C9592780618Adda7EaA99998Abd,Topaz,no,,,,,yes,2026-05-19,topaz-cl
+5,689857,2,Dexs,Dinosaur Eggs,0x9a78649501bbaac285ea4187299471b7ad4abd35,Dinosaur Eggs Token,no,,0x32b03c76d8b3301981777ea5ecf7f8478b9798b7,contract,,yes,2021-10-21,dinosaur-eggs
+5,682766,2,Dexs,Titano Swych,0x4e3cABD3AD77420FF9031d19899594041C420aeE,Titano,no,,0xf983b8c8ce452701cf06536606e9e9da1698eb78,EOA,,yes,2022-09-20,titano-swych
+5,620886,2,Dexs,GIBXSwap,0xae28714390e95b8df1ef847c58aeac23ed457702,GIBX Swap,no,,0x8746137de6d8020ffa2eac1da0e38958743aedd7,EOA,,no,2021-11-19,gibxswap
+5,450077,2,Dexs,ValueDefi,0x49e833337ece7afe375e44f4e3e8481029218e5c,,,,,,,,,valuedefi
+5,283032,2,Lending,Demeter,,,,,,,,,2021-11-17,demeter
+5,270095,2,Dexs,WardenSwap,0x0feadcc3824e7f3c12f40e324a60c23ca51627fc,WardenSwap Token,no,,0xde866dd77b6df6772e320dc92bff0eddc626c674,contract,,yes,,wardenswap
+5,267858,2,Dexs,Coinswap Space,0x3bc5798416c1122bcfd7cb0e055d50061f23850d,CoinSwap Token,no,,0x3a0a988d680dbbb02decbfd35f9e0676b4bec292,contract,,yes,,coinswap-space
+5,262308,2,Dexs,PantherSwap,0x1f546ad641b56b86fd9dceac473d1c7a357276b7,PantherSwap Token,no,,0x058451c62b96c594ad984370eda8b6fd7197bbd4,contract,,yes,,pantherswap
+5,253617,2,Luck Games,B-Lucky,0x67b47971426bb2180453b3993ff2ec319e704444,B-Lucky,no,,,,,yes,2025-11-08,b-lucky
+5,251206,2,Dexs,SquadSwap Dynamo,,,,,,,,,2025-03-19,squadswap-dynamo
+5,200648,2,Dexs,MetaCoin Swap,,,,,,,,,2023-03-14,metacoin-swap
+4,259442890,2,CDP,Lista CDP,0xFceB31A79F71AC9CBDCF853519c1b12D379EdC46,Lista DAO,no,,,,,yes,2022-08-30,lista-cdp
+4,69385946,0,Dexs,PancakeSwap Infinity,0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82,PancakeSwap Token,no,,0x73feaa1ee314f8c655e354234017be2193c9e24e,contract,,yes,2025-05-05,pancakeswap-infinity
+4,52357622,2,Basis Trading,Unitas USDu,,,,,,,,,2025-06-20,unitas-usdu
+4,38498641,0,Dexs,Lista DEX,0xFceB31A79F71AC9CBDCF853519c1b12D379EdC46,Lista DAO,no,,,,,yes,2026-03-31,lista-dex
+4,32364794,0,Canonical Bridge,StandX Bridge,,,,,,,,,,standx-bridge
+4,32316858,2,Leveraged Farming,Alpaca Leveraged Yield Farming,0x8f0528ce5ef7b51152a59745befdd91d97091d2f,AlpacaToken,no,,0xa625ab01b08ce023b2a342dbb12a16f2c8489a8f,contract,,yes,,alpaca-leveraged-yield-farming
+4,23201569,2,Onchain Capital Allocator,YieldNest,0x7159cc276d7d17ab4b3beb19959e1f39368a45ba,,,,,,,,2024-05-15,yieldnest
+4,3009808,2,DEX Aggregator,1inch Swap,0x111111111117dc0aa78b770fa6a738034120c302,1INCH Token,no,,0xb91facdde5c6b398d3149aa25b0118bef6760b0a,Safe,,yes,,1inch-swap
+4,977265,2,Indexes,BiShares,,,,,,,,,2021-10-29,bishares
+4,539295,2,Dexs,KnightSwap Finance,0xD23811058Eb6e7967D9a00dc3886E75610c4AbBa,KnightSwap Token,no,,0xe50cb76a71b0c52ab091860cd61b9ba2fa407414,contract,,yes,2021-11-29,knightswap-finance
+4,502058,2,Dexs,SquadSwap Thanos,,,,,,,,,2026-08-18,squadswap-thanos
+4,488212,2,Dexs,Smoothy,0xbf776e4fca664d791c4ee3a71e2722990e003283,SMTYToken,yes,0xc9dacc72777210de0a9c25630e7e16d3803ae8af,0x058d260d6b9e41052378c063c367c53a2c22dac4,EOA,,yes,,smoothy
+4,397639,2,Dexs,Definix,0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d,Definix Token,no,,0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a,contract,,yes,2021-11-26,definix
+4,225135,0,Yield Aggregator,Clovis,,,,,,,,,2025-09-22,clovis
+3,29319896,0,Token Locker,GoPlus Locker V3,,,,,,,,,2025-03-14,goplus-locker-v3
+3,24133451,0,Liquid Restaking,Mellow Restaking,,,,,,,,,2024-06-11,mellow-restaking
+3,23803657,0,CEX,BitVenus,,,,,,,,,2023-02-07,bitvenus
+3,18951281,0,CEX,OSL,,,,,,,,,2025-10-09,osl
+3,15934950,2,Launchpad,DxSale,0xF063fE1aB7a291c5d06a86e14730b00BF24cB589,,,,,,,,2022-07-15,dxsale
+3,11726744,0,Cross Chain Bridge,Synapse Cross Chain Bridge,0x0f2d719407fdbeff09d87557abb7232601fd9f29,,,,,,,,,synapse-cross-chain-bridge
+3,11709536,0,CEX,ProBit Global,0xfb559ce67ff522ec0b9ba7f5dc9dc7ef6c139803,,,,,,,,2024-07-20,probit-global
+3,11675043,0,Risk Curators,MEV Capital,,,,,,,,,2025-05-20,mev-capital
+3,10139315,0,Dexs,Frax Swap,0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,,,,,,,,2022-09-23,frax-swap
+3,9394877,0,CEX,LeveX,,,,,,,,,2025-11-28,levex
+3,5788229,0,CEX,CEX.IO,,,,,,,,,2025-09-03,cex.io
+3,4888740,0,Liquidity Manager,TheDeep,,,,,,,,,2025-07-18,thedeep
+3,4728108,0,Dexs,Metric V2,,,,,,,,,2026-06-11,metric-v2
+3,4662495,0,Yield Lottery,Ample,,,,,,,,,2026-03-04,ample
+3,4583567,0,CEX,Tothemoon,,,,,,,,,,tothemoon
+3,3580988,0,CEX,BitMart,0x986ee2b944c42d017f52af21c4c69b84dbea35d8,,,,,,,,,bitmart
+3,3391499,0,CEX,WOO X,0x4691937a7508860f876c9c0a2a617e7d9e945d4b,Wootrade Network,no,,,,,yes,2022-12-09,woo-x
+3,3124600,0,Canonical Bridge,CORE Bridge,,,,,,,,,2024-11-19,core-bridge
+3,2556675,2,Lending,LayerBank,,,,,,,,,2023-07-19,layerbank
+3,2507253,0,Dexs,EmpireDEX,,,,,,,,,2021-11-09,empiredex
+3,2346459,0,Bridge,ioTube,,,,,,,,,2022-01-16,iotube
+3,1611882,2,Yield,Singular Farm,,,,,,,,,,singular-farm
+3,1442900,0,Cross Chain Bridge,Butter Network,,,,,,,,,2022-12-15,butter-network
+3,1426950,0,CEX,Hotcoin,,,,,,,,,2025-04-03,hotcoin
+3,1265301,0,Bridge,Rosen Bridge,,,,,,,,,2024-06-06,rosen-bridge
+3,1097478,0,Dexs,Maverick V2,0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd,,,,,,,,2024-06-11,maverick-v2
+3,1063572,2,Liquid Staking,Filet Finance,,,,,,,,,2022-07-13,filet-finance
+3,897641,2,Yield,Solo Top,,,,,,,,,2021-10-29,solo-top
+3,870833,0,Payments,Pay Protocol,,,,,,,,,2024-04-23,pay-protocol
+3,799408,0,Bridge,Meter Passport,,,,,,,,,2022-11-28,meter-passport
+3,742989,0,Risk Curators,Apostro,,,,,,,,,2025-05-20,apostro
+3,738620,0,Bridge,WavesBridge,,,,,,,,,2025-01-09,wavesbridge
+3,710315,0,OTC Marketplace,Whales Market,,,,,,,,,2024-05-14,whales-market
+3,648987,2,Launchpad,Mint Club V2,,,,,,,,,2024-02-01,mint-club-v2
+3,584562,0,Bridge,BabyDoge Bridge,0xc748673057861a797275cd8a068abb95a902e8de,Baby Doge Coin,no,,,,,yes,2026-01-23,babydoge-bridge
+3,536233,0,Cross Chain Bridge,Meson,,,,,,,,,2024-04-29,meson
+3,463278,0,Cross Chain Bridge,Counterstake,,,,,,,,,2022-08-15,counterstake
+3,458334,0,Dexs,JustMoney,0x388D819724dD6d71760A38F00dc01D310d879771,JustMoney,no,,0xafd9f4d63588d52ff8a50d8d0b0d37254cc509b1,EOA,,yes,2022-07-13,justmoney
+3,450119,2,Yield,Tetu Earn,,,,,,,,,,tetu-earn
+3,449782,2,Lending,Ajna V2,0x9a96ec9b57fb64fbc60b423d1f4da7691bd35079,,,,,,,,2024-01-12,ajna-v2
+3,441055,0,AI Agents,Krystal Auto-Farm Vault,,,,,,,,,2025-02-07,krystal-auto-farm-vault
+3,438823,0,Dexs,Textile FX,,,,,,,,,2026-08-03,textile-fx
+3,413349,0,Liquidity Manager,EZManager,,,,,,,,,2026-03-05,ezmanager
+3,401281,0,Token Locker,GoPlus Locker V2,,,,,,,,,2025-03-14,goplus-locker-v2
+3,399310,2,Lending,Segment Finance,0x5de40c1152c990492eaeaeecc4ecaab788bbc4fd,Segment,no,,,,,yes,2024-02-06,segment-finance
+3,394016,0,Bridge,Octus Bridge,,,,,,,,,2022-03-03,octus-bridge
+3,357870,2,Lending,Neku,,,,,,,,,2021-11-02,neku
+3,353052,2,Lending,Prime Protocol,,,,,,,,,2023-05-17,prime-protocol
+3,309510,2,Options,Deri Protocol,,,,,,,,,,deri-protocol
+3,307626,2,Yield Aggregator,Teahouse Managed,,,,,,,,,2023-07-24,teahouse-managed
+3,306992,0,CEX,Fastex,,,,,,,,,2023-09-21,fastex
+3,296576,2,Derivatives,Vest Markets,,,,,,,,,2024-03-29,vest-markets
+3,281919,0,Prediction Market,Myriad Markets,,,,,,,,,2025-09-03,myriad-markets
+3,276589,2,Derivatives,MUFEX,,,,,,,,,2023-08-02,mufex
+3,264847,2,Yield,Velvet V3,0x8b194370825e37b33373e74a41009161808c1488,Velvet,no,,,,,yes,2024-08-21,velvet-v3
+3,264448,2,Derivatives,Jarvis Network,0x8a9c67fee641579deba04928c4bc45f66e26343a ,,,,,,,,,jarvis-network
+3,258971,0,DEX Aggregator,Hashflow,0xb3999f658c0391d94a37f7ff328f3fec942bcadc,,,,,,,,2022-02-22,hashflow
+3,253022,0,Liquidity Manager,Dyson,,,,,,,,,2023-02-07,dyson
+3,252439,2,Yield Aggregator,BIM Yield,,,,,,,,,2025-07-07,bim-yield
+3,232252,2,Options,FinNexus,0xef9cd7882c067686691b6ff49e650b43afbbcc6b,,,,,,,,,finnexus
+3,224659,0,Dexs,Intercroneswap,,,,,,,,,2023-05-22,intercroneswap
+3,220392,0,Liquidity Manager,Krystal Community Vault,,,,,,,,,2026-08-05,krystal-community-vault
+3,214293,1,Restaking,Pell Network,,,,,,,,,2024-05-29,pell-network
+3,201296,0,CEX,Latoken,,,,,,,,,2023-05-04,latoken
+2,151208763,0,Launchpad,PinkSale,0x602ba546a7b06e0fc7f58fd27eb6996ecc824689,PinkSale,no,,,,,yes,2022-06-06,pinksale
+2,75412949,0,Bridge,edgeX Bridge,0xb0076de78dc50581770bba1d211ddc0ad4f2a241,,,,,,,,2024-08-07,edgex-bridge
+2,73757687,0,Bridge,APX Bridge,0x000ae314e2a2172a039b26378814c252734f556a,Aster,no,,,,,yes,2022-05-19,apx-bridge
+2,69061153,0,CEX,Coinstore,,,,,,,,,2026-03-03,coinstore
+2,67806112,0,CEX,Toobit,,,,,,,,,2024-07-31,toobit
+2,62980340,0,Onchain Capital Allocator,Solv Strategies,,,,,,,,,2025-05-06,solv-strategies
+2,61140042,0,Bridge,SoDEX Bridge,0x624e2e7fdc8903165f64891672267ab0fcb98831,,,,,,,,2026-01-08,sodex-bridge
+2,57941740,0,CEX,Coin8,,,,,,,,,2025-01-27,coin8
+2,51173397,0,CEX,Gate US,0xe66747a101bff2dba3697199dcce5b743b454759,,,,,,,,2025-11-19,gate-us
+2,43869420,0,Dexs,SushiSwap V3,0x6b3595068778dd592e39a122f4f5a5cf09c90fe2,,,,,,,,2023-04-06,sushiswap-v3
+2,42585343,0,Risk Curators,Tulipa Capital,,,,,,,,,2025-05-20,tulipa-capital
+2,38010596,0,CEX,BitKan,0x1410434b0346f5be678d0fb554e5c7ab620f8f4a,,,,,,,,2025-10-09,bitkan
+2,32691957,0,CEX,Zoomex,,,,,,,,,2025-05-26,zoomex
+2,32292918,0,Onchain Capital Allocator,Lombard Vaults,0xf0db65d17e30a966c2ae6a21f6bba71cea6e9754,,,,,,,,2024-09-13,lombard-vaults
+2,30914249,0,CEX,Flipster,,,,,,,,,2024-05-10,flipster
+2,28562108,2,Bridge,Connext,0xfe67a4450907459c3e1fff623aa927dd4e28c67a,,,,,,,,,connext
+2,28338037,2,Bridge,Orderly Bridge,0xabd4c63d2616a5201454168269031355f4764337,,,,,,,,2022-11-10,orderly-bridge
+2,26832603,2,Bridge,SunX Bridge,,,,,,,,,2025-09-24,sunx-bridge
+2,25072712,2,Bridge,PumpBTC,0xb7c0007ab75350c582d5eab1862b872b5cf53f0c,pumpBTC Governance token,no,,0x1553b5053ebf7add0f202d41e44aa43c41cfc421,Safe,,yes,2024-07-25,pumpbtc
+2,19707061,2,Liquidity Manager,Steer Protocol,,,,,,,,,2023-05-30,steer-protocol
+2,16529724,2,Bridge,Orbit Bridge,,,,,,,,,2022-08-17,orbit-bridge
+2,14216826,2,Bridge,cBridge,0x4f9254c83eb525f9fcf346490bbb3ed28a81c667,,,,,,,,2021-11-07,cbridge
+2,13099805,2,Bridge,pNetwork,0x89ab32156e46f46d02ade3fecbe5fc4243b9aaed,,,,,,,,,pnetwork
+2,12807414,2,CeDeFi,Goose,,,,,,,,,2024-11-14,goose
+2,12287798,2,Dexs,DODO AMM,0x43Dfc4159D86F3A37A5A4B3D4580b888ad7d4DDd,,,,,,,,,dodo-amm
+2,11807429,2,Stablecoin Wrapper,XGLD,,,,,,,,,2026-07-24,xgld
+2,11252817,2,CEX,HashKey Global,,,,,,,,,2024-05-31,hashkey-global
+2,11115114,2,Token Locker,FlokiFi Locker,0xcf0c122c6b73ff809c693db761e7baebe62b6a2e,,,,,,,,2023-01-04,flokifi-locker
+2,9298896,2,Dexs,Joe DEX,,,,,,,,,,joe-dex
+2,8735933,2,Cross Chain Bridge,Symbiosis,0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9,,,,,,,,2022-03-30,symbiosis
+2,7592985,2,Liquidity Manager,ICHI,0x111111517e4929D3dcbdfa7CCe55d30d4B6BC4d6,,,,,,,,2021-11-20,ichi
+2,7040882,2,Bridge,Axelar Cross Chain,0x467719ad09025fcc6cf6f8311755809d45a5e5f3,,,,,,,,2025-04-02,axelar-cross-chain
+2,6889086,2,Bridge,Wan Bridge,,,,,,,,,2022-09-12,wan-bridge
+2,6794752,2,Dexs,Swaap Maker V2,,,,,,,,,2023-07-11,swaap-maker-v2
+2,6720896,2,Token Locker,Bitbond Lockers,,,,,,,,,2025-03-13,bitbond-lockers
+2,6058554,2,Payments,Superfluid,,,,,,,,,2021-10-21,superfluid
+2,5541909,2,Bridge,Dexalot Portfolio,,,,,,,,,2024-08-16,dexalot-portfolio
+2,4999527,2,CEX,P2PB2B,,,,,,,,,2024-11-08,p2pb2b
+2,4493894,2,Yield Lottery,PoolTogether V3,0x0cec1a9154ff802e7934fc916ed7ca50bde6844e,,,,,,,,,pooltogether-v3
+2,3448781,2,Dexs,Joe V2.1,,,,,,,,,2023-04-27,joe-v2.1
+2,2985257,2,Liquidity Manager,Gamma,0x6bea7cfef803d1e3d5f7c0103f7ded065644e197,,,,,,,,,gamma
+2,2935174,2,Payments,Sablier Lockup,,,,,,,,,2023-07-29,sablier-lockup
+2,2724384,2,Dexs,Dexalot DEX,,,,,,,,,2023-02-21,dexalot-dex
+2,2303559,2,Dexs,WOOFi Swap,0x4691937a7508860f876c9c0a2a617e7d9e945d4b,Wootrade Network,no,,,,,yes,2022-02-23,woofi-swap
+2,2127337,2,Dexs,Balanced Exchange,,,,,,,,,,balanced-exchange
+2,2060892,2,Bridge,SODAX,,,,,,,,,2026-08-11,sodax
+2,2060837,2,Privacy,Privacy Cash,,,,,,,,,2025-08-29,privacy-cash
+2,2016862,2,CeDeFi,STONEUSD,,,,,,,,,2026-02-03,stoneusd
+2,1784591,2,Bridge,deBridge,,,,,,,,,2022-02-23,debridge
+2,1770250,2,Payments,LlamaPay,,,,,,,,,2022-04-19,llamapay
+2,1598003,2,Dexs,iZiSwap,0x9ad37205d608B8b219e6a2573f922094CEc5c200,,,,,,,,2022-07-06,iziswap
+2,1327795,2,Dexs,IDEX Classic,0xb705268213d593b8fd88d3fdeff93aff5cbdcfae,,,,,,,,,idex-classic
+2,1308490,2,Onchain Capital Allocator,Mitosis,0x8e1e6bf7e13c400269987b65ab2b5724b016caef,MITO,yes,0xb87827592f4f75ec5610751156e4e2044a4853c1,0x1248163214d9a0d6f02932a245370d3fd9613a82,Timelock,contract,yes,2024-05-14,mitosis
+2,1154665,2,Bridge,Hashport,,,,,,,,,2025-02-12,hashport
+2,1128913,2,Prediction Market,Overtime,0x90ce5720c17587d28e4af120ae2d313b3bad1722,,,,,,,,,overtime
+2,1040019,2,Dexs,Maverick V1,0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd,,,,,,,,2023-03-08,maverick-v1
+2,1028289,2,Bridge,Allbridge Classic,,,,,,,,,,allbridge-classic
+2,1016291,None,Dexs,KyberSwap Classic,0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202,,,,,,,,,kyberswap-classic
+2,979556,2,Dexs,Bridgers,,,,,,,,,2024-06-19,bridgers
+2,878329,2,Liquidity Manager,DefiEdge,,,,,,,,,2022-12-06,defiedge
+2,703230,2,Bridge,PepeTeam Bridge,,,,,,,,,2023-04-03,pepeteam-bridge
+2,655222,2,Payments,Sablier Flow,,,,,,,,,2025-04-17,sablier-flow
+2,593505,2,Bridge,NerveBridge,,,,,,,,,2023-02-21,nervebridge
+2,507957,2,Payments,Sablier Legacy,,,,,,,,,,sablier-legacy
+2,493232,2,Dexs,PICWE,,,,,,,,,2025-03-26,picwe
+2,481090,2,Prediction Market,PRDT,0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301,PRDT Token,no,,,,,yes,2022-10-20,prdt
+2,471821,2,Insurance,Ante Finance,,,,,,,,,,ante-finance
+2,457992,2,Bridge,ChainPort,0x104f3152d8ebfc3f679392977356962ff36566ac,SPELLFIRE Token [via Cha,no,,,,,yes,2021-12-19,chainport
+2,453693,2,Dexs,RadioShack,0x7a5d3A9Dcd33cb8D527f7b5F96EB4Fef43d55636,,,,,,,,2022-04-05,radioshack
+2,447606,2,Dexs,DefiBox,0x708c0e1d2417603d9acb0ae04fefbb93a7a322ff,BOX Token,no,,0x76fc1e11bab2d9bf716f2dccaa72b95749c2fdf0,EOA,,yes,,defibox
+2,389660,2,Dexs,Biswap V3,0x965f527d9159dce6288a2219db51fc6eef120dd1,Biswap,no,,0xf5d6fed0f4735ff2036ce4be535bd32e77dae9fe,contract,,yes,2023-07-03,biswap-v3
+2,383875,2,Bridge,Knit Finance,0xEF53462838000184F35f7D991452e5f25110b207,,,,,,,,2021-11-25,knit-finance
+2,343808,2,Bridge,Allbridge Core,,,,,,,,,2023-12-20,allbridge-core
+2,338299,2,Dexs,JetSwap,0x0487b824c8261462F88940f97053E65bDb498446,JetSwap Token,no,,0x63d6ec1cdef04464287e2af710ffef9780b6f9f5,contract,,yes,,jetswap
+2,307504,2,Cross Chain Bridge,BoringDAO,0xbc19712feb3a26080ebf6f2f7849b417fdd792ca,,,,,,,,,boringdao
+2,272516,2,Dexs,Orion Pools,0x0258f474786ddfd37abce6df6bbb1dd5dfc4434a,,,,,,,,,orion-pools
+2,262849,3,Dexs,YouSwap,,,,,,,,,,youswap
+2,256611,2,Payments,Streamflow,,,,,,,,,2023-02-28,streamflow
+2,236014,2,Dexs,OneSwap,0x0b342c51d1592c41068d5d4b4da4a68c0a04d5a4,,no,,,,,no,2021-12-18,oneswap
+2,227703,2,Indexes,xWin Finance,0xd88ca08d8eec1E9E09562213Ae83A7853ebB5d28,xWIN Token,no,,0x3149738c80d7a659ab1f312ce6e08502ce7e3ae5,EOA,,yes,2023-07-14,xwin-finance
+2,212950,5,Dexs,Bunni V2,0xfd0205066521550d7d7ab19da8f72bb004b4c341,,,,,,,,2025-02-05,bunni-v2
+2,211707,3,Dexs,HyperJump,0x03D6BD3d48F956D783456695698C407A46ecD54d,HyperBurn,no,,0x89861bf28cedabba52ea4b06869186294cd00265,contract,,yes,,hyperjump
+2,209889,2,DCA Tools,Balmy,,,,,,,,,,balmy
+1,284139692,0,CEX,Bitunix,,,,,,,,,2024-08-27,bitunix
+1,262978721,0,CEX,Phemex,0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c,,,,,,,,2022-12-19,phemex
+1,259157065,0,Risk Curators,Hyperithm,,,,,,,,,2025-05-20,hyperithm
+1,257797286,0,CEX,WEEX,0x1b66474c8eca3827f16202907f41f63785579716,,,,,,,,2026-01-02,weex
+1,192763441,0,Risk Curators,RockawayX,,,,,,,,,2026-03-26,rockawayx
+1,184184698,0,Risk Curators,KPK,0xbf3f63d8ac133b16d7d50c015036b33219dd8d23,,,,,,,,2025-10-16,kpk
+1,161420710,0,CEX,CoinDCX,,,,,,,,,,coindcx
+1,150129924,0,CEX,Bitrue,,,,,,,,,2025-02-05,bitrue
+1,121820876,0,CEX,VALR,,,,,,,,,2025-09-29,valr
+1,111253765,0,CEX,Pionex,,,,,,,,,2024-09-09,pionex
+1,109870549,0,CEX,Ourbit,,,,,,,,,2024-11-11,ourbit
+1,103362739,0,CEX,BloFin,,,,,,,,,2024-08-26,blofin
+1,96861914,0,Bridge,NEAR Intents,,,,,,,,,2025-10-16,near-intents
+1,84953210,0,Cross Chain Bridge,Hyperlane,,,,,,,,,2026-02-26,hyperlane
+1,81119558,0,Risk Curators,Re7 Labs,,,,,,,,,2025-05-20,re7-labs
+1,61223442,2,Liquidity Manager,Arrakis Modular,,,,,,,,,2024-10-23,arrakis-modular
+1,58317812,3,Dexs,THORChain DEX,,,,,,,,,,thorchain-dex
+1,45710188,2,Token Locker,Team Finance,0xCC4304A31d09258b0029eA7FE63d032f52e44EFe,,,,,,,,2022-06-29,team-finance
+1,44728247,2,Bridge,Poly Network,,,,,,,,,2022-06-01,poly-network
+1,42781179,2,Bridge,Ring Few,,,,,,,,,2024-03-02,ring-few
+1,36459777,2,Indexes,Reserve Protocol,0x320623b8e4ff03373931769a31fc52a4e78b5d70,,,,,,,,,reserve-protocol
+0,139488593,2,Bridge,Axelar,0x467719ad09025fcc6cf6f8311755809d45a5e5f3,,,,,,,,2022-10-29,axelar
+0,112519394,2,Liquid Restaking,Renzo,0x3b50805453023a91a8bf641e279401a0b23fa6f9,,,,,,,,2023-12-19,renzo
+0,93140614,2,Indexes,SoSoValue Indexes,0x624e2e7fdc8903165f64891672267ab0fcb98831,,,,,,,,2025-01-13,sosovalue-indexes
+0,91102331,3,CeDeFi,River Omni-CDP,0xdA7AD9dea9397cffdDAE2F8a052B82f1484252B3,River,no,,0xe7fb85455158bbd3a9f024105852341a0cdde019,Safe,,yes,2024-03-31,river-omni-cdp
+0,85014258,2,Privacy,Railgun,0xe76c6c83af64e4c60245d8c7de953df673a7a33d,,,,,,,,2022-01-27,railgun

@@ -268,3 +268,32 @@ Prevention-focused: live/funded/unaudited money contracts (not hacked). Full wor
 
 **Deep-dive entry addresses (token → resolve minter/vault before auditing; see AUDIT_TARGETS.md):**
 Resolv USR `0x259338656198ec7a76c729514d3cb45dfbf768a1` · Alchemix V3 `0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF` · Cooler Loans (OHM) `0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5` · Metronome Synth `0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa` · Ledgity Yield `0x482dF7483a52496F4C65AB499966dfcdf4DDFDbc` · Yield Basis `0x01791f726b4103694969820be083196cc7c045ff` · Everything (ARB lending) `0xe7e7e741c23a4767831a56a8c99f522c5ac1e7e7` · Spectra V2 (Base) `0x64fcc3a02eeeba05ef701b7eed066c6ebd5d4e51`.
+
+---
+
+## Run 5 — BNB Chain (new & unwatched; via NodeReal RPC + Sourcify)
+
+253 new BNB-Chain protocols (none from runs 1–4), 120 with a resolved contract — full list +
+columns in `at_risk_bsc.csv`. On-chain signal: authority concentration (owner/admin = EOA vs Safe/
+timelock). Read 2026-08-21.
+
+**EOA-owned (single-key authority) — obscure + funded:**
+
+| Protocol | Address | owner | sourcify |
+|---|---|---|---|
+| BTCST (Yield) | `0x78650b139471520656b9e7aa7a5e9276814a38e9` | EOA `0xad3784cd07…` | not-on-sourcify |
+| Titano Swych (Dex) | `0x4e3cABD3AD77420FF9031d19899594041C420aeE` | EOA `0xf983b8c8ce…` | yes |
+| GIBXSwap (Dex) | `0xae28714390e95b8df1ef847c58aeac23ed457702` | EOA `0x8746137de6…` | not-on-sourcify |
+| Smoothy (Dex, proxy) | `0xbf776e4fca664d791c4ee3a71e2722990e003283` | EOA `0x058d260d6b…` | yes |
+| JustMoney (Dex) | `0x388D819724dD6d71760A38F00dc01D310d879771` | EOA `0xafd9f4d635…` | yes |
+| DefiBox (Dex) | `0x708c0e1d2417603d9acb0ae04fefbb93a7a322ff` | EOA `0x76fc1e11ba…` | yes |
+| SteakBank Finance (LST) | `0xbb53fcab7a3616c5be33b9c0af612f0462b01734` | EOA `0x6083edf1e4…` | yes |
+| PureSwap (Dex) | `0x481F0557FB3BB5eE461FD47F287b1ca944aD89bc` | EOA `0x94d112712d…` | yes |
+| xWin Finance (Indexes) | `0xd88ca08d8eec1E9E09562213Ae83A7853ebB5d28` | EOA `0x3149738c80…` | yes |
+
+**Notable Safe/contract-governed (audit-ready, better governance):** Alpaca Finance 2.0
+`0x8f0528ce5ef7b51152a59745befdd91d97091d2f` (Lending $12M), Venus Flux (Lending, Safe), GoldFinger
+`0xb8a1eD561C914F22BD69b0bb4558ad5A89FeAAE1` (RWA $24M, Safe), Landshare `0xA73164DB271931CF952cBaEfF9E8F5817b42fA5C` (RWA),
+Horizon Protocol `0xc0eff7749b125444953ef89682201fb8c6a917cd` (Synthetics, Safe). Full 120 in `at_risk_bsc.csv`.
+
+*Caveat: `sourcify=not-on-sourcify` ≠ unverified — check BscScan (BSC verifies there, not always Sourcify).*
