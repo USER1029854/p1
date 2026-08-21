@@ -5,16 +5,10 @@ address the next stage needs to start reading**: the named contract, its impleme
 owner, its oracle/price authority, its markets/pools and their underlyings, and (for incident-anchored
 entries) the exploited contract + attacker. This is a *starting map*, not a proof of exploitability.
 
-> **Per-run address books.** Each research run also has its own frozen snapshot so runs can be tracked
-> and diffed. This file (`ADDRESS_BOOK.md`) is the **cumulative master** (all runs merged, latest at the
-> bottom). Per-run files:
-> - [`ADDRESS_BOOK_run1.md`](./ADDRESS_BOOK_run1.md) — initial queue anchors
-> - [`ADDRESS_BOOK_run2.md`](./ADDRESS_BOOK_run2.md) — multi-condition additions (GMX Vault, CRETH2)
-> - [`ADDRESS_BOOK_run3.md`](./ADDRESS_BOOK_run3.md) — full resolved dossier (= §Ethereum/Arbitrum/Base/incident blocks below)
-> - [`ADDRESS_BOOK_run4.md`](./ADDRESS_BOOK_run4.md) — wide computed scan (approval-authority, fingerprint, impl-age)
->
-> **Convention (carried forward): every future run gets its own `ADDRESS_BOOK_run<N>.md`, and its new
-> addresses are also merged into this master.** See `CLAUDE.md`.
+> **Start here for auditing:** [`AUDIT_TARGETS.md`](./AUDIT_TARGETS.md) is the single prioritized,
+> audit-ready worksheet (pick a target → load the address → audit the hypothesis). This file
+> (`ADDRESS_BOOK.md`) is the deeper **cumulative address reference** it points into — every grounded
+> candidate across all three runs, latest (wide computed scan) merged at the bottom.
 
 **How the addresses were obtained (2026-08-20):**
 - ⛓️ **resolved on-chain this pass** — via Etherscan V2 `eth_call`/`eth_getStorageAt` (Ethereum,
@@ -225,7 +219,7 @@ resolved subset are marked "resolve remaining via `getAllMarkets()`."*
 
 ---
 
-## RUN 4 — programmatic wide computed scan (merged from `ADDRESS_BOOK_run4.md`)
+## Wide computed scan (latest run) — approval-authority, fingerprint, impl-age
 
 Read live 2026-08-20. "LIVE n/15" = current non-zero `allowance` sampled among recent approvers.
 
