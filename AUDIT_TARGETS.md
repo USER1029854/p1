@@ -1,117 +1,168 @@
-# Audit Targets — start here
+# Audit Targets — start here  (run 4: fresh & at-risk, prevention-first)
 
-**One consolidated, audit-ready worksheet** merging the best of all research runs. Each target is a
-**contract address + the exact thing to check**, ordered by priority. Pick a row, load the address,
-audit the hypothesis. Everything read live on-chain **2026-08-20**.
+**What changed this run.** Prior runs leaned on already-hacked / deprecated contracts. Those are low
+prevention value — the money already left, and everyone's watching. This run pivots to the real
+prevention target: **live, funded, freshly-deployed, under-reviewed protocols where the bug is still
+in the code and nobody has drained it yet.** Conversion in this tier is 1–3%, so this is a *wide* list
+(379 candidates in [`at_risk_protocols.csv`](./at_risk_protocols.csv)) with **deep hypotheses on the
+top ~25**. Read a target, load the address, audit the hypothesis.
 
-- **✅ live** = confirmed on-chain this pass (allowance / storage / creation read).
-- "Load first" = the address to open in a decompiler/explorer to begin.
-- "Audit this" = the specific vulnerability hypothesis and where it lives.
-- Full address detail is in `ADDRESS_BOOK.md`; the reasoning/data behind each is in `SCAN_REPORT.md`
-  and `CANDIDATE_QUEUE.md`; `candidates.csv` is the sortable register; `scanners/` reproduces the reads.
-
----
-
-## TIER 1 — confirmed live authority, unwatched deployed state (audit these first)
-
-### T1 · Radiant V2 — fresh **unverified** implementation on a twice-exploited pool  ✅
-- **Load first:** implementation `0x3d4c56cdb97355807157f5c7d4f54957f0e9af44` (Arbitrum) — created **2024-10-17, UNVERIFIED**
-- Proxy (entry): `0xF4B1486DD74D07706052A33d31d7c0AAFD0659E1` (shell 2023-03-18)
-- **Audit this:** pull the unverified impl bytecode; diff against a verified Aave-v2 `LendingPool` twin.
-  Check (a) new-reserve index/rounding on a freshly-activated market, (b) the price-oracle source via
-  the `LendingPoolAddressesProvider` → `getPriceOracle()`. Aave-v2 fork; **hit twice** (Jan-2024
-  rounding, Oct-2024 key compromise) and the logic was swapped right after.
-- **Why:** fresh + unverified + prior-incident + live pool. Disclosure: Radiant Immunefi.
-
-### T2 · Multichain — dead bridge routers still holding live ∞ approvals  ✅
-- **Load first:** `0x765277EebeCA2e31912C9946eAe1021199B39C61` (Router4, Ethereum) — and `0x6b7a87899490EcE95443e979cA9485CBE7E71522` (Router6)
-- **Audit this:** does **any entrypoint pull tokens from an arbitrary `from`** (not `msg.sender`)? The
-  protocol is dead (Jul-2023, operator keys seized) yet **14/15 sampled recent approvers still have a
-  live infinite allowance** to Router4. If such a path exists, whoever holds the seized keys can drain
-  every current approver. Shape 2/7.
-- **Why:** dead protocol + compromised keys + confirmed live ∞ approvals from 800+ wallets. Disclosure:
-  no team → this one is a warn-the-users / informational case, not a bounty.
-
-### T3 · SwapNet — one router, byte-identical on 4 chains, still live ∞ approvals  ✅
-- **Load first:** `0x616000e384Ef1C2B52f5f3A88D57a3B64F23757e` (same address & bytecode on **ETH·ARB·BASE·BNB**; codehash `7d1a6d36…`, closed-source → get bytecode)
-- **Audit this:** the arbitrary `target.call(data)` swap step with insufficient validation that reaches
-  `transferFrom` of user approvals (the Jan-2026 drain path). Confirm whether it was patched/redeployed;
-  ETH still shows **5/15 sampled live ∞ approvals**. Characterize once → applies to all four chains.
-- **Why:** exploited, closed-source, still holds live authority. Disclosure: SwapNet/Matcha-Meta contact.
-
-### T4 · KyberSwap old aggregation router — live ∞ approvals on exploited code  ✅
-- **Load first:** `0xDF1A1b60f2D438842916C0aDc43748768353EC25` (Ethereum)
-- **Audit this:** any arbitrary-call / arbitrary-`from` `transferFrom` reachable path. **15/15 sampled
-  approvers still live & infinite.** Kyber has prior incident history. Shape 2/7.
-- **Why:** exploited-lineage router with confirmed live ∞ approval surface. Disclosure: KyberSwap bounty.
-
-### T5 · Flux Finance — unaudited $44.5M RWA Compound-v2 fork  ✅
-- **Load first:** Comptroller `0x95Af143a021DF745bc78e845b54591C53a8B3A51` (Ethereum); impl `0xdc7b90593cafe7a919d22b903fed21bf27da9719`
-- Price oracle (the mover): `0xa42e17f72aefc6ae585a08e6058a38ec036d37ec`
-- Markets: fOUSG `0x1dd7950c266fb1be96180a8fdb0591f70200e018` (RWA collateral, underlying OUSG `0x1b19c19393e2d034d8ff31ff34c81252fcbbee92`) · fUSDC `0x465a5a630482f3abd6d3b84b39b29b07214d19e5` · fDAI `0xe2ba8693ce7474900a045757fe0efca900f6530b` · fUSDT `0x81994b9607e06ab3d5cf3afff9a67374f05f27d7` · **fFRAX (thin)** `0x1c9a2d6b33b4826757273d47ebee0e2dddcd978b`
-- **Audit this:** (a) Compound-v2 donation / raw-`balanceOf` accounting on the thin `fFRAX` market;
-  (b) how the oracle values `fOUSG` (an RWA NAV Flux reads but does not derive — Shape 3). **aud=0.**
-- **Why:** unaudited at scale + RWA oracle + Compound-fork mechanics. Disclosure: Ondo contact.
+> Honesty up front: a surfacing pass can't prove a bug. Each target below is **a specific hypothesis +
+> the on-chain signal that made it worth your time**, not a confirmed finding. The 1-in-30-to-100 that
+> converts is what you're hunting; my job is to make the 30–100 the *right* ones. On-chain reads:
+> 2026-08-20.
 
 ---
 
-## TIER 2 — strong shape + funded (audit after Tier 1)
+## How I chose these — what makes a *live, unhacked* protocol risky (my rubric)
 
-### T6 · Iron Bank (ex-CREAM) Compound-v2 fork  ✅
-- Comptroller `0xAB1c342C7bf5Ec5F02ADEA1c2270670bCa144CbB`; oracle `0xbd6f5add9b7a6eb151933cb4efd50be4eca71451`; impl `0xcb9ab119be270f58d40e3d57d1ecc82bd479d59f` (Ethereum)
-- **Audit this:** the protocol-to-protocol credit-line divergence from stock Compound-v2, + single-source oracle. Thin markets: iMIM `0x9e8e207083ffd5bdc3d99a1f32d1e6250869c1a9`, iEUR `0x00e5c0774a5f065c285068170b20393925c84bf3`, iGBP `0xecab2c76f1a8359a06fab5fa0ceea51280a97ecf`.
+Not "was it hacked" but "what would make it hackable, and why hasn't anyone looked":
 
-### T7 · dForce Lending — controller logic swapped 2024-10-25  ✅
-- Controller `0x8B53Ab2c0Df3230EA327017C91Eb909f815Ad113`; impl `0xbd0ed2f6e7d84ac5a74cc29d4585d5179ece7ddd` (fresh 2024-10-25); owner `0x17e66b1e0260c930bfa567ff3ab5c71794279b94` (Ethereum; also ARB/Base)
-- **Audit this:** the fresh 2024 controller logic + the 2023 reentrancy-on-nonstandard-collateral path (verify it's fixed on every chain — age each chain's impl separately).
+1. **Authority concentration** — a funded upgradeable contract whose upgrade admin / owner / minter is
+   a single EOA (not a multisig/timelock). One key = total loss, and it's audit-independent.
+2. **Fresh + unaudited + real TVL** — new code (listed < ~12 mo) holding 7–9 figures with `aud=0`.
+   Untested money math is where new bugs live; nobody has re-read the *deployed* state.
+3. **Novel / complex money mechanics** — leverage loops, delta-neutral basis, self-repaying debt, RWA
+   NAV, cross-margin. More moving parts, more invariants to break; forks of these copy the bug.
+4. **Caller/keeper-settable pricing** — perps & synths whose mark price comes from a keeper or a
+   signed message (the KiloEx class). If the price setter's auth is weak, positions mint free PnL.
+5. **Mint authority over an off-chain-backed token** — RWA / synthetic stablecoins where a role can
+   mint the token; if the mint check or the collateral-proof is wrong, it depegs / prints unbacked.
+6. **Upgradeable + weak governance / short timelock** — the code you audit today isn't the code that
+   runs tomorrow.
+7. **Unverified code holding real money** — you can't review what you can't read; get the bytecode.
+8. **Composability blast radius** — a vault that routes into other protocols inherits their bugs.
 
-### T8 · Ionic (Base) — Fuse fork, exploited Feb-2025  ✅
-- Comptroller `0x05c9C6417F246600f8f5f49fcA9Ee991bfF73D13`; impl `0xc63Ee58A68C22BFd7900ab5C3eB94D0f3d1442e9`; oracle `0x1d89e5ba287e67ac0046d2218be5fe1382ce47b4`
-- **Audit this:** verify the Feb-2025 patch vs. redeploy; the **restaking/exotic collateral oracle** —
-  ionezETH `0x079f84161642d81aafb67966123c9949f9284bf5`, ionwstETH `0x9d62e30c6cb7964c99314dcf5f847e36fcb29ca9`, ionwsuperOETHb `0xc462eb5587062e2f2391990b8609d2428d8cf598`, ioncbBTC `0x1de166df671ae6db4c4c98903df88e8007593748`. Empty market: ionmsUSD `0x5be1cb6cb3c9bfd16db43ed4f6c081fa9783dd1c` (totalSupply 0, CF 10% — weak).
-
-### T9 · Aave V1 — deprecated, holds 927.9 ETH, impl-date anomaly  ✅
-- LendingPoolCore `0x3dfd23A6c5E8BbcFc9581d2E864a68feb6a076d3` (holds 927.9 ETH); impl `0x0e26e0bf83b4ec2cb0dcbc037bb01da5bb352eae` (**creation reads 2024-05-02 — verify why on a 2020 deprecated contract**); shared ProxyAdmin `0x24a42fd28c976a61df5d00d0599c34c4f90748c8` (Ethereum)
-- **Audit this:** the impl-date anomaly (reinit / CREATE2 / lookup quirk?) and the v1 flashloan/reentrancy surface on a contract still custodying 927 ETH.
-
-### T10 · Compound V1 — original 2018 money market  ✅
-- MoneyMarket `0x3FDA67f7583380E67ef93072294a7fAc882FD7E7`; admin `0x8b8592e9570e96166336603a1b4bd1e8db20fa20` (Ethereum)
-- **Audit this:** 2018 Solidity 0.4.24 code, admin-settable price oracle (Shape 3/6), ~$3M residual.
-
-### T11 · KiloEx — caller-settable price feed behind a weak forwarder  ✅
-- Base `0xd649a0876453fc7626569b28e364262192874e18` · BSC `0xcc6a5784194bd516db29aa505179857025d8bef4` (differ per chain)
-- **Audit this:** the `MinimalForwarder` signature-spoof → forged trusted-role → `setPrices()` chain (Shapes 1+2+3). Relaunched → verify the forwarder access-control hole is actually closed.
-
-### T12 · GMX-v1 GLP-fork family — mark-price + vault accounting
-- Fingerprint reference (Arbitrum): GMX-v1 `Vault` `0x489ee077994B6658eAfA855C308275EAd8097C4A`
-- **Audit this:** bytecode-match forks (BMX/Morphex on Base·BNB, Vela, **Level Finance** & **El Dorado/EDE** on BNB — both prior-exploited) against this Vault; check whether the **July-2025** GMX-v1 mark-price/reentrancy fix was back-ported. Shapes 3+4.
-
-### T13 · CRETH2 — abandoned Cream liquid-staking token  ✅
-- Token `0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd` (Ethereum, ~$1.58M)
-- **Audit this:** the mint/redemption authority (Cream is dead; `owner()` null → resolve the minter role); is it frozen or live?
-
-### T14 · Deprecated audited routers with confirmed live ∞ approvals  ✅
-- 1inch v4 `0x1111111254fb6c44bAC0beD2854e76F90643097d` (15/15 live ∞) · dYdX v1 SoloMargin `0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e` (14/15) · 0x old AllowanceTarget `0xF740B67dA229f2f10bcBd38A7979992fCC71B8Eb` (12/15) — all Ethereum
-- **Audit this:** any arbitrary-`from` `transferFrom` path. **Lower prior** (these were well audited) but the standing authority is real and the deprecated deployed state is unmonitored — a quick negative clears them.
+The 379-row CSV is scored on a computable proxy of these (unaudited + fresh + high-risk-category +
+multi-chain + unwatched TVL band). The deep-dives below add the mechanic-specific hypothesis a scanner
+can't.
 
 ---
 
-## TIER 3 — leads to resolve before auditing (entry point + the call to run)
+## TIER 1 — deep-dive targets (fresh, funded, high-risk; audit these first)
 
-- **SYMM intent-perp forks** (SYMMIO/IntentX/ELFi, ARB·Base, aud=0): resolve the shared `Symmio` **diamond**, check for an uninitialized facet (Shape 6) + the Muon price trust.
-- **LRT deposit pools** (Meta Pool ETH, GETH, GLIF-Base, aud=0 at 8-figure TVL): resolve `MINTER_ROLE` holder + NAV source + (if OFT) LayerZero DVN config.
-- **Small/old bridges** (Orbit ~$16M prior-incident, Allbridge, Meter Passport, Knit, pNetwork): resolve the mint/release authority + signer-set/DVN.
-- **Safe modules / credit delegation:** enumerate `enabledModules` with a permissionless `execTransactionFromModule`; read `borrowAllowance`.
-- **Abandoned Compound forks** (Sonne-dead, Rari/Fuse pools, Cream residuals): the real empty-market donation surface (maintained forks are seeded — see `SCAN_REPORT.md` §5).
+Format: **what it is · money mechanic · AUDIT THIS (hypothesis) · signal · chain · address**
+("core" = the money contract; "token → resolve" = DefiLlama gives the token, resolve the minter/vault
+via its `MINTER_ROLE`/`owner` or docs before auditing).
+
+### Synthetic / basis-trading stablecoins — *does minted supply stay backed?*
+The recurring bug class: mint/redeem accounting that lets supply exceed collateral, or a collateral
+NAV read from a source the protocol doesn't control.
+- **Aegis YUSD** — Basis-trading synthetic USD, $34M, aud=0, listed 2025-04. **Audit this:** the
+  `AegisMinting` contract — the collateral-in vs YUSD-out accounting, the redeem queue, and the
+  custody/oracle that asserts off-chain collateral. Token → resolve minter. [ETH]
+- **Resolv USR** — delta-neutral stablecoin, $6M + RLP insurance layer, aud=0. **Audit this:** the
+  RequestManager/minter: can USR be minted beyond the delta-neutral collateral? Is RLP (the junior
+  tranche) correctly subordinated on loss? Token `0x259338656198ec7a76c729514d3cb45dfbf768a1` → resolve minter. [ETH]
+- **Usual ETH0** — synthetic ETH, aud=0, listed 2026-02. **Signal:** the core contract shows a
+  `delegatecall` + **2× arbitrary `.call(data)`** and 3 sweep paths — verify the external-call targets
+  are allow-listed and the collateral manager can't be steered. Token `0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E`. [ETH]
+- **BounceBit Prime / CeDeFi Yield** ($11M / $258M, Basis, aud=0), **BitFi Basis** ($218M), **Aegis** —
+  same class at scale; the CeDeFi ones hinge on how on-chain accounting mirrors an off-chain position.
+
+### Self-repaying loans / CDPs — *debt accounting & liquidation*
+- **Alchemix V3** — self-repaying loans, $35M, listed 2026-04 (brand-new version). **Audit this:** the
+  V3 debt-reduction-by-yield accounting and the transmuter; a rounding/credit bug lets debt vanish or
+  over-borrow. Token `0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF` → resolve `AlchemistV3`. [ETH]
+- **mStable V2** — CDP, aud=0. **⚠ concrete signal:** the resolved implementation uses an `initializer`
+  **without `_disableInitializers()`** — classic uninitialized-implementation risk (Shape 6). **Audit
+  this:** confirm the implementation can't be initialized by an attacker to seize the proxy. `0xca1207647ff814039530d7d35df0e1dd2e91fa84`. [ETH]
+- **Cooler Loans** — Olympus lending, **$216M**, listed 2026-02. **Audit this:** the Clearinghouse/Cooler
+  terms & the gOHM collateral valuation in the new accounting (DefiLlama address is the OHM token;
+  resolve the Clearinghouse). [ETH]
+- **Templar Protocol** ($26M lending, 2025-08, aud=0), **BIMA CDP** ($8.6M), **Threshold thUSD**,
+  **Inverse Frontier** — CDP/lending accounting on fresh unaudited code.
+
+### Perps / options — *keeper- or caller-settable pricing (the KiloEx class, applied to fresh perps)*
+The prevention question: is the mark/settlement price set by a keeper or a signed message, and is that
+auth tight? A weak setter = free PnL.
+- **Extended Perps** ($121M, 2025-03, aud=0), **AZverse Perps** ($51M, listed **2026-07-31**, aud=0),
+  **Antarctic** ($9.5M, aud=0), **Evedex** ($2.9M, aud=0), **Apex Omni** ($29.7M, aud=0). **Audit this
+  (each):** the price-feed contract — is `setPrice`/settlement gated by a robust signature/role, or a
+  single keeper / forwarder (KiloEx pattern)? Then the LP-vault accounting on open/close. [ETH/ARB]
+- **Rysk V12** ($65M Options Vault, aud=0), **Deri V4** ($7.5M Options, BSC), **IntentX/SYMMIO**
+  (SYMM diamonds — check uninitialized facet). Options settlement pricing + collateral.
+
+### Leveraged / yield vaults — *4626 accounting & strategy authority*
+- **Yield Basis** — leveraged BTC farming, **$148M**, Curve ecosystem, listed 2025-09, aud=0. **Audit
+  this:** the leverage-loop math and the crvUSD/LP oracle it borrows against — leveraged AMM positions
+  are the densest source of oracle/rounding invariants. Token `0x01791f726b4103694969820be083196cc7c045ff` → resolve the AMM/leverage core. [ETH]
+- **Avalon Superearn** ($30M Yield, aud=0). **Signal:** resolved impl `AvalonMintable` shows an
+  **arbitrary `.call(data)`** path — verify it can't be steered to move vault funds. `0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2`. [ETH]
+- **Spectra V2** ($35M interest-rate/yield, Base, PROXY), **RockSolid Network** ($24M), **Syntropia**
+  ($5M), **Zoo Finance** ($19M), **Royco V1/V2** ($1.5M/$23M), **Nerona**, **TermFinance Vaults**
+  ($12M). **Audit this (each):** 4626 `withdraw`/`totalAssets` divergence from canonical, first-depositor
+  rounding, and who controls the strategy/allocation.
+
+### RWA — *mint authority & redemption*
+- **KAIO** ($41M RWA, aud=0). **Signal:** resolved impl `KaioToken` exposes **4× sweep/rescue**
+  functions — verify each is tightly access-controlled (a loose one drains reserves). `0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e`. [ETH]
+- **Stobox** ($14M RWA, Arbitrum). **⚠ concrete signal: the core contract is UNVERIFIED** — get the
+  bytecode / demand source before this holds more. `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed`. [ARB]
+- **GAIB** ($20M RWA, AI-compute backed, novel, aud=0), **Theo Network thBill** ($26M), **Clearpool
+  TPOOL** ($20M), **Lista RWA**, **eva Markets**. **Audit this:** who holds mint authority over the RWA
+  token, and how is the off-chain collateral asserted on-chain?
+
+### Uncollateralized / novel
+- **Wildcat Protocol** ($7.3M, Uncollateralized Lending, aud=0) — risk is *by design*: lenders trust
+  borrowers. **Audit this:** the market-parameter & withdrawal-cycle access control; a borrower-side
+  auth bug is catastrophic here. [ETH]
+- **GETH** (LST, aud=0). **Signal:** `StakeToken` shows `transferFrom(param_from)` — verify it's not an
+  arbitrary-from pull. `0x3802c218221390025bceabbad5d8c59f40eb74b8`. [ETH]
 
 ---
 
-## Excluded on evidence
-- **Aperture** `0xD83d960deBEC397fB149b51F8F37DD3B5CFA8913` — 245 approval *events* but **0/14 sampled allowances live** (churn, not standing authority).
-- **Onyx** lending markets — drained (~$21k residual).
-- Maintained-fork "empty markets" flagged in an early scan — rate-limit ghosts (corrected; see `SCAN_REPORT.md` §1).
+## TIER 2 — the volume list (breadth for the 1–3% conversion)
+
+**379 funded ($500k–$150M), risky-category protocols on BNB/ETH/ARB/Base, ranked by profile-risk** —
+full sortable file: [`at_risk_protocols.csv`](./at_risk_protocols.csv) (columns: score, tvl, audits,
+category, name, listedAt, chains). Score = unaudited + fresh + high-risk-category + multi-chain +
+unwatched-TVL-band. Top of the list (score ≥ 6) is the Tier-1 pool above; the long tail (scores 4–5)
+is your breadth — dozens of fresh unaudited Yield/RWA/Lending/Derivatives protocols. Work down it.
+
+Highest-scoring beyond the deep-dives: Ledgity Yield, Metronome Synth, Native Credit Pool, Hyperbeat
+USD, Rezerve Lending, Everything (ARB lending, `EV` impl 245KB), Fraxlend, Penpie, Sushi BentoBox,
+Blur Lending, BTCFi CDP, SMARDEX USDN, Zircuit, Acre, Lazy, Flex, AirPuff, Rho X LP Vault.
 
 ---
 
-*This is the single audit-ready handoff. If you want it as a spreadsheet, `candidates.csv` has the same
-targets in sortable columns.*
+## Concrete on-chain flags found this run (triage — verify the access control before trusting)
+
+| Protocol | Chain | Flag | Address |
+|---|---|---|---|
+| **mStable V2** | ETH | `initializer` **without `_disableInitializers`** (impl-init / Shape 6) | `0xca1207647ff814039530d7d35df0e1dd2e91fa84` |
+| **Stobox** (RWA $14M) | ARB | **core UNVERIFIED** | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` |
+| **Usual ETH0** | ETH | delegatecall + **2× arbitrary `.call(data)`** | `0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E` |
+| **Avalon Superearn** | ETH | arbitrary `.call(data)` in `AvalonMintable` | `0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2` |
+| **KAIO** (RWA $41M) | ETH | 4× sweep/rescue paths | `0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e` |
+| **GETH** (LST) | ETH | `transferFrom(param_from)` | `0x3802c218221390025bceabbad5d8c59f40eb74b8` |
+
+These are **triage flags, not findings** — the pattern scanner over-flags common idioms (a `rescue`
+behind `onlyOwner` is fine; a permit `ecrecover` is guarded in the OZ lib). Confirm the access control
+and the data-flow before spending real time.
+
+---
+
+## Methodology & honest limits
+
+- **New tooling this run** (`scanners/`): a keccak-driven authority scanner (proxy admin / owner
+  classified EOA vs Safe vs timelock) and a **source dangerous-pattern scanner** (delegatecall,
+  arbitrary call, `transferFrom(from)`, ecrecover-without-`address(0)`, spot-oracle reads, missing
+  `_disableInitializers`, sweep/rescue), with impl auto-resolution.
+- **The address-resolution gap is the real limit:** DefiLlama exposes the governance *token*, not the
+  vault/minter/pool. For token-layer scans that's shallow; the Tier-1 hypotheses name the money
+  contract to resolve. The deepest audit (reading each core's source) is the step you're about to do.
+- **Pattern-scan false positives:** `sweep/rescue` and permit-`ecrecover` are ubiquitous and mostly
+  benign — I've de-weighted them and surfaced only the sharper flags above.
+- **BNB is still the explorer gap** (Sourcify + RPC only); several BNB perps/forks are under-covered.
+- Full dataset: `at_risk_protocols.csv` (379). Prior-run detail (hacked/deprecated, demoted): see below.
+
+---
+
+## Prior-run targets (runs 1–3) — demoted, kept for reference
+
+Lower prevention value (already exploited or deprecated), but real live authority in a few: the dead
+**Multichain** routers with live ∞ approvals, **Radiant V2**'s unverified 2024-10-17 impl, **Flux**
+(unaudited RWA Compound fork), the ancient-funded **Aave V1 / Compound V1**. Full detail in
+[`ADDRESS_BOOK.md`](./ADDRESS_BOOK.md) and [`SCAN_REPORT.md`](./SCAN_REPORT.md). Per your steer, this
+run does not lead with them.

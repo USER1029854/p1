@@ -12,17 +12,26 @@ findings). The user takes a contract address from here and starts an audit.
 - **`ADDRESS_BOOK.md`** — cumulative address reference the worksheet points into (every grounded
   candidate; latest run merged at the bottom).
 - `CANDIDATE_QUEUE.md` — families/shapes reasoning · `SCAN_REPORT.md` — the on-chain scan writeup ·
-  `candidates.csv` — sortable register · `scanners/` — reproducible, dependency-free on-chain tooling.
+  `at_risk_protocols.csv` — the 379-protocol ranked universe (run4) · `candidates.csv` — earlier
+  register · `scanners/` — reproducible, dependency-free on-chain tooling.
 
 ## Run convention (IMPORTANT — carry forward)
 
-- **Runs so far = 3 discovery runs:** run1 = initial candidate queue; run2 = multi-condition rerun
+- **Runs so far = 4 discovery runs:** run1 = initial candidate queue; run2 = multi-condition rerun
   (families K–N); run3 = programmatic wide + precise scan (approval-authority live-confirmation,
-  bytecode fingerprint, impl-age). **The next discovery run is run4.**
+  bytecode fingerprint, impl-age); run4 = **fresh & at-risk, prevention-first** — pivoted away from
+  already-hacked/deprecated contracts to live/funded/unaudited/complex-mechanic protocols; built the
+  authority-concentration + source dangerous-pattern scanners; produced `at_risk_protocols.csv` (379
+  ranked candidates). **The next discovery run is run5.**
+- User steer (carry forward): **do not over-index on already-hacked contracts** — the prevention value
+  is in live, unexploited, under-reviewed protocols. Give **volume** (conversion is ~1–3%). Think for
+  yourself about what makes a protocol risky (authority concentration, fresh unaudited complex money
+  math, keeper/caller-settable pricing, mint authority, upgrade risk, unverified code), not just the
+  fixed shape catalog.
 - A follow-up that only reorganizes or asks a meta-question is **not** a numbered discovery run.
 - **On each new run: refresh `AUDIT_TARGETS.md` (re-prioritized, latest first) and merge the run's new
-  addresses into `ADDRESS_BOOK.md`.** Keep it to these two living files — do **not** create per-run
-  snapshot files (`ADDRESS_BOOK_runN.md`); the user found those confusing.
+  addresses into `ADDRESS_BOOK.md`.** Keep it to these living files (+ `at_risk_protocols.csv` /
+  `candidates.csv`) — do **not** create per-run snapshot files (`ADDRESS_BOOK_runN.md`); confusing.
 
 ## Working conventions
 

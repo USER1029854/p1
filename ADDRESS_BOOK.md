@@ -8,7 +8,7 @@ entries) the exploited contract + attacker. This is a *starting map*, not a proo
 > **Start here for auditing:** [`AUDIT_TARGETS.md`](./AUDIT_TARGETS.md) is the single prioritized,
 > audit-ready worksheet (pick a target → load the address → audit the hypothesis). This file
 > (`ADDRESS_BOOK.md`) is the deeper **cumulative address reference** it points into — every grounded
-> candidate across all three runs, latest (wide computed scan) merged at the bottom.
+> candidate across all runs, latest merged at the bottom.
 
 **How the addresses were obtained (2026-08-20):**
 - ⛓️ **resolved on-chain this pass** — via Etherscan V2 `eth_call`/`eth_getStorageAt` (Ethereum,
@@ -247,3 +247,24 @@ chain (ETH `efc84c5b…` / ARB `94edcf58…` / no code on Base); KiloEx differs 
 **Empty-market (only true empty found):** Ionic `ionmsUSD`
 `0x5be1cb6cb3c9bfd16db43ed4f6c081fa9783dd1c` (Base) — totalSupply 0, cash ~32e18, CF 10%; underlying
 msUSD `0x526728dbc96689597f85ae4cd716d4f7fccbae9d`.
+
+---
+
+## Run 4 (fresh & at-risk) — new candidates & on-chain flags
+
+Prevention-focused: live/funded/unaudited money contracts (not hacked). Full worksheet in
+`AUDIT_TARGETS.md`; the 379-protocol universe in `at_risk_protocols.csv`. Addresses read 2026-08-20.
+
+**Concrete flags (triage — verify access control):**
+
+| Protocol | Chain | Address | Flag |
+|---|---|---|---|
+| mStable V2 (CDP) | ETH | `0xca1207647ff814039530d7d35df0e1dd2e91fa84` | `initializer` w/o `_disableInitializers` (impl-init / Shape 6) |
+| Stobox (RWA $14M) | ARB | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` | core **UNVERIFIED** |
+| Usual ETH0 (Synth) | ETH | `0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E` | delegatecall + 2× arbitrary `.call(data)` |
+| Avalon Superearn (Yield $30M) | ETH | `0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2` | arbitrary `.call(data)` in `AvalonMintable` impl |
+| KAIO (RWA $41M) | ETH | `0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e` | 4× sweep/rescue |
+| GETH (LST) | ETH | `0x3802c218221390025bceabbad5d8c59f40eb74b8` | `transferFrom(param_from)` |
+
+**Deep-dive entry addresses (token → resolve minter/vault before auditing; see AUDIT_TARGETS.md):**
+Resolv USR `0x259338656198ec7a76c729514d3cb45dfbf768a1` · Alchemix V3 `0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF` · Cooler Loans (OHM) `0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5` · Metronome Synth `0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa` · Ledgity Yield `0x482dF7483a52496F4C65AB499966dfcdf4DDFDbc` · Yield Basis `0x01791f726b4103694969820be083196cc7c045ff` · Everything (ARB lending) `0xe7e7e741c23a4767831a56a8c99f522c5ac1e7e7` · Spectra V2 (Base) `0x64fcc3a02eeeba05ef701b7eed066c6ebd5d4e51`.
