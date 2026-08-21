@@ -25,8 +25,10 @@ simulated, or proven exploitable; that is the next stage's job.
   exploited contracts (Multichain, KyberSwap-old, 1inch-v4, dYdX-v1, SwapNet) that still hold
   **confirmed-live infinite approvals** from hundreds of wallets — zero balance, live drain surface.
 - **[`at_risk_protocols.csv`](./at_risk_protocols.csv)** — run-4 breadth: **379 live, funded, mostly-
-  unaudited protocols** on the four chains, ranked by profile-risk (unaudited + fresh + high-risk
-  category + multi-chain). The prevention universe to work through (conversion ~1–3%).
+  unaudited protocols** on the four chains, ranked by profile-risk, **each with its contract**:
+  `address`, `address_chain`, `contract_name`, `is_proxy`, `implementation`, `verified` (resolved
+  on-chain for the 192 with a listed contract; 187 need the address pulled from the protocol's docs).
+  Sort by `score`, take the address, audit. Unverified contracts (`verified=NO`) are audit blind spots.
 - **[`candidates.csv`](./candidates.csv)** — earlier machine-readable register (chain, address, family,
   shapes, condition score, authority status, prior incident, disclosure).
 - **[`scanners/`](./scanners/)** — the reproducible, dependency-free scanner tooling (pure-Python

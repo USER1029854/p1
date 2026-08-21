@@ -116,11 +116,14 @@ auth tight? A weak setter = free PnL.
 
 ## TIER 2 — the volume list (breadth for the 1–3% conversion)
 
-**379 funded ($500k–$150M), risky-category protocols on BNB/ETH/ARB/Base, ranked by profile-risk** —
-full sortable file: [`at_risk_protocols.csv`](./at_risk_protocols.csv) (columns: score, tvl, audits,
-category, name, listedAt, chains). Score = unaudited + fresh + high-risk-category + multi-chain +
-unwatched-TVL-band. Top of the list (score ≥ 6) is the Tier-1 pool above; the long tail (scores 4–5)
-is your breadth — dozens of fresh unaudited Yield/RWA/Lending/Derivatives protocols. Work down it.
+**379 funded ($500k–$150M), risky-category protocols on BNB/ETH/ARB/Base, ranked by profile-risk —
+now with the contract for each**: [`at_risk_protocols.csv`](./at_risk_protocols.csv) carries
+`address · address_chain · contract_name · is_proxy · implementation · verified` (resolved on-chain
+for the 192 that list a contract; the other 187 need the address pulled from the protocol's docs).
+Score = unaudited + fresh + high-risk-category + multi-chain + unwatched-TVL-band. Sort by `score`,
+take the address, audit. `verified=NO` rows are blind spots (get bytecode first). Top of the list is
+the Tier-1 pool above; the long tail (scores 4–5) is your breadth. Note: a listed `address` is often
+the protocol's main/token contract — for the full money-contract surface use `AUDIT_SCOPE.md`.
 
 Highest-scoring beyond the deep-dives: Ledgity Yield, Metronome Synth, Native Credit Pool, Hyperbeat
 USD, Rezerve Lending, Everything (ARB lending, `EV` impl 245KB), Fraxlend, Penpie, Sushi BentoBox,

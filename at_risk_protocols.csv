@@ -1,380 +1,380 @@
-score,tvl,audits,category,name,listedAt,chains
-8,51688471,0,Derivatives,AZverse Perps,2026-07-31,"Arbitrum,Ethereum"
-8,23040882,0,Yield,Royco V2,2026-02-18,"Arbitrum,Base,Ethereum"
-8,2758173,0,Derivatives,SYMMIO,2025-09-29,"Arbitrum,Base"
-8,2535105,0,Yield,Ledgity Yield,2026-04-21,"Arbitrum,Base,Ethereum"
-8,2170571,0,Synthetics,Usual ETH0,2026-02-25,Ethereum
-7,35086871,2,Synthetics,Alchemix V3,2026-04-23,"Arbitrum,Ethereum"
-7,30775999,0,Yield,Avalon Superearn,2026-02-18,Ethereum
-7,29702698,0,Derivatives,Apex Omni,2024-06-27,"Arbitrum,Base,Ethereum"
-7,26380032,0,RWA,Theo Network thBill,2025-09-10,"Arbitrum,Ethereum"
-7,20038219,0,RWA,GAIB,2025-08-06,"Arbitrum,Base,Ethereum"
-7,13952059,0,RWA,Stobox,2026-02-16,Arbitrum
-7,11450817,0,Basis Trading,BounceBit Prime,2025-11-10,Ethereum
-7,10983992,0,Synthetics,Metronome Synth,2023-01-12,"Base,Ethereum"
-7,9505792,0,Derivatives,Antarctic,2025-11-20,Arbitrum
-7,7542439,0,Options,Deri V4,2023-11-29,"Arbitrum,Base"
-7,5673214,0,Derivatives,IntentX,2023-11-25,"Arbitrum,Base"
-7,5276937,0,RWA,eva Markets,2026-04-25,Ethereum
-7,4040787,0,Lending,Morpho Midnight,2026-07-22,Base
-7,3107500,0,CDP,mStable V2,2025-10-15,Ethereum
-7,2913217,0,Derivatives,Evedex,2025-07-29,Arbitrum
-7,2135163,0,Yield Aggregator,Nerona,2026-05-01,Ethereum
-7,1676688,0,Lending,Hyperbeat USD,2026-06-11,Ethereum
-7,1549187,0,Yield,Rysk Premium,2026-03-17,Ethereum
-7,521421,0,Lending,Everything,2026-04-14,"Arbitrum,Base,Ethereum"
-6,1161464975,0,Yield,Spark Savings,2025-09-11,"Arbitrum,Base,Ethereum"
-6,258891016,0,Basis Trading,BounceBit CeDeFi Yield,2024-12-01,"Base,Ethereum"
-6,218149827,0,Basis Trading,BitFi Basis,2025-02-14,"Base,Ethereum"
-6,216657034,0,Lending,Cooler Loans,2026-02-21,Ethereum
-6,148199675,0,Leveraged Farming,Yield Basis,2025-09-25,Ethereum
-6,144491474,0,Derivatives,Derive V2,2023-12-15,"Arbitrum,Base,Ethereum"
-6,66221903,0,Yield,Wise Token,2026-08-18,Ethereum
-6,65041995,0,Options Vault,Rysk V12,2025-07-11,Ethereum
-6,35090113,0,Yield,Spectra V2,2024-06-05,"Arbitrum,Base,Ethereum"
-6,34816721,0,Basis Trading,Aegis YUSD,2025-04-10,Ethereum
-6,26636904,0,Lending,Templar Protocol,2025-08-12,Ethereum
-6,24224628,0,Lending,Native Credit Pool,2024-05-23,"Arbitrum,Base,Ethereum"
-6,24162347,0,Yield,RockSolid Network,2025-11-05,Ethereum
-6,22255325,0,Lending,Fraxlend,2022-09-08,"Arbitrum,Ethereum"
-6,19611070,0,Yield,Zoo Finance,2025-02-10,"Arbitrum,Base"
-6,14597479,0,Yield Aggregator,Yield Yak Aggregator,?,"Arbitrum,Base"
-6,11923666,0,Yield,TermFinance Vaults,2025-03-24,"Arbitrum,Base,Ethereum"
-6,8637151,0,CDP,BIMA CDP,2025-05-28,Ethereum
-6,8605022,0,Lending,Revert Lend,2025-05-21,"Arbitrum,Base,Ethereum"
-6,7790437,0,Restaking,OpenGDP Shared Security,2024-04-09,"Arbitrum,Ethereum"
-6,7664233,0,NFT Lending,Blur Lending,2023-05-01,Ethereum
-6,7282092,0,Uncollateralized Lending,Wildcat Protocol,2023-12-01,Ethereum
-6,7099925,0,CDP,BTCFi CDP,2024-04-22,Base
-6,6344103,0,Basis Trading,Resolv USR,2025-01-23,Ethereum
-6,5263688,0,Yield Aggregator,Syntropia,2025-10-15,Ethereum
-6,4553387,0,CDP,Inverse Finance Frontier,?,Ethereum
-6,4305303,0,RWA,Hamilton Lane Senior Credit Opportunities Securitize Fund,2025-09-11,Ethereum
-6,4196910,0,RWA,BackedFi,2023-08-30,"Arbitrum,Base,Ethereum"
-6,4065574,0,RWA,Lista RWA,2025-12-10,Ethereum
-6,3863714,0,Yield,Penpie,2023-06-08,"Arbitrum,Base,Ethereum"
-6,2947349,0,Basis Trading,SoSoValue Basis,2025-02-13,Base
-6,2381671,0,Yield,Sushi BentoBox,2022-10-18,"Arbitrum,Ethereum"
-6,2132179,2,CDP,Parallel Protocol V3,2025-07-29,"Base,Ethereum"
-6,2028902,0,Yield Aggregator,DexFi Aggregator,?,"Arbitrum,Base,Ethereum"
-6,1952216,0,CDP,Threshold thUSD,2024-06-25,Ethereum
-6,1819928,2,Yield,BTCD,2026-05-21,"Arbitrum,Ethereum"
-6,1742210,0,Lending,OmniBTC,2023-08-16,"Arbitrum,Base,Ethereum"
-6,1688441,2,Lending,Silo V3,2026-05-18,"Arbitrum,Ethereum"
-6,1619537,0,Basis Trading,DeSyn Basis Trading,2024-07-16,Arbitrum
-6,1565523,2,Uncollateralized Lending,Accountable,2025-12-04,"Arbitrum,Ethereum"
-6,1536033,0,Yield,Royco V1,2024-11-10,"Arbitrum,Base,Ethereum"
-6,1484439,0,Basis Trading,HOPE Collateral,2023-10-17,Ethereum
-6,1442746,0,Basis Trading,SMARDEX USDN,2025-05-27,Ethereum
-6,1411127,0,Lending,Rezerve Lending,2025-09-16,Ethereum
-6,1202806,2,Yield,Zircuit Finance,2026-02-25,"Base,Ethereum"
-6,1192741,0,Yield,Lazy,2026-01-15,Ethereum
-6,1153560,0,Lending,Teller,2023-03-28,"Arbitrum,Base,Ethereum"
-6,926416,0,Lending,Flex,2026-05-20,Ethereum
-6,644524,0,Yield,Rho X LP Vault,2026-02-03,Ethereum
-6,633038,0,Leveraged Farming,AirPuff,2024-03-15,"Arbitrum,Ethereum"
-6,523037,0,Yield,Acre,2026-02-23,Ethereum
-5,4124906990,0,Liquid Staking,ether.fi Stake,2023-03-02,"Arbitrum,Base,Ethereum"
-5,3527261508,0,RWA,BlackRock BUIDL,2024-07-06,"Arbitrum,Ethereum"
-5,3215578795,0,RWA,Tether Gold,2024-07-09,"Arbitrum,Ethereum"
-5,1292772653,0,CDP,USDD,2025-03-13,Ethereum
-5,873096379,0,RWA,Anemoy Capital,2024-12-09,"Base,Ethereum"
-5,407754354,0,RWA,xStocks,2025-07-01,Arbitrum
-5,286196666,0,Yield Aggregator,CIAN Yield Layer,2024-11-18,"Arbitrum,Base,Ethereum"
-5,193366527,0,RWA,VanEck Treasury Fund,2025-08-28,Ethereum
-5,168488899,0,RWA,DigiFT,2023-09-29,"Arbitrum,Ethereum"
-5,121727278,0,Derivatives,Extended Perps,2025-03-11,Ethereum
-5,113938398,0,RWA,Frax USD,2025-08-19,Ethereum
-5,103271912,0,RWA,Securitize Tokenized AAA CLO Fund,2025-12-30,Ethereum
-5,95654551,0,RWA,Apollo Diversified Credit Securitize Fund,2025-08-14,Ethereum
-5,81060797,0,Yield,Lorenzo sUSD1+,2025-10-10,Ethereum
-5,76361431,0,Lending,Curve LlamaLend,2024-03-19,"Arbitrum,Ethereum"
-5,67551562,2,Basis Trading,Axis,2026-08-20,Ethereum
-5,66652909,0,Basis Trading,Bitwise USCC,2024-09-09,Ethereum
-5,64342630,2,Basis Trading,Tori Finance,2026-06-24,Ethereum
-5,59399497,0,Liquid Staking,Origin Ether,2023-05-08,"Base,Ethereum"
-5,44531680,0,Lending,Flux Finance,2023-02-15,Ethereum
-5,41280203,0,RWA,KAIO,2025-01-29,Ethereum
-5,29615533,2,CDP,Reservoir Protocol,2024-11-11,"Arbitrum,Base,Ethereum"
-5,29397046,2,Basis Trading,Piku Finance,2025-11-19,Ethereum
-5,24483215,0,Liquid Staking,Meta Pool ETH,2023-08-17,Ethereum
-5,24085024,0,RWA,MatrixDock STBT,2023-04-11,Ethereum
-5,23000000,0,RWA,T RIZE,2025-04-02,Base
-5,21422535,0,Liquid Staking,GLIF,2023-04-18,Base
-5,20630063,0,RWA,Clearpool TPOOL,2024-07-12,Ethereum
-5,17823331,0,Liquid Staking,GETH,2023-01-19,Ethereum
-5,15708254,1,Yield Aggregator,Harvest Finance,?,"Arbitrum,Base,Ethereum"
-5,15077736,2,Derivatives,Aevo Perps,2023-04-10,"Arbitrum,Base,Ethereum"
-5,14694005,2,Lending,Twyne,2026-02-11,Ethereum
-5,13949868,0,RWA,Estate Protocol,2024-10-09,Arbitrum
-5,11310891,2,Lending,Flying Tulip Lend,2026-01-26,Ethereum
-5,10674283,3,RWA,Syntetika,2026-08-19,Base
-5,10495192,2,Derivatives,Gains Network,2021-12-13,"Arbitrum,Base"
-5,10038431,2,CDP,Overnight Finance,2025-01-31,"Arbitrum,Base"
-5,10014912,2,Options,Hegic,?,"Arbitrum,Ethereum"
-5,9977812,2,Lending,Fira,2026-01-27,Ethereum
-5,9712153,2,Yield Aggregator,Odyssey Finance,2025-08-05,"Base,Ethereum"
-5,9482223,1,Derivatives,MUX Perps,2022-11-06,Arbitrum
-5,8094695,2,Uncollateralized Lending,3Jane Lending,2025-09-03,Ethereum
-5,7467495,1,Yield,Toros,2022-07-05,"Arbitrum,Base,Ethereum"
-5,6630478,0,Yield,Radpie,2023-09-24,Arbitrum
-5,6528583,0,Lending,Capyfi,2024-08-16,Ethereum
-5,6371420,2,RWA,Vault Street primeUSD,2026-07-10,Ethereum
-5,6362567,0,Yield,StableHodl,2025-06-23,Ethereum
-5,6236210,0,Yield Aggregator,OmniYield,2025-01-17,Arbitrum
-5,6158407,2,Derivatives,Contango V2,2023-10-06,"Arbitrum,Base,Ethereum"
-5,5569222,2,Yield,NUVA,2026-07-07,Ethereum
-5,4509872,2,CDP,Abracadabra Spell,?,"Arbitrum,Ethereum"
-5,4163895,2,Lending,Tangent Finance,2026-05-25,Ethereum
-5,3152303,0,Lending,Kinza Finance,2023-06-28,Ethereum
-5,2623474,2,CDP,QiDao,?,"Arbitrum,Base,Ethereum"
-5,2491275,0,Yield,BendDAO APE Staking,2023-02-20,Ethereum
-5,2273824,2,Yield Aggregator,Flying Tulip ftUSD,2026-04-27,Ethereum
-5,2199549,0,RWA,ZTLN-P,2025-01-23,Ethereum
-5,1998645,2,Yield,HyperWave,2025-07-08,"Arbitrum,Base,Ethereum"
-5,1985742,2,CDP,Angle,2021-11-03,"Arbitrum,Ethereum"
-5,1887377,2,Derivatives,AlphaX,2024-08-12,"Arbitrum,Ethereum"
-5,1786125,0,Yield,Llama Airforce,2022-01-13,Ethereum
-5,1584705,0,Liquid Staking,CRETH2,2023-05-08,Ethereum
-5,1545003,2,Derivatives,ELFi Protocol,2024-09-19,"Arbitrum,Base"
-5,1543926,2,Yield,Ammalgam Vaults,2026-07-23,Ethereum
-5,1476702,2,RWA,Byzanlink RWA Markets,2026-07-08,Ethereum
-5,1429966,2,Derivatives,ApeX Pro,2022-07-04,"Arbitrum,Ethereum"
-5,1153094,2,Yield Aggregator,YieldSeeker,2026-04-01,Base
-5,1085772,2,Basis Trading,Theo Straddle Vaults,2024-12-20,"Arbitrum,Base,Ethereum"
-5,1011558,2,Lending,Surge Credit,2026-07-29,Base
-5,985242,0,RWA,Etherfuse,2025-11-13,Base
-5,932174,2,Options,Panoptic V2,2026-06-19,Ethereum
-5,887037,0,Derivatives,Synthetix V4,?,Ethereum
-5,578967,0,Derivatives,Opyn Squeeth,2022-12-31,Ethereum
-5,578053,0,Liquid Staking,Accumulated Finance Liquid Staking,2023-12-16,"Arbitrum,Ethereum"
-5,567361,0,Yield,Solid Yield,2025-10-07,Ethereum
-5,550772,2,Yield,Saffron Vaults,2026-07-28,"Arbitrum,Base,Ethereum"
-5,546991,0,Options,Opyn Convexity,2022-12-31,Ethereum
-5,511046,0,Options,Premia V3,2023-09-07,Arbitrum
-4,2922480174,0,RWA,Circle USYC,2023-10-26,Ethereum
-4,1971638441,0,RWA,Paxos Gold,2024-07-09,Ethereum
-4,1173932761,2,Basis Trading,Falcon Finance,2025-09-30,Ethereum
-4,779730243,0,RWA,WisdomTree,?,Ethereum
-4,664389407,0,RWA,Invesco USTB,2024-03-08,Ethereum
-4,551645461,0,Liquid Staking,mETH Protocol,2023-12-04,Ethereum
-4,443808517,0,Liquid Staking,Coinbase Wrapped Staked ETH,2022-10-24,Ethereum
-4,357675372,0,RWA,Ethena USDtb,2024-12-16,Ethereum
-4,291952669,2,RWA,Re,2025-12-22,"Arbitrum,Base,Ethereum"
-4,263958130,2,Lending,Aave V4,2026-03-30,Ethereum
-4,261949192,0,RWA,OpenTrade,2024-12-06,Ethereum
-4,225348817,2,Farm,AFI Protocol,2026-02-14,"Base,Ethereum"
-4,179953828,2,Basis Trading,Solv Basis Trading,2023-09-29,"Arbitrum,Ethereum"
-4,118337372,0,Liquid Staking,Frax Ether,2022-10-24,Ethereum
-4,78097091,0,Liquid Staking,stake.link liquid,2022-12-21,Ethereum
-4,74213090,0,RWA,Sky RWA,2023-10-19,Ethereum
-4,68780253,0,RWA,MatrixDock XAUM,2025-06-19,Ethereum
-4,62927846,0,RWA,stUSDT,2023-07-04,Ethereum
-4,54381641,2,Basis Trading,ZEROBASE CeDeFi,2025-06-04,"Arbitrum,Base,Ethereum"
-4,49394647,2,Leveraged Farming,Origami Finance,2024-05-13,Ethereum
-4,42694579,2,RWA,Tangible RWA,2022-10-27,"Arbitrum,Base,Ethereum"
-4,42402134,2,RWA,Brickken,2024-01-24,"Base,Ethereum"
-4,42236696,2,Yield,AUTOfinance,?,"Arbitrum,Base,Ethereum"
-4,38565513,None,Derivatives,dYdX V3,?,Ethereum
-4,37466863,2,Yield Aggregator,YO Protocol,2025-03-19,"Arbitrum,Base,Ethereum"
-4,31289545,2,Lending,TermMax,2024-06-20,"Arbitrum,Base,Ethereum"
-4,26298560,2,Yield Aggregator,vfat.io,2024-05-14,"Arbitrum,Base,Ethereum"
-4,25788533,2,CDP,Inverse Finance FiRM,2023-01-13,Ethereum
-4,24966187,2,Leveraged Farming,Extra Finance Leverage Farming,2023-05-14,Base
-4,24656706,2,RWA,OpenEden USDO,2025-04-04,"Arbitrum,Base,Ethereum"
-4,20719592,2,Lending,Gearbox,2021-12-27,"Arbitrum,Ethereum"
-4,18475996,2,Derivatives,Avantis,2024-02-06,Base
-4,18369382,0,Farm,Katana Pre-Launch,2025-06-22,Ethereum
-4,17250692,2,Derivatives,Ostium,2024-07-27,Arbitrum
-4,17062805,2,Yield Aggregator,Superform,2024-04-06,"Arbitrum,Base,Ethereum"
-4,11963867,2,Yield Aggregator,Badger DAO,?,"Arbitrum,Ethereum"
-4,11186430,2,Yield Aggregator,YieldFi,2025-01-06,"Arbitrum,Base,Ethereum"
-4,10154442,2,Yield,Equilibria,2023-06-09,"Arbitrum,Base,Ethereum"
-4,9620760,2,Yield,Aura,2022-07-22,"Arbitrum,Base,Ethereum"
-4,7846300,2,RWA,Anzen V2,2024-06-08,"Arbitrum,Base,Ethereum"
-4,7104605,2,Lending,Exactly,2022-12-24,"Base,Ethereum"
-4,6283801,2,Lending,Unitus,2023-12-19,"Arbitrum,Base,Ethereum"
-4,6172793,2,Lending,Seamless V2,2025-06-09,"Base,Ethereum"
-4,6006312,2,Yield,Harmonix Finance,2024-07-08,"Arbitrum,Base,Ethereum"
-4,5676235,2,Lending,Silo V2,2025-01-10,"Arbitrum,Ethereum"
-4,5484139,2,Lending,TermFinance Lend,2023-08-16,"Arbitrum,Base,Ethereum"
-4,5233507,2,Lending,Folks Finance xChain,2024-10-03,"Arbitrum,Base,Ethereum"
-4,5224178,2,Yield Aggregator,Nucleus,2024-12-11,"Arbitrum,Ethereum"
-4,5208689,2,RWA,VNX,2024-07-10,"Arbitrum,Base,Ethereum"
-4,5110108,None,Derivatives,Hakka Finance,?,Ethereum
-4,4789656,0,Farm,PoWH3D,?,Ethereum
-4,4685243,3,Yield Aggregator,Pickle,?,"Arbitrum,Ethereum"
-4,3957394,2,Options Vault,Ribbon,?,Ethereum
-4,3790318,2,Lending,ZeroLend Lending,2023-07-18,"Base,Ethereum"
-4,3774602,2,Leveraged Farming,DeltaPrime,2023-01-30,Arbitrum
-4,3174837,2,Derivatives,Keep3r Network,?,Ethereum
-4,3107967,2,Derivatives,SynFutures V3,2024-03-01,Base
-4,3059457,2,Derivatives,GMX V1 Perps,?,Arbitrum
-4,3045955,2,NFT Lending,Gondi V3,2024-12-27,Ethereum
-4,3010800,2,CDP,mStable CDP,?,Ethereum
-4,2868475,2,Yield,Pirex,2022-09-15,"Arbitrum,Ethereum"
-4,2768263,0,Farm,Fomo3D,?,Ethereum
-4,2608107,2,Yield,WOOFi Earn,2022-11-15,"Arbitrum,Base"
-4,2585553,2,Derivatives,Strike Finance Perpetuals,?,Ethereum
-4,2521093,2,CDP,Reflexer,?,Ethereum
-4,2297580,2,Liquid Staking,iAero Protocol,2025-11-24,Base
-4,2174952,0,Farm,Blast pre-launch Farm,2023-11-22,Ethereum
-4,2119176,2,Synthetics,Rumpel Labs,2024-09-24,Ethereum
-4,2113290,2,CDP,Yala,2025-05-07,Ethereum
-4,1954690,2,Yield,Peapods Finance,2024-01-25,"Arbitrum,Base,Ethereum"
-4,1571149,2,CDP,Yamato Protocol,2023-08-13,Ethereum
-4,1555430,2,Derivatives,KiloEx,2023-08-02,Base
-4,1543914,2,Yield Aggregator,Idle,?,"Arbitrum,Ethereum"
-4,1501540,2,RWA,Asseto CASH+,2025-10-28,Ethereum
-4,1400441,2,RWA,Mountain Protocol,2023-10-05,"Arbitrum,Base,Ethereum"
-4,1395432,2,Lending,Silo V1,2022-08-25,"Arbitrum,Base,Ethereum"
-4,1372063,2,CDP,Interest Protocol,2022-06-18,Ethereum
-4,1370894,2,CDP,Decentralized Euro,2025-04-07,Ethereum
-4,1368842,2,Yield Aggregator,Rari Capital,?,"Arbitrum,Ethereum"
-4,1326615,2,Lending,Avalon Finance,2024-04-12,"Arbitrum,Base,Ethereum"
-4,1282034,2,Synthetics,Outcome Finance,?,Ethereum
-4,1223681,2,Lending,Sumer.money,2023-11-21,"Arbitrum,Base,Ethereum"
-4,1189660,2,Yield,Sprinter,2025-07-31,Base
-4,1075894,1,Yield,Kine Finance,?,Ethereum
-4,1065485,2,Lending,Venus Isolated Pools,2023-07-18,"Arbitrum,Ethereum"
-4,1026462,2,Lending,dForce Lending,?,"Arbitrum,Ethereum"
-4,1025501,2,Options,Opyn Gamma,?,Ethereum
-4,1006322,2,Options,Ribbon Earn,?,Ethereum
-4,966999,2,Options,SOFA.org,2024-06-16,"Arbitrum,Ethereum"
-4,960322,0,Yield Aggregator,Trevee Earn,2024-12-19,Ethereum
-4,924342,0,Farm,Blackwing,2024-03-31,"Arbitrum,Ethereum"
-4,890031,0,Lending,dTRINITY dLEND,2025-01-06,Ethereum
-4,767560,0,Yield,Convergence Fi,2024-07-24,Ethereum
-4,729707,0,Yield,Puffer UniFi,2025-03-06,Ethereum
-4,717581,0,Restaking,Allstake,2024-06-20,Ethereum
-4,672655,2,Derivatives,IPOR Derivatives,2022-10-04,"Arbitrum,Base,Ethereum"
-4,663503,2,Derivatives,Wasabi Perps,2023-04-26,"Base,Ethereum"
-4,654051,2,Options,GammaSwap Open Interest,2024-04-19,"Arbitrum,Base,Ethereum"
-4,577375,1,Reserve Currency,Rezerve Money,2025-06-13,"Base,Ethereum"
-4,568994,0,Farm,Terminal Finance Pre-Deposits,2025-06-30,Ethereum
-3,16190683275,2,Lending,Aave V3,2022-04-01,"Arbitrum,Base,Ethereum"
-3,8872077132,2,Lending,Morpho Blue,2024-01-14,"Arbitrum,Base,Ethereum"
-3,5424801199,2,CDP,Sky Lending,?,Ethereum
-3,4075140241,2,Basis Trading,Ethena USDe,2024-02-15,Ethereum
-3,2510282199,2,RWA,Ondo Yield Assets,?,"Arbitrum,Ethereum"
-3,2496655859,2,RWA,Spiko,2024-08-13,"Arbitrum,Base,Ethereum"
-3,1635418734,2,RWA,Centrifuge Protocol,2024-08-01,"Arbitrum,Base,Ethereum"
-3,1320131844,2,Lending,Compound V3,2022-09-14,"Arbitrum,Base,Ethereum"
-3,1193905784,2,Lending,Venus Core Pool,?,"Arbitrum,Base,Ethereum"
-3,1166022778,2,Yield,Pendle,?,"Arbitrum,Base,Ethereum"
-3,968051052,2,RWA,Ondo Global Markets,2025-09-03,Ethereum
-3,733270022,2,Lending,Fluid Lending,2024-02-25,"Arbitrum,Base,Ethereum"
-3,588510749,2,RWA,Hastra,2026-01-19,Ethereum
-3,526252685,2,Yield,Convex Finance,?,"Arbitrum,Ethereum"
-3,370205585,2,Lending,Euler V2,2024-08-26,"Arbitrum,Base,Ethereum"
-3,309815173,2,Lending,cap,2025-08-14,Ethereum
-3,253206480,2,RWA,OpenEden TBILL,2023-06-01,"Arbitrum,Ethereum"
-3,205694924,2,Lending,Dolomite,2022-10-17,"Arbitrum,Ethereum"
-3,198812660,2,Derivatives,GMX V2 Perps,2023-08-09,Arbitrum
-3,181242494,2,Yield Aggregator,Yearn Finance,?,"Arbitrum,Base,Ethereum"
-3,171137049,2,CDP,Liquity V1,?,Ethereum
-3,133351144,2,RWA,Midas RWA,2024-07-12,"Arbitrum,Base,Ethereum"
-3,126216342,2,Yield,Stake DAO,?,"Arbitrum,Base,Ethereum"
-3,110273717,2,Leveraged Farming,Homora V2,?,Ethereum
-3,108593815,2,Yield Aggregator,Beefy,?,"Arbitrum,Base,Ethereum"
-3,83480014,2,CDP,crvUSD,2023-05-03,Ethereum
-3,83392431,2,CDP,Liquity V2,2025-01-23,Ethereum
-3,77766019,2,CDP,Frankencoin,2023-11-14,Ethereum
-3,76095594,2,Yield,Yuzu Money,2025-11-14,Ethereum
-3,75201453,2,Yield Aggregator,Vesper,?,"Base,Ethereum"
-3,74223496,0,Farm,Swell L2 Farm,2024-04-10,Ethereum
-3,72502549,2,Yield,Strata Markets,2025-10-16,Ethereum
-3,53370205,2,Yield Aggregator,Fusion by IPOR,2024-09-13,"Arbitrum,Base,Ethereum"
-3,52644552,2,Lending,Moonwell Lending,2022-06-23,"Base,Ethereum"
-3,48446504,2,Yield,infiniFi,2025-05-28,Ethereum
-3,46627160,2,Algo-Stables,Frax,?,Ethereum
-3,45748067,2,Lending,Resupply,2025-03-28,Ethereum
-3,38126237,2,Yield,Noon,2025-02-03,Ethereum
-3,33314214,2,Liquid Staking,NodeDAO,2023-05-18,Ethereum
-3,32999968,2,Liquid Staking,Veno Finance,2023-01-02,Ethereum
-3,30602851,2,Liquid Staking,Swell Liquid Staking,2023-04-27,Ethereum
-3,30006388,2,Lending,40 Acres,2025-04-17,Base
-3,24255131,2,Liquid Staking,Ankr,?,Ethereum
-3,20054234,2,Liquid Staking,StakeStone STONE,2023-09-25,Ethereum
-3,11461173,2,Yield,Origin ARM,2024-10-25,Ethereum
-3,11400158,2,Liquid Staking,Bifrost Liquid Staking,2022-05-05,Ethereum
-3,11308486,2,Algo-Stables,Mento V2,?,Ethereum
-3,8046038,2,RWA,Aurus,2024-07-09,Ethereum
-3,7283306,2,Lending,Aave V1,2022-06-18,Ethereum
-3,6277889,2,Reserve Currency,The Idols,2022-03-31,Ethereum
-3,6008949,2,Yield,cVault Finance,?,Ethereum
-3,5665982,2,Yield Aggregator,Origin Dollar,?,Ethereum
-3,5316760,2,Yield,CLever,2022-04-28,Ethereum
-3,5270019,2,Lending,Wing Finance,?,Ethereum
-3,5001625,2,Liquid Staking,Dinero (pxETH),2023-12-13,Ethereum
-3,4615520,2,Yield,Tranchess Yield,?,Ethereum
-3,4593892,2,Liquid Staking,Stakingverse,2025-04-23,Ethereum
-3,4521306,2,Lending,BiFi,?,Ethereum
-3,3982496,2,RWA,Nawa Protocol,2025-04-25,Ethereum
-3,3971885,2,Liquid Staking,TruStake,2023-07-25,Ethereum
-3,3579496,2,Liquid Staking,Stafi,?,Ethereum
-3,3459178,2,Lending,Arkis,2025-02-11,Ethereum
-3,3159461,2,RWA,KUMA Protocol,2024-01-09,Ethereum
-3,3096346,2,Lending,Notional V2,?,Ethereum
-3,3042689,2,Lending,Compound V1,?,Ethereum
-3,2042238,2,Lending,Ionic Protocol,2024-01-26,Base
-3,1832956,2,Yield,Universe XYZ,?,Ethereum
-3,1808574,2,Yield,Guru Network Classic,2022-01-21,Arbitrum
-3,1783879,2,Yield,Gro,?,Ethereum
-3,1758434,2,Lending,DeFIL,2022-03-22,Ethereum
-3,1732132,2,Lending,Extra Finance Xlend,2024-12-24,Base
-3,1621604,2,Yield,Latch,2025-01-05,Ethereum
-3,1578145,2,RWA,LandX Finance,2023-12-26,Ethereum
-3,1508028,2,Yield Aggregator,LUSD ChickenBonds,2022-10-05,Ethereum
-3,1383699,2,Yield Aggregator,Reaper Farm,?,Arbitrum
-3,1337565,2,Yield,Cyclone,?,Ethereum
-3,1299664,2,Restaking,Parasail,2024-01-08,Arbitrum
-3,1126688,2,Lending,LendFlare,2022-04-08,Ethereum
-3,1020978,2,RWA,RealtyX,2025-06-09,Base
-3,974114,2,Yield Aggregator,Jones DAO,2022-02-19,"Arbitrum,Ethereum"
-3,938517,2,RWA,CANA Holdings California Carbon Credits,2025-09-03,Ethereum
-3,937241,2,Lending,MortgageFi,2024-11-21,"Arbitrum,Base"
-3,766725,2,Lending,WePiggy,?,"Arbitrum,Ethereum"
-3,672560,2,Lending,Radiant V2,2023-03-21,"Arbitrum,Base,Ethereum"
-3,650127,2,Lending,Vendor V2,2023-05-17,"Arbitrum,Base"
-3,612512,2,Derivatives,DerivaDEX,?,Ethereum
-3,608715,2,NFT Lending,BendDAO Lending V1,2022-05-19,Ethereum
-3,592747,2,CDP,Parallel Protocol V2,?,Ethereum
-3,582454,2,Lending,Impermax V2,?,"Arbitrum,Base,Ethereum"
-3,566654,3,Lending,Tarot,?,"Arbitrum,Base,Ethereum"
-3,552365,2,Yield,VaultCraft,2022-05-30,"Arbitrum,Base,Ethereum"
-3,541088,2,NFT Lending,JPEG'd,2022-04-06,Ethereum
-3,520258,2,Yield Aggregator,Sperax USD,2022-01-05,"Arbitrum,Ethereum"
-3,517554,2,Synthetics,Wrap Protocol,?,Ethereum
-3,512009,2,Yield,Aarna Protocol,2025-02-13,"Arbitrum,Base,Ethereum"
-2,22300646615,2,Liquid Staking,Lido,?,Ethereum
-2,8647515628,2,Liquid Staking,Binance staked ETH,2023-04-29,Ethereum
-2,6185703762,2,Restaking,EigenCloud,2023-06-14,Ethereum
-2,4732011566,2,Lending,SparkLend,2023-05-03,Ethereum
-2,2632958194,2,Lending,Maple,?,Ethereum
-2,1225209699,2,Liquid Staking,Rocket Pool,2021-11-24,Ethereum
-2,869656150,2,Liquid Staking,StakeWise V3,?,Ethereum
-2,792447871,2,Lending,Lista Lending,2025-04-16,Ethereum
-2,743721170,2,Liquid Staking,Liquid Collective,2023-08-16,Ethereum
-2,241406680,2,Liquid Staking,Stader,2021-12-18,Ethereum
-2,166936805,None,Yield Aggregator,Fluid Lite,?,Ethereum
-2,119451215,2,RWA,RAAC,?,Ethereum
-2,109570494,2,RWA,Nest Credit,2024-10-26,Ethereum
-2,105792383,2,Lending,Aave V2,?,Ethereum
-2,100267486,2,Lending,Compound V2,?,Ethereum
-2,92703403,2,RWA,Usual USD0,2024-07-15,Ethereum
-2,69688851,2,Yield,Concentrator,2022-03-14,Ethereum
-2,2082897,2,Farm,Sophon Farm,2025-01-25,Ethereum
-2,1897362,2,Farm,Ethereal Season Zero,2025-02-23,Ethereum
-2,962284,2,Yield,Wompie,2022-11-11,Arbitrum
-2,948318,2,Yield Aggregator,GMD Protocol,2022-11-29,Arbitrum
-2,733992,2,Yield,DELV Yield,?,Ethereum
-2,659553,2,Yield,CIAN Automation,2024-03-13,Ethereum
-2,582329,2,RWA,CACHE.Gold,2022-08-22,Ethereum
-2,540444,2,Yield Aggregator,Zunami Protocol,2022-01-05,Ethereum
-2,539690,2,RWA,Toucan Protocol,2022-08-04,Base
-2,538359,2,Yield Aggregator,Swell Earn,2024-10-23,Ethereum
-2,534396,2,Lending,Seamless V1,2023-09-08,Base
-2,517964,2,Lending,Sentiment,2022-11-15,Arbitrum
-2,514643,2,Yield Aggregator,yAxis,?,Ethereum
-1,55890391,2,Farm,Zircuit Staking,2024-03-04,Ethereum
+score,tvl,audits,category,name,chains,address,address_chain,contract_name,is_proxy,implementation,verified,listedAt,slug
+8,51688471,0,Derivatives,AZverse Perps,"Arbitrum,Ethereum",,,,,,,2026-07-31,azverse-perps
+8,23040882,0,Yield,Royco V2,"Arbitrum,Base,Ethereum",,,,,,,2026-02-18,royco-v2
+8,2758173,0,Derivatives,SYMMIO,"Arbitrum,Base",0x800822d361335b4d5f352dac293ca4128b5b605f,Base,,,,base/bsc: check Blockscout/Sourcify,2025-09-29,symmio
+8,2535105,0,Yield,Ledgity Yield,"Arbitrum,Base,Ethereum",0x482dF7483a52496F4C65AB499966dfcdf4DDFDbc,Ethereum,LDY,no,,yes,2026-04-21,ledgity-yield
+8,2170571,0,Synthetics,Usual ETH0,Ethereum,0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E,Ethereum,TransparentUpgradeableProxy,yes,0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f,yes,2026-02-25,usual-eth0
+7,35086871,2,Synthetics,Alchemix V3,"Arbitrum,Ethereum",0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF,Ethereum,AlchemixToken,no,,yes,2026-04-23,alchemix-v3
+7,30775999,0,Yield,Avalon Superearn,Ethereum,0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2,Ethereum,TransparentUpgradeableProxy,yes,0x3228995749610bea00b59c44f8d1df21c14027f1,yes,2026-02-18,avalon-superearn
+7,29702698,0,Derivatives,Apex Omni,"Arbitrum,Base,Ethereum",,,,,,,2024-06-27,apex-omni
+7,26380032,0,RWA,Theo Network thBill,"Arbitrum,Ethereum",,,,,,,2025-09-10,theo-network-thbill
+7,20038219,0,RWA,GAIB,"Arbitrum,Base,Ethereum",,,,,,,2025-08-06,gaib
+7,13952059,0,RWA,Stobox,Arbitrum,0xa6422e3e219ee6d4c1b18895275fe43556fd50ed,Arbitrum,?,no,,NO,2026-02-16,stobox
+7,11450817,0,Basis Trading,BounceBit Prime,Ethereum,,,,,,,2025-11-10,bouncebit-prime
+7,10983992,0,Synthetics,Metronome Synth,"Base,Ethereum",0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa,Ethereum,Metronome2,no,,yes,2023-01-12,metronome-synth
+7,9505792,0,Derivatives,Antarctic,Arbitrum,,,,,,,2025-11-20,antarctic
+7,7542439,0,Options,Deri V4,"Arbitrum,Base",0xe60eaf5A997DFAe83739e035b005A33AfdCc6df5,BSC,,,,base/bsc: check Blockscout/Sourcify,2023-11-29,deri-v4
+7,5673214,0,Derivatives,IntentX,"Arbitrum,Base",,,,,,,2023-11-25,intentx
+7,5276937,0,RWA,eva Markets,Ethereum,,,,,,,2026-04-25,eva-markets
+7,4040787,0,Lending,Morpho Midnight,Base,0x58D97B57BB95320F9a05dC918Aef65434969c2B2,Base,,,,base/bsc: check Blockscout/Sourcify,2026-07-22,morpho-midnight
+7,3107500,0,CDP,mStable V2,Ethereum,0xca1207647ff814039530d7d35df0e1dd2e91fa84,Ethereum,DHedgeTokenProxy,yes,0x50a6b25101173b41e41c1a30a5bae42f213b2687,yes,2025-10-15,mstable-v2
+7,2913217,0,Derivatives,Evedex,Arbitrum,,,,,,,2025-07-29,evedex
+7,2135163,0,Yield Aggregator,Nerona,Ethereum,,,,,,,2026-05-01,nerona
+7,1676688,0,Lending,Hyperbeat USD,Ethereum,,,,,,,2026-06-11,hyperbeat-usd
+7,1549187,0,Yield,Rysk Premium,Ethereum,,,,,,,2026-03-17,rysk-premium
+7,521421,0,Lending,Everything,"Arbitrum,Base,Ethereum",0xe7e7e741c23a4767831a56a8c99f522c5ac1e7e7,Arbitrum,ERC1967Proxy,yes,0xdcca77dd282667561c4c611ff5de697002515dc1,yes,2026-04-14,everything
+6,1161464975,0,Yield,Spark Savings,"Arbitrum,Base,Ethereum",0xc20059e0317de91738d13af027dfc4a50781b066,Ethereum,SDAO,no,,yes,2025-09-11,spark-savings
+6,258891016,0,Basis Trading,BounceBit CeDeFi Yield,"Base,Ethereum",,,,,,,2024-12-01,bouncebit-cedefi-yield
+6,218149827,0,Basis Trading,BitFi Basis,"Base,Ethereum",,,,,,,2025-02-14,bitfi-basis
+6,216657034,0,Lending,Cooler Loans,Ethereum,0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5,Ethereum,OlympusERC20Token,no,,yes,2026-02-21,cooler-loans
+6,148199675,0,Leveraged Farming,Yield Basis,Ethereum,0x01791f726b4103694969820be083196cc7c045ff,Ethereum,YBToken,no,,yes,2025-09-25,yield-basis
+6,144491474,0,Derivatives,Derive V2,"Arbitrum,Base,Ethereum",0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be,Ethereum,TransparentUpgradeableProxy,yes,0x4909ad99441ea5311b90a94650c394cea4a881b8,yes,2023-12-15,derive-v2
+6,66221903,0,Yield,Wise Token,Ethereum,0x66a0f676479cee1d7373f3dc2e2952778bff5bd6,Ethereum,WiseToken,no,,yes,2026-08-18,wise-token
+6,65041995,0,Options Vault,Rysk V12,Ethereum,,,,,,,2025-07-11,rysk-v12
+6,35090113,0,Yield,Spectra V2,"Arbitrum,Base,Ethereum",0x64fcc3a02eeeba05ef701b7eed066c6ebd5d4e51,Base,,,,base/bsc: check Blockscout/Sourcify,2024-06-05,spectra-v2
+6,34816721,0,Basis Trading,Aegis YUSD,Ethereum,,,,,,,2025-04-10,aegis-yusd
+6,26636904,0,Lending,Templar Protocol,Ethereum,,,,,,,2025-08-12,templar-protocol
+6,24224628,0,Lending,Native Credit Pool,"Arbitrum,Base,Ethereum",,,,,,,2024-05-23,native-credit-pool
+6,24162347,0,Yield,RockSolid Network,Ethereum,,,,,,,2025-11-05,rocksolid-network
+6,22255325,0,Lending,Fraxlend,"Arbitrum,Ethereum",0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,Ethereum,FRAXShares,no,,yes,2022-09-08,fraxlend
+6,19611070,0,Yield,Zoo Finance,"Arbitrum,Base",,,,,,,2025-02-10,zoo-finance
+6,14597479,0,Yield Aggregator,Yield Yak Aggregator,"Arbitrum,Base",,avax,,,,,,yield-yak-aggregator
+6,11923666,0,Yield,TermFinance Vaults,"Arbitrum,Base,Ethereum",,,,,,,2025-03-24,termfinance-vaults
+6,8637151,0,CDP,BIMA CDP,Ethereum,,,,,,,2025-05-28,bima-cdp
+6,8605022,0,Lending,Revert Lend,"Arbitrum,Base,Ethereum",,,,,,,2025-05-21,revert-lend
+6,7790437,0,Restaking,OpenGDP Shared Security,"Arbitrum,Ethereum",,,,,,,2024-04-09,opengdp-shared-security
+6,7664233,0,NFT Lending,Blur Lending,Ethereum,0x5283d291dbcf85356a21ba090e6db59121208b44,Ethereum,BlurToken,no,,yes,2023-05-01,blur-lending
+6,7282092,0,Uncollateralized Lending,Wildcat Protocol,Ethereum,,,,,,,2023-12-01,wildcat-protocol
+6,7099925,0,CDP,BTCFi CDP,Base,,,,,,,2024-04-22,btcfi-cdp
+6,6344103,0,Basis Trading,Resolv USR,Ethereum,0x259338656198ec7a76c729514d3cb45dfbf768a1,Ethereum,TransparentUpgradeableProxy,yes,0x5ac0551f79d10f9f2a7ce74eeffad23336060b9a,yes,2025-01-23,resolv-usr
+6,5263688,0,Yield Aggregator,Syntropia,Ethereum,,,,,,,2025-10-15,syntropia
+6,4553387,0,CDP,Inverse Finance Frontier,Ethereum,0x41d5d79431a913c4ae7d69a668ecdfe5ff9dfb68,Ethereum,INV,no,,yes,,inverse-finance-frontier
+6,4305303,0,RWA,Hamilton Lane Senior Credit Opportunities Securitize Fund,Ethereum,0xda2ffa104356688e74d9340519b8c17f00d7752e,Ethereum,ERC1967Proxy,yes,0xa2f6ef3144753f31fcd728910b96a92bbbb462c9,yes,2025-09-11,hamilton-lane-senior-credit-opportunities-securitize-fund
+6,4196910,0,RWA,BackedFi,"Arbitrum,Base,Ethereum",,,,,,,2023-08-30,backedfi
+6,4065574,0,RWA,Lista RWA,Ethereum,0xFceB31A79F71AC9CBDCF853519c1b12D379EdC46,BSC,,,,base/bsc: check Blockscout/Sourcify,2025-12-10,lista-rwa
+6,3863714,0,Yield,Penpie,"Arbitrum,Base,Ethereum",0x7dedbce5a2e31e4c75f87fea60bf796c17718715,Ethereum,PenpieOFT,no,,yes,2023-06-08,penpie
+6,2947349,0,Basis Trading,SoSoValue Basis,Base,0x624e2e7fdc8903165f64891672267ab0fcb98831,Base,,,,base/bsc: check Blockscout/Sourcify,2025-02-13,sosovalue-basis
+6,2381671,0,Yield,Sushi BentoBox,"Arbitrum,Ethereum",0x6b3595068778dd592e39a122f4f5a5cf09c90fe2,Ethereum,SushiToken,no,,yes,2022-10-18,sushi-bentobox
+6,2132179,2,CDP,Parallel Protocol V3,"Base,Ethereum",0x6c0aeceeDc55c9d55d8B99216a670D85330941c3,Ethereum,PRL,no,,yes,2025-07-29,parallel-protocol-v3
+6,2028902,0,Yield Aggregator,DexFi Aggregator,"Arbitrum,Base,Ethereum",0x92a212d9f5eef0b262ac7d84aea64a0d0758b94f,Arbitrum,GDEX,no,,yes,,dexfi-aggregator
+6,1952216,0,CDP,Threshold thUSD,Ethereum,0xcdf7028ceab81fa0c6971208e83fa7872994bee5,Ethereum,T,no,,yes,2024-06-25,threshold-thusd
+6,1819928,2,Yield,BTCD,"Arbitrum,Ethereum",,,,,,,2026-05-21,btcd
+6,1742210,0,Lending,OmniBTC,"Arbitrum,Base,Ethereum",,,,,,,2023-08-16,omnibtc
+6,1688441,2,Lending,Silo V3,"Arbitrum,Ethereum",0xf0b2dd79324a66d2108c961d680f7616e1486bb0,Ethereum,SiloToken,no,,yes,2026-05-18,silo-v3
+6,1619537,0,Basis Trading,DeSyn Basis Trading,Arbitrum,,,,,,,2024-07-16,desyn-basis-trading
+6,1565523,2,Uncollateralized Lending,Accountable,"Arbitrum,Ethereum",,,,,,,2025-12-04,accountable
+6,1536033,0,Yield,Royco V1,"Arbitrum,Base,Ethereum",,,,,,,2024-11-10,royco-v1
+6,1484439,0,Basis Trading,HOPE Collateral,Ethereum,0xc353bf07405304aeab75f4c2fac7e88d6a68f98e,Ethereum,TransparentUpgradeableProxy,yes,0x8f9bd4f6b88c46657aab889f1150b0521203c61e,yes,2023-10-17,hope-collateral
+6,1442746,0,Basis Trading,SMARDEX USDN,Ethereum,,,,,,,2025-05-27,smardex-usdn
+6,1411127,0,Lending,Rezerve Lending,Ethereum,,sonic,,,,,2025-09-16,rezerve-lending
+6,1202806,2,Yield,Zircuit Finance,"Base,Ethereum",,,,,,,2026-02-25,zircuit-finance
+6,1192741,0,Yield,Lazy,Ethereum,,,,,,,2026-01-15,lazy
+6,1153560,0,Lending,Teller,"Arbitrum,Base,Ethereum",,,,,,,2023-03-28,teller
+6,926416,0,Lending,Flex,Ethereum,,,,,,,2026-05-20,flex
+6,644524,0,Yield,Rho X LP Vault,Ethereum,,,,,,,2026-02-03,rho-x-lp-vault
+6,633038,0,Leveraged Farming,AirPuff,"Arbitrum,Ethereum",0x2be056e595110b30ddd5eaf674bdac54615307d9,Ethereum,ApuffTokenMain,no,,yes,2024-03-15,airpuff
+6,523037,0,Yield,Acre,Ethereum,,,,,,,2026-02-23,acre
+5,4124906990,0,Liquid Staking,ether.fi Stake,"Arbitrum,Base,Ethereum",0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb,Ethereum,EtherFiGovernanceToken,no,,yes,2023-03-02,ether.fi-stake
+5,3527261508,0,RWA,BlackRock BUIDL,"Arbitrum,Ethereum",,,,,,,2024-07-06,blackrock-buidl
+5,3215578795,0,RWA,Tether Gold,"Arbitrum,Ethereum",0x68749665ff8d2d112fa859aa293f07a622782f38,Ethereum,TransparentUpgradeableProxy,yes,0x4c0d2c74a8d26f1e4f5653021c521f5471f9e566,yes,2024-07-09,tether-gold
+5,1292772653,0,CDP,USDD,Ethereum,,,,,,,2025-03-13,usdd
+5,873096379,0,RWA,Anemoy Capital,"Base,Ethereum",,,,,,,2024-12-09,anemoy-capital
+5,407754354,0,RWA,xStocks,Arbitrum,,,,,,,2025-07-01,xstocks
+5,286196666,0,Yield Aggregator,CIAN Yield Layer,"Arbitrum,Base,Ethereum",,,,,,,2024-11-18,cian-yield-layer
+5,193366527,0,RWA,VanEck Treasury Fund,Ethereum,,,,,,,2025-08-28,vaneck-treasury-fund
+5,168488899,0,RWA,DigiFT,"Arbitrum,Ethereum",,,,,,,2023-09-29,digift
+5,121727278,0,Derivatives,Extended Perps,Ethereum,,,,,,,2025-03-11,extended-perps
+5,113938398,0,RWA,Frax USD,Ethereum,0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,Ethereum,FRAXShares,no,,yes,2025-08-19,frax-usd
+5,103271912,0,RWA,Securitize Tokenized AAA CLO Fund,Ethereum,,,,,,,2025-12-30,securitize-tokenized-aaa-clo-fund
+5,95654551,0,RWA,Apollo Diversified Credit Securitize Fund,Ethereum,,,,,,,2025-08-14,apollo-diversified-credit-securitize-fund
+5,81060797,0,Yield,Lorenzo sUSD1+,Ethereum,,,,,,,2025-10-10,lorenzo-susd1+
+5,76361431,0,Lending,Curve LlamaLend,"Arbitrum,Ethereum",0xd533a949740bb3306d119cc777fa900ba034cd52,Ethereum,Vyper_contract,no,,yes,2024-03-19,curve-llamalend
+5,67551562,2,Basis Trading,Axis,Ethereum,,,,,,,2026-08-20,axis
+5,66652909,0,Basis Trading,Bitwise USCC,Ethereum,,,,,,,2024-09-09,bitwise-uscc
+5,64342630,2,Basis Trading,Tori Finance,Ethereum,,,,,,,2026-06-24,tori-finance
+5,59399497,0,Liquid Staking,Origin Ether,"Base,Ethereum",0x8207c1ffc5b6804f6024322ccf34f29c3541ae26,Ethereum,OriginToken,no,,yes,2023-05-08,origin-ether
+5,44531680,0,Lending,Flux Finance,Ethereum,,,,,,,2023-02-15,flux-finance
+5,41280203,0,RWA,KAIO,Ethereum,0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e,Ethereum,KaioToken,no,,yes,2025-01-29,kaio
+5,29615533,2,CDP,Reservoir Protocol,"Arbitrum,Base,Ethereum",,,,,,,2024-11-11,reservoir-protocol
+5,29397046,2,Basis Trading,Piku Finance,Ethereum,0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3,Ethereum,PIKU,no,,yes,2025-11-19,piku-finance
+5,24483215,0,Liquid Staking,Meta Pool ETH,Ethereum,,near,,,,,2023-08-17,meta-pool-eth
+5,24085024,0,RWA,MatrixDock STBT,Ethereum,,,,,,,2023-04-11,matrixdock-stbt
+5,23000000,0,RWA,T RIZE,Base,0x9818b6c09f5ecc843060927e8587c427c7c93583,Base,,,,base/bsc: check Blockscout/Sourcify,2025-04-02,t-rize
+5,21422535,0,Liquid Staking,GLIF,Base,,filecoin,,,,,2023-04-18,glif
+5,20630063,0,RWA,Clearpool TPOOL,Ethereum,0x66761fa41377003622aee3c7675fc7b5c1c2fac5,Ethereum,CPOOL,no,,yes,2024-07-12,clearpool-tpool
+5,17823331,0,Liquid Staking,GETH,Ethereum,0x3802c218221390025bceabbad5d8c59f40eb74b8,Ethereum,StakeToken,no,,yes,2023-01-19,geth
+5,15708254,1,Yield Aggregator,Harvest Finance,"Arbitrum,Base,Ethereum",0xa0246c9032bC3A600820415aE600c6388619A14D,Ethereum,RewardToken,no,,yes,,harvest-finance
+5,15077736,2,Derivatives,Aevo Perps,"Arbitrum,Base,Ethereum",0xB528edBef013aff855ac3c50b381f253aF13b997,Ethereum,AevoToken,no,,yes,2023-04-10,aevo-perps
+5,14694005,2,Lending,Twyne,Ethereum,,,,,,,2026-02-11,twyne
+5,13949868,0,RWA,Estate Protocol,Arbitrum,,,,,,,2024-10-09,estate-protocol
+5,11310891,2,Lending,Flying Tulip Lend,Ethereum,0x5DD1A7A369e8273371d2DBf9d83356057088082c,Ethereum,FT,no,,yes,2026-01-26,flying-tulip-lend
+5,10674283,3,RWA,Syntetika,Base,,,,,,,2026-08-19,syntetika
+5,10495192,2,Derivatives,Gains Network,"Arbitrum,Base",,polygon,,,,,2021-12-13,gains-network
+5,10038431,2,CDP,Overnight Finance,"Arbitrum,Base",,optimism,,,,,2025-01-31,overnight-finance
+5,10014912,2,Options,Hegic,"Arbitrum,Ethereum",0x584bC13c7D411c00c01A62e8019472dE68768430,Ethereum,Hegic,no,,yes,,hegic
+5,9977812,2,Lending,Fira,Ethereum,,,,,,,2026-01-27,fira
+5,9712153,2,Yield Aggregator,Odyssey Finance,"Base,Ethereum",,,,,,,2025-08-05,odyssey-finance
+5,9482223,1,Derivatives,MUX Perps,Arbitrum,0x4e352cf164e64adcbad318c3a1e222e9eba4ce42,Arbitrum,TransparentUpgradeableProxy,yes,0x80a267c8e73cccdf84fb622bbe640d21eea87001,yes,2022-11-06,mux-perps
+5,8094695,2,Uncollateralized Lending,3Jane Lending,Ethereum,,,,,,,2025-09-03,3jane-lending
+5,7467495,1,Yield,Toros,"Arbitrum,Base,Ethereum",,,,,,,2022-07-05,toros
+5,6630478,0,Yield,Radpie,Arbitrum,0x54bdbf3ce36f451ec61493236b8e6213ac87c0f6,Arbitrum,TransparentUpgradeableProxy,yes,0xa8787209fe0e4c74277b1edf191163fdd09b5611,yes,2023-09-24,radpie
+5,6528583,0,Lending,Capyfi,Ethereum,,,,,,,2024-08-16,capyfi
+5,6371420,2,RWA,Vault Street primeUSD,Ethereum,,,,,,,2026-07-10,vault-street-primeusd
+5,6362567,0,Yield,StableHodl,Ethereum,,,,,,,2025-06-23,stablehodl
+5,6236210,0,Yield Aggregator,OmniYield,Arbitrum,,,,,,,2025-01-17,omniyield
+5,6158407,2,Derivatives,Contango V2,"Arbitrum,Base,Ethereum",0xc760f9782f8cea5b06d862574464729537159966,Arbitrum,ContangoToken,no,,yes,2023-10-06,contango-v2
+5,5569222,2,Yield,NUVA,Ethereum,,,,,,,2026-07-07,nuva
+5,4509872,2,CDP,Abracadabra Spell,"Arbitrum,Ethereum",0x090185f2135308bad17527004364ebcc2d37e5f6,Ethereum,Spell,no,,yes,,abracadabra-spell
+5,4163895,2,Lending,Tangent Finance,Ethereum,,,,,,,2026-05-25,tangent-finance
+5,3152303,0,Lending,Kinza Finance,Ethereum,,,,,,,2023-06-28,kinza-finance
+5,2623474,2,CDP,QiDao,"Arbitrum,Base,Ethereum",,polygon,,,,,,qidao
+5,2491275,0,Yield,BendDAO APE Staking,Ethereum,0x0d02755a5700414B26FF040e1dE35D337DF56218,Ethereum,TransparentUpgradeableProxy,yes,0x02863c14603c3b157379999f567ddece151e9153,yes,2023-02-20,benddao-ape-staking
+5,2273824,2,Yield Aggregator,Flying Tulip ftUSD,Ethereum,,,,,,,2026-04-27,flying-tulip-ftusd
+5,2199549,0,RWA,ZTLN-P,Ethereum,,,,,,,2025-01-23,ztln-p
+5,1998645,2,Yield,HyperWave,"Arbitrum,Base,Ethereum",,,,,,,2025-07-08,hyperwave
+5,1985742,2,CDP,Angle,"Arbitrum,Ethereum",0x31429d1856aD1377A8A0079410B297e1a9e214c2,Ethereum,ANGLE,no,,yes,2021-11-03,angle
+5,1887377,2,Derivatives,AlphaX,"Arbitrum,Ethereum",,,,,,,2024-08-12,alphax
+5,1786125,0,Yield,Llama Airforce,Ethereum,,,,,,,2022-01-13,llama-airforce
+5,1584705,0,Liquid Staking,CRETH2,Ethereum,0x2ba592F78dB6436527729929AAf6c908497cB200,Ethereum,Comp,no,,yes,2023-05-08,creth2
+5,1545003,2,Derivatives,ELFi Protocol,"Arbitrum,Base",,,,,,,2024-09-19,elfi-protocol
+5,1543926,2,Yield,Ammalgam Vaults,Ethereum,,,,,,,2026-07-23,ammalgam-vaults
+5,1476702,2,RWA,Byzanlink RWA Markets,Ethereum,,,,,,,2026-07-08,byzanlink-rwa-markets
+5,1429966,2,Derivatives,ApeX Pro,"Arbitrum,Ethereum",0x52a8845df664d76c69d2eea607cd793565af42b8,Ethereum,ApeXToken,no,,yes,2022-07-04,apex-pro
+5,1153094,2,Yield Aggregator,YieldSeeker,Base,,,,,,,2026-04-01,yieldseeker
+5,1085772,2,Basis Trading,Theo Straddle Vaults,"Arbitrum,Base,Ethereum",,,,,,,2024-12-20,theo-straddle-vaults
+5,1011558,2,Lending,Surge Credit,Base,,,,,,,2026-07-29,surge-credit
+5,985242,0,RWA,Etherfuse,Base,,,,,,,2025-11-13,etherfuse
+5,932174,2,Options,Panoptic V2,Ethereum,,,,,,,2026-06-19,panoptic-v2
+5,887037,0,Derivatives,Synthetix V4,Ethereum,0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f,Ethereum,ProxyERC20,no,,yes,,synthetix-v4
+5,578967,0,Derivatives,Opyn Squeeth,Ethereum,,,,,,,2022-12-31,opyn-squeeth
+5,578053,0,Liquid Staking,Accumulated Finance Liquid Staking,"Arbitrum,Ethereum",,,,,,,2023-12-16,accumulated-finance-liquid-staking
+5,567361,0,Yield,Solid Yield,Ethereum,,,,,,,2025-10-07,solid-yield
+5,550772,2,Yield,Saffron Vaults,"Arbitrum,Base,Ethereum",0xb753428af26e81097e7fd17f40c88aaa3e04902c,Ethereum,SFI,no,,yes,2026-07-28,saffron-vaults
+5,546991,0,Options,Opyn Convexity,Ethereum,,,,,,,2022-12-31,opyn-convexity
+5,511046,0,Options,Premia V3,Arbitrum,0x6399c842dd2be3de30bf99bc7d1bbf6fa3650e70,Arbitrum,?,no,,NO,2023-09-07,premia-v3
+4,2922480174,0,RWA,Circle USYC,Ethereum,,,,,,,2023-10-26,circle-usyc
+4,1971638441,0,RWA,Paxos Gold,Ethereum,0x45804880de22913dafe09f4980848ece6ecbaf78,Ethereum,AdminUpgradeabilityProxy,yes,0x7da4c5d9eca180a03765a6d27196f2a0380fa543,yes,2024-07-09,paxos-gold
+4,1173932761,2,Basis Trading,Falcon Finance,Ethereum,0xfa1c09fc8b491b6a4d3ff53a10cad29381b3f949,Ethereum,FF,no,,yes,2025-09-30,falcon-finance
+4,779730243,0,RWA,WisdomTree,Ethereum,,,,,,,,wisdomtree
+4,664389407,0,RWA,Invesco USTB,Ethereum,,,,,,,2024-03-08,invesco-ustb
+4,551645461,0,Liquid Staking,mETH Protocol,Ethereum,0x9f0c013016e8656bc256f948cd4b79ab25c7b94d,Ethereum,TransparentUpgradeableProxy,yes,0x3bb3d74b1280a2e86013a03d05147b9a684df4bc,yes,2023-12-04,meth-protocol
+4,443808517,0,Liquid Staking,Coinbase Wrapped Staked ETH,Ethereum,,,,,,,2022-10-24,coinbase-wrapped-staked-eth
+4,357675372,0,RWA,Ethena USDtb,Ethereum,0x57e114b691db790c35207b2e685d4a43181e6061,Ethereum,ENA,no,,yes,2024-12-16,ethena-usdtb
+4,291952669,2,RWA,Re,"Arbitrum,Base,Ethereum",0x526526528f35ac738177003b8773b402b8df8143,Ethereum,ERC1967Proxy,yes,0x4d24b40e5b1103b3ce071192fce91ef39abc0273,yes,2025-12-22,re
+4,263958130,2,Lending,Aave V4,Ethereum,0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9,Ethereum,InitializableAdminUpgradeabilityProxy,yes,0x5d4aa78b08bc7c530e21bf7447988b1be7991322,yes,2026-03-30,aave-v4
+4,261949192,0,RWA,OpenTrade,Ethereum,,,,,,,2024-12-06,opentrade
+4,225348817,2,Farm,AFI Protocol,"Base,Ethereum",,,,,,,2026-02-14,afi-protocol
+4,179953828,2,Basis Trading,Solv Basis Trading,"Arbitrum,Ethereum",0x256f2d67e52fe834726d2ddcd8413654f5eb8b53,Ethereum,SOLV,no,,yes,2023-09-29,solv-basis-trading
+4,118337372,0,Liquid Staking,Frax Ether,Ethereum,0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,Ethereum,FRAXShares,no,,yes,2022-10-24,frax-ether
+4,78097091,0,Liquid Staking,stake.link liquid,Ethereum,0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23,Ethereum,StakingAllowance,no,,yes,2022-12-21,stake.link-liquid
+4,74213090,0,RWA,Sky RWA,Ethereum,0x56072c95faa701256059aa122697b133aded9279,Ethereum,Sky,no,,yes,2023-10-19,sky-rwa
+4,68780253,0,RWA,MatrixDock XAUM,Ethereum,,,,,,,2025-06-19,matrixdock-xaum
+4,62927846,0,RWA,stUSDT,Ethereum,,tron,,,,,2023-07-04,stusdt
+4,54381641,2,Basis Trading,ZEROBASE CeDeFi,"Arbitrum,Base,Ethereum",0xfab99fcf605fd8f4593edb70a43ba56542777777,Ethereum,ZEROBASE,no,,yes,2025-06-04,zerobase-cedefi
+4,49394647,2,Leveraged Farming,Origami Finance,Ethereum,,,,,,,2024-05-13,origami-finance
+4,42694579,2,RWA,Tangible RWA,"Arbitrum,Base,Ethereum",,polygon,,,,,2022-10-27,tangible-rwa
+4,42402134,2,RWA,Brickken,"Base,Ethereum",0x0A638F07ACc6969abF392bB009f216D22aDEa36d,Ethereum,Brickken,no,,yes,2024-01-24,brickken
+4,42236696,2,Yield,AUTOfinance,"Arbitrum,Base,Ethereum",0x2e9d63788249371f1dfc918a52f8d799f4a38c94,Ethereum,Toke,no,,yes,,autofinance
+4,38565513,None,Derivatives,dYdX V3,Ethereum,0x92d6c1e31e14520e676a687f0a93788b716beff5,Ethereum,DydxToken,no,,yes,,dydx-v3
+4,37466863,2,Yield Aggregator,YO Protocol,"Arbitrum,Base,Ethereum",0x1925450f5e5fb974b0aae1f3408cf5286fbd1a72,Ethereum,?,no,,NO,2025-03-19,yo-protocol
+4,31289545,2,Lending,TermMax,"Arbitrum,Base,Ethereum",,,,,,,2024-06-20,termmax
+4,26298560,2,Yield Aggregator,vfat.io,"Arbitrum,Base,Ethereum",,,,,,,2024-05-14,vfat.io
+4,25788533,2,CDP,Inverse Finance FiRM,Ethereum,0x41d5d79431a913c4ae7d69a668ecdfe5ff9dfb68,Ethereum,INV,no,,yes,2023-01-13,inverse-finance-firm
+4,24966187,2,Leveraged Farming,Extra Finance Leverage Farming,Base,,optimism,,,,,2023-05-14,extra-finance-leverage-farming
+4,24656706,2,RWA,OpenEden USDO,"Arbitrum,Base,Ethereum",,,,,,,2025-04-04,openeden-usdo
+4,20719592,2,Lending,Gearbox,"Arbitrum,Ethereum",0xba3335588d9403515223f109edc4eb7269a9ab5d,Ethereum,GearToken,no,,yes,2021-12-27,gearbox
+4,18475996,2,Derivatives,Avantis,Base,0x696f9436b67233384889472cd7cd58a6fb5df4f1,Base,,,,base/bsc: check Blockscout/Sourcify,2024-02-06,avantis
+4,18369382,0,Farm,Katana Pre-Launch,Ethereum,,,,,,,2025-06-22,katana-pre-launch
+4,17250692,2,Derivatives,Ostium,Arbitrum,,,,,,,2024-07-27,ostium
+4,17062805,2,Yield Aggregator,Superform,"Arbitrum,Base,Ethereum",0x1d926bbe67425c9f507b9a0e8030eedc7880bf33,Ethereum,Up,no,,yes,2024-04-06,superform
+4,11963867,2,Yield Aggregator,Badger DAO,"Arbitrum,Ethereum",0x3472A5A71965499acd81997a54BBA8D852C6E53d,Ethereum,MiniMeToken,no,,yes,,badger-dao
+4,11186430,2,Yield Aggregator,YieldFi,"Arbitrum,Base,Ethereum",,,,,,,2025-01-06,yieldfi
+4,10154442,2,Yield,Equilibria,"Arbitrum,Base,Ethereum",0xbfbcfe8873fe28dfa25f1099282b088d52bbad9c,Arbitrum,ClonableBeaconProxy,yes,0x3f770ac673856f105b586bb393d122721265ad46,yes,2023-06-09,equilibria
+4,9620760,2,Yield,Aura,"Arbitrum,Base,Ethereum",0xc0c293ce456ff0ed870add98a0828dd4d2903dbf,Ethereum,AuraToken,no,,yes,2022-07-22,aura
+4,7846300,2,RWA,Anzen V2,"Arbitrum,Base,Ethereum",0xeec468333ccc16d4bf1cef497a56cf8c0aae4ca3,Base,,,,base/bsc: check Blockscout/Sourcify,2024-06-08,anzen-v2
+4,7104605,2,Lending,Exactly,"Base,Ethereum",,optimism,,,,,2022-12-24,exactly
+4,6283801,2,Lending,Unitus,"Arbitrum,Base,Ethereum",0x3b6564b5da73a41d3a66e6558a98fd0e9e1e77ad,Ethereum,TransparentUpgradeableProxy,yes,0xc42aece42fb38437afbbdfa0773e6c2c756e03e9,yes,2023-12-19,unitus
+4,6172793,2,Lending,Seamless V2,"Base,Ethereum",0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85,Base,,,,base/bsc: check Blockscout/Sourcify,2025-06-09,seamless-v2
+4,6006312,2,Yield,Harmonix Finance,"Arbitrum,Base,Ethereum",,hyperliquid,,,,,2024-07-08,harmonix-finance
+4,5676235,2,Lending,Silo V2,"Arbitrum,Ethereum",0xf0b2dd79324a66d2108c961d680f7616e1486bb0,Ethereum,SiloToken,no,,yes,2025-01-10,silo-v2
+4,5484139,2,Lending,TermFinance Lend,"Arbitrum,Base,Ethereum",,,,,,,2023-08-16,termfinance-lend
+4,5233507,2,Lending,Folks Finance xChain,"Arbitrum,Base,Ethereum",,avax,,,,,2024-10-03,folks-finance-xchain
+4,5224178,2,Yield Aggregator,Nucleus,"Arbitrum,Ethereum",,,,,,,2024-12-11,nucleus
+4,5208689,2,RWA,VNX,"Arbitrum,Base,Ethereum",,,,,,,2024-07-10,vnx
+4,5110108,None,Derivatives,Hakka Finance,Ethereum,0x0E29e5AbbB5FD88e28b2d355774e73BD47dE3bcd,Ethereum,Hakka,no,,yes,,hakka-finance
+4,4789656,0,Farm,PoWH3D,Ethereum,,,,,,,,powh3d
+4,4685243,3,Yield Aggregator,Pickle,"Arbitrum,Ethereum",0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5,Ethereum,PickleToken,no,,yes,,pickle
+4,3957394,2,Options Vault,Ribbon,Ethereum,0x6123b0049f904d730db3c36a31167d9d4121fa6b,Ethereum,RibbonToken,no,,yes,,ribbon
+4,3790318,2,Lending,ZeroLend Lending,"Base,Ethereum",,linea,,,,,2023-07-18,zerolend-lending
+4,3774602,2,Leveraged Farming,DeltaPrime,Arbitrum,0x3de81ce90f5a27c5e6a5adb04b54aba488a6d14e,Arbitrum,Prime_L2,no,,yes,2023-01-30,deltaprime
+4,3174837,2,Derivatives,Keep3r Network,Ethereum,0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44,Ethereum,Keep3rV1,no,,yes,,keep3r-network
+4,3107967,2,Derivatives,SynFutures V3,Base,0x6e15a54b5ecac17e58dadeddbe8506a7560252f9,Base,,,,base/bsc: check Blockscout/Sourcify,2024-03-01,synfutures-v3
+4,3059457,2,Derivatives,GMX V1 Perps,Arbitrum,0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a,Arbitrum,GMX,no,,yes,,gmx-v1-perps
+4,3045955,2,NFT Lending,Gondi V3,Ethereum,,,,,,,2024-12-27,gondi-v3
+4,3010800,2,CDP,mStable CDP,Ethereum,0xca1207647ff814039530d7d35df0e1dd2e91fa84,Ethereum,DHedgeTokenProxy,yes,0x50a6b25101173b41e41c1a30a5bae42f213b2687,yes,,mstable-cdp
+4,2868475,2,Yield,Pirex,"Arbitrum,Ethereum",0xc55126051b22ebb829d00368f4b12bde432de5da,Ethereum,BTRFLYV2,no,,yes,2022-09-15,pirex
+4,2768263,0,Farm,Fomo3D,Ethereum,,,,,,,,fomo3d
+4,2608107,2,Yield,WOOFi Earn,"Arbitrum,Base",0x4691937a7508860f876c9c0a2a617e7d9e945d4b,Arbitrum,?,no,,NO,2022-11-15,woofi-earn
+4,2585553,2,Derivatives,Strike Finance Perpetuals,Ethereum,,cardano,,,,,,strike-finance-perpetuals
+4,2521093,2,CDP,Reflexer,Ethereum,0x6243d8cea23066d098a15582d81a598b4e8391f4,Ethereum,DSDelegateToken,no,,yes,,reflexer
+4,2297580,2,Liquid Staking,iAero Protocol,Base,0x7ee8964160126081cebc443a42482e95e393e6a8,Base,,,,base/bsc: check Blockscout/Sourcify,2025-11-24,iaero-protocol
+4,2174952,0,Farm,Blast pre-launch Farm,Ethereum,0xb1a5700fa2358173fe465e6ea4ff52e36e88e2ad,Ethereum,?,no,,NO,2023-11-22,blast-pre-launch-farm
+4,2119176,2,Synthetics,Rumpel Labs,Ethereum,,,,,,,2024-09-24,rumpel-labs
+4,2113290,2,CDP,Yala,Ethereum,0xf970706063b7853877f39515c96932d49d5ac9cd,Ethereum,YALA,no,,yes,2025-05-07,yala
+4,1954690,2,Yield,Peapods Finance,"Arbitrum,Base,Ethereum",0x02f92800f57bcd74066f5709f1daa1a4302df875,Ethereum,PEAS,no,,yes,2024-01-25,peapods-finance
+4,1571149,2,CDP,Yamato Protocol,Ethereum,,,,,,,2023-08-13,yamato-protocol
+4,1555430,2,Derivatives,KiloEx,Base,0x503fa24b7972677f00c4618e5fbe237780c1df53,BSC,,,,base/bsc: check Blockscout/Sourcify,2023-08-02,kiloex
+4,1543914,2,Yield Aggregator,Idle,"Arbitrum,Ethereum",0x875773784Af8135eA0ef43b5a374AaD105c5D39e,Ethereum,Idle,no,,yes,,idle
+4,1501540,2,RWA,Asseto CASH+,Ethereum,,,,,,,2025-10-28,asseto-cash+
+4,1400441,2,RWA,Mountain Protocol,"Arbitrum,Base,Ethereum",0x59d9356e565ab3a36dd77763fc0d87feaf85508c,Ethereum,ERC1967Proxy,yes,0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e,yes,2023-10-05,mountain-protocol
+4,1395432,2,Lending,Silo V1,"Arbitrum,Base,Ethereum",0xf0b2dd79324a66d2108c961d680f7616e1486bb0,Ethereum,SiloToken,no,,yes,2022-08-25,silo-v1
+4,1372063,2,CDP,Interest Protocol,Ethereum,0x2a54ba2964c8cd459dc568853f79813a60761b58,Ethereum,TransparentUpgradeableProxy,yes,0x57d0e13f353d630ab5218ac841c88985ab31a066,yes,2022-06-18,interest-protocol
+4,1370894,2,CDP,Decentralized Euro,Ethereum,,,,,,,2025-04-07,decentralized-euro
+4,1368842,2,Yield Aggregator,Rari Capital,"Arbitrum,Ethereum",0xD291E7a03283640FDc51b121aC401383A46cC623,Ethereum,AdminUpgradeabilityProxy,yes,0xb528e8bb2dcb99cfdea4c28bf44925ef58ab1520,yes,,rari-capital
+4,1326615,2,Lending,Avalon Finance,"Arbitrum,Base,Ethereum",0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2,Ethereum,TransparentUpgradeableProxy,yes,0x3228995749610bea00b59c44f8d1df21c14027f1,yes,2024-04-12,avalon-finance
+4,1282034,2,Synthetics,Outcome Finance,Ethereum,,,,,,,,outcome-finance
+4,1223681,2,Lending,Sumer.money,"Arbitrum,Base,Ethereum",,,,,,,2023-11-21,sumer.money
+4,1189660,2,Yield,Sprinter,Base,,,,,,,2025-07-31,sprinter
+4,1075894,1,Yield,Kine Finance,Ethereum,0xbfa9df9ed8805e657d0feab5d186c6a567752d7f,BSC,,,,base/bsc: check Blockscout/Sourcify,,kine-finance
+4,1065485,2,Lending,Venus Isolated Pools,"Arbitrum,Ethereum",0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63,BSC,,,,base/bsc: check Blockscout/Sourcify,2023-07-18,venus-isolated-pools
+4,1026462,2,Lending,dForce Lending,"Arbitrum,Ethereum",0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0,Ethereum,DSToken,no,,yes,,dforce-lending
+4,1025501,2,Options,Opyn Gamma,Ethereum,,,,,,,,opyn-gamma
+4,1006322,2,Options,Ribbon Earn,Ethereum,0x6123b0049f904d730db3c36a31167d9d4121fa6b,Ethereum,RibbonToken,no,,yes,,ribbon-earn
+4,966999,2,Options,SOFA.org,"Arbitrum,Ethereum",0x57b96d4af698605563a4653d882635da59bf11af,Ethereum,RCH,no,,yes,2024-06-16,sofa.org
+4,960322,0,Yield Aggregator,Trevee Earn,Ethereum,,,,,,,2024-12-19,trevee-earn
+4,924342,0,Farm,Blackwing,"Arbitrum,Ethereum",,,,,,,2024-03-31,blackwing
+4,890031,0,Lending,dTRINITY dLEND,Ethereum,,,,,,,2025-01-06,dtrinity-dlend
+4,767560,0,Yield,Convergence Fi,Ethereum,,,,,,,2024-07-24,convergence-fi
+4,729707,0,Yield,Puffer UniFi,Ethereum,0x4d1c297d39c5c1277964d0e3f8aa901493664530,Ethereum,PUFFER,no,,yes,2025-03-06,puffer-unifi
+4,717581,0,Restaking,Allstake,Ethereum,,,,,,,2024-06-20,allstake
+4,672655,2,Derivatives,IPOR Derivatives,"Arbitrum,Base,Ethereum",,,,,,,2022-10-04,ipor-derivatives
+4,663503,2,Derivatives,Wasabi Perps,"Base,Ethereum",,,,,,,2023-04-26,wasabi-perps
+4,654051,2,Options,GammaSwap Open Interest,"Arbitrum,Base,Ethereum",0xb08d8becab1bf76a9ce3d2d5fa946f65ec1d3e83,Arbitrum,ERC1967Proxy,yes,0x91fb10327bd9c0b8d1d7eb8445258eecac6cf2dd,yes,2024-04-19,gammaswap-open-interest
+4,577375,1,Reserve Currency,Rezerve Money,"Base,Ethereum",,sonic,,,,,2025-06-13,rezerve-money
+4,568994,0,Farm,Terminal Finance Pre-Deposits,Ethereum,,,,,,,2025-06-30,terminal-finance-pre-deposits
+3,16190683275,2,Lending,Aave V3,"Arbitrum,Base,Ethereum",0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9,Ethereum,InitializableAdminUpgradeabilityProxy,yes,0x5d4aa78b08bc7c530e21bf7447988b1be7991322,yes,2022-04-01,aave-v3
+3,8872077132,2,Lending,Morpho Blue,"Arbitrum,Base,Ethereum",0x58D97B57BB95320F9a05dC918Aef65434969c2B2,Ethereum,ERC1967Proxy,yes,0x4364fd2371b6318159366abfa51f190df5c24852,yes,2024-01-14,morpho-blue
+3,5424801199,2,CDP,Sky Lending,Ethereum,0x56072c95faa701256059aa122697b133aded9279,Ethereum,Sky,no,,yes,,sky-lending
+3,4075140241,2,Basis Trading,Ethena USDe,Ethereum,0x57e114b691db790c35207b2e685d4a43181e6061,Ethereum,ENA,no,,yes,2024-02-15,ethena-usde
+3,2510282199,2,RWA,Ondo Yield Assets,"Arbitrum,Ethereum",0xfaba6f8e4a5e8ab82f62fe7c39859fa577269be3,Ethereum,Ondo,no,,yes,,ondo-yield-assets
+3,2496655859,2,RWA,Spiko,"Arbitrum,Base,Ethereum",,,,,,,2024-08-13,spiko
+3,1635418734,2,RWA,Centrifuge Protocol,"Arbitrum,Base,Ethereum",0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94,Ethereum,CFG,no,,yes,2024-08-01,centrifuge-protocol
+3,1320131844,2,Lending,Compound V3,"Arbitrum,Base,Ethereum",0xc00e94cb662c3520282e6f5717214004a7f26888,Ethereum,Comp,no,,yes,2022-09-14,compound-v3
+3,1193905784,2,Lending,Venus Core Pool,"Arbitrum,Base,Ethereum",0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63,BSC,,,,base/bsc: check Blockscout/Sourcify,,venus-core-pool
+3,1166022778,2,Yield,Pendle,"Arbitrum,Base,Ethereum",0x808507121b80c02388fad14726482e061b8da827,Ethereum,PENDLE,no,,yes,,pendle
+3,968051052,2,RWA,Ondo Global Markets,Ethereum,0xfaba6f8e4a5e8ab82f62fe7c39859fa577269be3,Ethereum,Ondo,no,,yes,2025-09-03,ondo-global-markets
+3,733270022,2,Lending,Fluid Lending,"Arbitrum,Base,Ethereum",0x6f40d4a6237c257fff2db00fa0510deeecd303eb,Ethereum,InstaToken,yes,0x31de2088f38ed7f8a4231de03973814eda1f8773,yes,2024-02-25,fluid-lending
+3,588510749,2,RWA,Hastra,Ethereum,,,,,,,2026-01-19,hastra
+3,526252685,2,Yield,Convex Finance,"Arbitrum,Ethereum",0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b,Ethereum,ConvexToken,no,,yes,,convex-finance
+3,370205585,2,Lending,Euler V2,"Arbitrum,Base,Ethereum",0xd9fcd98c322942075a5c3860693e9f4f03aae07b,Ethereum,Eul,no,,yes,2024-08-26,euler-v2
+3,309815173,2,Lending,cap,Ethereum,0x99991c6aabba5a096f24f250b73580f5179b9999,Ethereum,ERC1967Proxy,yes,0x9c850771b321c6e7aa909413b5cc98c86ccba96f,yes,2025-08-14,cap
+3,253206480,2,RWA,OpenEden TBILL,"Arbitrum,Ethereum",,,,,,,2023-06-01,openeden-tbill
+3,205694924,2,Lending,Dolomite,"Arbitrum,Ethereum",,berachain,,,,,2022-10-17,dolomite
+3,198812660,2,Derivatives,GMX V2 Perps,Arbitrum,0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a,Arbitrum,GMX,no,,yes,2023-08-09,gmx-v2-perps
+3,181242494,2,Yield Aggregator,Yearn Finance,"Arbitrum,Base,Ethereum",0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e,Ethereum,YFI,no,,yes,,yearn-finance
+3,171137049,2,CDP,Liquity V1,Ethereum,0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D,Ethereum,LQTYToken,no,,yes,,liquity-v1
+3,133351144,2,RWA,Midas RWA,"Arbitrum,Base,Ethereum",,,,,,,2024-07-12,midas-rwa
+3,126216342,2,Yield,Stake DAO,"Arbitrum,Base,Ethereum",0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f,Ethereum,SDT,no,,yes,,stake-dao
+3,110273717,2,Leveraged Farming,Homora V2,Ethereum,0xa1faa113cbe53436df28ff0aee54275c13b40975,Ethereum,AlphaToken,no,,yes,,homora-v2
+3,108593815,2,Yield Aggregator,Beefy,"Arbitrum,Base,Ethereum",0xB1F1ee126e9c96231Cc3d3fAD7C08b4cf873b1f1,Ethereum,BIFI,no,,yes,,beefy
+3,83480014,2,CDP,crvUSD,Ethereum,0xD533a949740bb3306d119CC777fa900bA034cd52,Ethereum,Vyper_contract,no,,yes,2023-05-03,crvusd
+3,83392431,2,CDP,Liquity V2,Ethereum,0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D,Ethereum,LQTYToken,no,,yes,2025-01-23,liquity-v2
+3,77766019,2,CDP,Frankencoin,Ethereum,0xB58E61C3098d85632Df34EecfB899A1Ed80921cB,Ethereum,Frankencoin,no,,yes,2023-11-14,frankencoin
+3,76095594,2,Yield,Yuzu Money,Ethereum,,,,,,,2025-11-14,yuzu-money
+3,75201453,2,Yield Aggregator,Vesper,"Base,Ethereum",0x1b40183efb4dd766f11bda7a7c3ad8982e998421,Ethereum,VSP,no,,yes,,vesper
+3,74223496,0,Farm,Swell L2 Farm,Ethereum,0x0a6e7ba5042b38349e437ec6db6214aec7b35676,Ethereum,SwellToken,no,,yes,2024-04-10,swell-l2-farm
+3,72502549,2,Yield,Strata Markets,Ethereum,,,,,,,2025-10-16,strata-markets
+3,53370205,2,Yield Aggregator,Fusion by IPOR,"Arbitrum,Base,Ethereum",,,,,,,2024-09-13,fusion-by-ipor
+3,52644552,2,Lending,Moonwell Lending,"Base,Ethereum",0xa88594d404727625a9437c3f886c7643872296ae,Base,,,,base/bsc: check Blockscout/Sourcify,2022-06-23,moonwell-lending
+3,48446504,2,Yield,infiniFi,Ethereum,,,,,,,2025-05-28,infinifi
+3,46627160,2,Algo-Stables,Frax,Ethereum,0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,Ethereum,FRAXShares,no,,yes,,frax
+3,45748067,2,Lending,Resupply,Ethereum,0x419905009e4656fdc02418c7df35b1e61ed5f726,Ethereum,GovToken,no,,yes,2025-03-28,resupply
+3,38126237,2,Yield,Noon,Ethereum,,,,,,,2025-02-03,noon
+3,33314214,2,Liquid Staking,NodeDAO,Ethereum,,,,,,,2023-05-18,nodedao
+3,32999968,2,Liquid Staking,Veno Finance,Ethereum,,cronos,,,,,2023-01-02,veno-finance
+3,30602851,2,Liquid Staking,Swell Liquid Staking,Ethereum,0x0a6e7ba5042b38349e437ec6db6214aec7b35676,Ethereum,SwellToken,no,,yes,2023-04-27,swell-liquid-staking
+3,30006388,2,Lending,40 Acres,Base,,,,,,,2025-04-17,40-acres
+3,24255131,2,Liquid Staking,Ankr,Ethereum,0x8290333cef9e6d528dd5618fb97a76f268f3edd4,Ethereum,ANKRToken,no,,yes,,ankr
+3,20054234,2,Liquid Staking,StakeStone STONE,Ethereum,0x1d88713b483a8e45cff0e5cd7c2e15e5fab4534d,Ethereum,STO,no,,yes,2023-09-25,stakestone-stone
+3,11461173,2,Yield,Origin ARM,Ethereum,0x8207c1ffc5b6804f6024322ccf34f29c3541ae26,Ethereum,OriginToken,no,,yes,2024-10-25,origin-arm
+3,11400158,2,Liquid Staking,Bifrost Liquid Staking,Ethereum,,,,,,,2022-05-05,bifrost-liquid-staking
+3,11308486,2,Algo-Stables,Mento V2,Ethereum,,celo,,,,,,mento-v2
+3,8046038,2,RWA,Aurus,Ethereum,0xcb0d82f4dfa503c9e3b8abc7a3caa01175b2da39,Ethereum,TransparentUpgradeableProxy,yes,0x688b1e7a521d098cff4f89bffb97c888fea13763,yes,2024-07-09,aurus
+3,7283306,2,Lending,Aave V1,Ethereum,0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9,Ethereum,InitializableAdminUpgradeabilityProxy,yes,0x5d4aa78b08bc7c530e21bf7447988b1be7991322,yes,2022-06-18,aave-v1
+3,6277889,2,Reserve Currency,The Idols,Ethereum,0x9416ba76e88d873050a06e5956a3ebf10386b863,Ethereum,VirtueToken,no,,yes,2022-03-31,the-idols
+3,6008949,2,Yield,cVault Finance,Ethereum,0x62359ed7505efc61ff1d56fef82158ccaffa23d7,Ethereum,CORE,no,,yes,,cvault-finance
+3,5665982,2,Yield Aggregator,Origin Dollar,Ethereum,0x8207c1ffc5b6804f6024322ccf34f29c3541ae26,Ethereum,OriginToken,no,,yes,,origin-dollar
+3,5316760,2,Yield,CLever,Ethereum,0x72953a5c32413614d24c29c84a66ae4b59581bbf,Ethereum,Vyper_contract,no,,yes,2022-04-28,clever
+3,5270019,2,Lending,Wing Finance,Ethereum,,,,,,,,wing-finance
+3,5001625,2,Liquid Staking,Dinero (pxETH),Ethereum,,,,,,,2023-12-13,dinero-(pxeth)
+3,4615520,2,Yield,Tranchess Yield,Ethereum,0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6,BSC,,,,base/bsc: check Blockscout/Sourcify,,tranchess-yield
+3,4593892,2,Liquid Staking,Stakingverse,Ethereum,,,,,,,2025-04-23,stakingverse
+3,4521306,2,Lending,BiFi,Ethereum,0x2791BfD60D232150Bff86b39B7146c0eaAA2BA81,Ethereum,ERC20,no,,yes,,bifi
+3,3982496,2,RWA,Nawa Protocol,Ethereum,,,,,,,2025-04-25,nawa-protocol
+3,3971885,2,Liquid Staking,TruStake,Ethereum,,,,,,,2023-07-25,trustake
+3,3579496,2,Liquid Staking,Stafi,Ethereum,0xef3A930e1FfFFAcd2fc13434aC81bD278B0ecC8d,Ethereum,FISToken,no,,yes,,stafi
+3,3459178,2,Lending,Arkis,Ethereum,,,,,,,2025-02-11,arkis
+3,3159461,2,RWA,KUMA Protocol,Ethereum,,,,,,,2024-01-09,kuma-protocol
+3,3096346,2,Lending,Notional V2,Ethereum,0xcfeaead4947f0705a14ec42ac3d44129e1ef3ed5,Ethereum,nProxy,yes,0x95df7e34403becd532f2be160cacda56f0bd6ba3,yes,,notional-v2
+3,3042689,2,Lending,Compound V1,Ethereum,0xc00e94cb662c3520282e6f5717214004a7f26888,Ethereum,Comp,no,,yes,,compound-v1
+3,2042238,2,Lending,Ionic Protocol,Base,,mode,,,,,2024-01-26,ionic-protocol
+3,1832956,2,Yield,Universe XYZ,Ethereum,0x618679df9efcd19694bb1daa8d00718eacfa2883 ,Ethereum,?,?,,?,,universe-xyz
+3,1808574,2,Yield,Guru Network Classic,Arbitrum,,fantom,,,,,2022-01-21,guru-network-classic
+3,1783879,2,Yield,Gro,Ethereum,0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7,Ethereum,GROToken,no,,yes,,gro
+3,1758434,2,Lending,DeFIL,Ethereum,0x09ce2b746c32528b7d864a1e3979bd97d2f095ab,Ethereum,DFL,no,,yes,2022-03-22,defil
+3,1732132,2,Lending,Extra Finance Xlend,Base,,optimism,,,,,2024-12-24,extra-finance-xlend
+3,1621604,2,Yield,Latch,Ethereum,,,,,,,2025-01-05,latch
+3,1578145,2,RWA,LandX Finance,Ethereum,0x08A1C30BBB26425c1031ee9E43FA0B9960742539,Ethereum,LNDX,no,,yes,2023-12-26,landx-finance
+3,1508028,2,Yield Aggregator,LUSD ChickenBonds,Ethereum,0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3,Ethereum,BLUSDToken,no,,yes,2022-10-05,lusd-chickenbonds
+3,1383699,2,Yield Aggregator,Reaper Farm,Arbitrum,,fantom,,,,,,reaper-farm
+3,1337565,2,Yield,Cyclone,Ethereum,0x8861cff2366c1128fd699b68304ad99a0764ef9a,Ethereum,CycloneToken,no,,yes,,cyclone
+3,1299664,2,Restaking,Parasail,Arbitrum,,,,,,,2024-01-08,parasail
+3,1126688,2,Lending,LendFlare,Ethereum,0xB620Be8a1949AA9532e6a3510132864EF9Bc3F82,Ethereum,LendFlareProxy,yes,0xef9423d140c8009597d1185b4b6d5302df21ca0f,yes,2022-04-08,lendflare
+3,1020978,2,RWA,RealtyX,Base,,,,,,,2025-06-09,realtyx
+3,974114,2,Yield Aggregator,Jones DAO,"Arbitrum,Ethereum",0x10393c20975cf177a3513071bc110f7962cd67da,Arbitrum,JonesToken,no,,yes,2022-02-19,jones-dao
+3,938517,2,RWA,CANA Holdings California Carbon Credits,Ethereum,0x01995A697752266d8E748738aAa3F06464B8350B,Ethereum,MaseerOne,no,,yes,2025-09-03,cana-holdings-california-carbon-credits
+3,937241,2,Lending,MortgageFi,"Arbitrum,Base",,,,,,,2024-11-21,mortgagefi
+3,766725,2,Lending,WePiggy,"Arbitrum,Ethereum",0x6f620ec89b8479e97a6985792d0c64f237566746,Ethereum,WePiggyToken,no,,yes,,wepiggy
+3,672560,2,Lending,Radiant V2,"Arbitrum,Base,Ethereum",0x3082CC23568eA640225c2467653dB90e9250AaA0,Arbitrum,RadiantOFT,no,,yes,2023-03-21,radiant-v2
+3,650127,2,Lending,Vendor V2,"Arbitrum,Base",,,,,,,2023-05-17,vendor-v2
+3,612512,2,Derivatives,DerivaDEX,Ethereum,0x3a880652f47bfaa771908c07dd8673a787daed3a,Ethereum,DDX,no,,yes,,derivadex
+3,608715,2,NFT Lending,BendDAO Lending V1,Ethereum,0x0d02755a5700414B26FF040e1dE35D337DF56218,Ethereum,TransparentUpgradeableProxy,yes,0x02863c14603c3b157379999f567ddece151e9153,yes,2022-05-19,benddao-lending-v1
+3,592747,2,CDP,Parallel Protocol V2,Ethereum,0x6c0aeceeDc55c9d55d8B99216a670D85330941c3,Ethereum,PRL,no,,yes,,parallel-protocol-v2
+3,582454,2,Lending,Impermax V2,"Arbitrum,Base,Ethereum",0xf655c8567e0f213e6c634cd2a68d992152161dc6,Ethereum,Ibex,no,,yes,,impermax-v2
+3,566654,3,Lending,Tarot,"Arbitrum,Base,Ethereum",,fantom,,,,,,tarot
+3,552365,2,Yield,VaultCraft,"Arbitrum,Base,Ethereum",0xcE246eEa10988C495B4A90a905Ee9237a0f91543,Ethereum,VCX,no,,yes,2022-05-30,vaultcraft
+3,541088,2,NFT Lending,JPEG'd,Ethereum,0xCE722f60F35C37aB295adc4E6bA45bCC7ca89Dd6,Ethereum,JPGD,no,,yes,2022-04-06,jpegd
+3,520258,2,Yield Aggregator,Sperax USD,"Arbitrum,Ethereum",0x5575552988a3a80504bbaeb1311674fcfd40ad4b,Arbitrum,SperaxTokenL2,no,,yes,2022-01-05,sperax-usd
+3,517554,2,Synthetics,Wrap Protocol,Ethereum,,tezos,,,,,,wrap-protocol
+3,512009,2,Yield,Aarna Protocol,"Arbitrum,Base,Ethereum",,,,,,,2025-02-13,aarna-protocol
+2,22300646615,2,Liquid Staking,Lido,Ethereum,0x5a98fcbea516cf06857215779fd812ca3bef1b32,Ethereum,MiniMeToken,no,,yes,,lido
+2,8647515628,2,Liquid Staking,Binance staked ETH,Ethereum,,,,,,,2023-04-29,binance-staked-eth
+2,6185703762,2,Restaking,EigenCloud,Ethereum,0xec53bf9167f50cdeb3ae105f56099aaab9061f83,Ethereum,TransparentUpgradeableProxy,yes,0x2c4a81e257381f87f5a5c4bd525116466d972e50,yes,2023-06-14,eigencloud
+2,4732011566,2,Lending,SparkLend,Ethereum,0xc20059e0317de91738d13af027dfc4a50781b066,Ethereum,SDAO,no,,yes,2023-05-03,sparklend
+2,2632958194,2,Lending,Maple,Ethereum,0x643c4e15d7d62ad0abec4a9bd4b001aa3ef52d66,Ethereum,MapleTokenProxy,yes,0x6ed767ebcff51533e5181f7bf818f2b9bd767aec,yes,,maple
+2,1225209699,2,Liquid Staking,Rocket Pool,Ethereum,0xd33526068d116ce69f19a9ee46f0bd304f21a51f,Ethereum,RocketTokenRPL,no,,yes,2021-11-24,rocket-pool
+2,869656150,2,Liquid Staking,StakeWise V3,Ethereum,0x48c3399719b582dd63eb5aadf12a40b4c3f52fa2,Ethereum,AdminUpgradeabilityProxy,yes,0xa28c2d79f0c5b78cec699dab0303008179815396,yes,,stakewise-v3
+2,792447871,2,Lending,Lista Lending,Ethereum,0xFceB31A79F71AC9CBDCF853519c1b12D379EdC46,BSC,,,,base/bsc: check Blockscout/Sourcify,2025-04-16,lista-lending
+2,743721170,2,Liquid Staking,Liquid Collective,Ethereum,,,,,,,2023-08-16,liquid-collective
+2,241406680,2,Liquid Staking,Stader,Ethereum,0x30d20208d987713f46dfd34ef128bb16c404d10f,Ethereum,Stader,no,,yes,2021-12-18,stader
+2,166936805,None,Yield Aggregator,Fluid Lite,Ethereum,0x6f40d4a6237c257fff2db00fa0510deeecd303eb,Ethereum,InstaToken,yes,0x31de2088f38ed7f8a4231de03973814eda1f8773,yes,,fluid-lite
+2,119451215,2,RWA,RAAC,Ethereum,,,,,,,,raac
+2,109570494,2,RWA,Nest Credit,Ethereum,,,,,,,2024-10-26,nest-credit
+2,105792383,2,Lending,Aave V2,Ethereum,0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9,Ethereum,InitializableAdminUpgradeabilityProxy,yes,0x5d4aa78b08bc7c530e21bf7447988b1be7991322,yes,,aave-v2
+2,100267486,2,Lending,Compound V2,Ethereum,0xc00e94cb662c3520282e6f5717214004a7f26888,Ethereum,Comp,no,,yes,,compound-v2
+2,92703403,2,RWA,Usual USD0,Ethereum,0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E,Ethereum,TransparentUpgradeableProxy,yes,0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f,yes,2024-07-15,usual-usd0
+2,69688851,2,Yield,Concentrator,Ethereum,0xb3Ad645dB386D7F6D753B2b9C3F4B853DA6890B8,Ethereum,Vyper_contract,no,,yes,2022-03-14,concentrator
+2,2082897,2,Farm,Sophon Farm,Ethereum,,,,,,,2025-01-25,sophon-farm
+2,1897362,2,Farm,Ethereal Season Zero,Ethereum,,,,,,,2025-02-23,ethereal-season-zero
+2,962284,2,Yield,Wompie,Arbitrum,0xD06716E1Ff2E492Cc5034c2E81805562dd3b45fa,BSC,,,,base/bsc: check Blockscout/Sourcify,2022-11-11,wompie
+2,948318,2,Yield Aggregator,GMD Protocol,Arbitrum,0x4945970EfeEc98D393b4b979b9bE265A3aE28A8B,Arbitrum,GMD,no,,yes,2022-11-29,gmd-protocol
+2,733992,2,Yield,DELV Yield,Ethereum,,,,,,,,delv-yield
+2,659553,2,Yield,CIAN Automation,Ethereum,,,,,,,2024-03-13,cian-automation
+2,582329,2,RWA,CACHE.Gold,Ethereum,0xf5238462e7235c7b62811567e63dd17d12c2eaa0,Ethereum,CacheGold,no,,yes,2022-08-22,cache.gold
+2,540444,2,Yield Aggregator,Zunami Protocol,Ethereum,,,,,,,2022-01-05,zunami-protocol
+2,539690,2,RWA,Toucan Protocol,Base,,,,,,,2022-08-04,toucan-protocol
+2,538359,2,Yield Aggregator,Swell Earn,Ethereum,0x0a6e7ba5042b38349e437ec6db6214aec7b35676,Ethereum,SwellToken,no,,yes,2024-10-23,swell-earn
+2,534396,2,Lending,Seamless V1,Base,0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85,Base,,,,base/bsc: check Blockscout/Sourcify,2023-09-08,seamless-v1
+2,517964,2,Lending,Sentiment,Arbitrum,,,,,,,2022-11-15,sentiment
+2,514643,2,Yield Aggregator,yAxis,Ethereum,0x0ada190c81b814548ddc2f6adc4a689ce7c1fe73,Ethereum,YaxisToken,no,,yes,,yaxis
+1,55890391,2,Farm,Zircuit Staking,Ethereum,,,,,,,2024-03-04,zircuit-staking
