@@ -5,7 +5,9 @@ prevention value — the money already left, and everyone's watching. This run p
 prevention target: **live, funded, freshly-deployed, under-reviewed protocols where the bug is still
 in the code and nobody has drained it yet.** Conversion in this tier is 1–3%, so this is a *wide* list
 (379 candidates in [`at_risk_protocols.csv`](./at_risk_protocols.csv)) with **deep hypotheses on the
-top ~25**. Read a target, load the address, audit the hypothesis.
+top ~25**. Read a target, load the address, audit the hypothesis. For the **full set of source-bearing
+contracts to load per target** (impl, upgrade authority, oracle, minter, vault — the whole surface, not
+one address), see [`AUDIT_SCOPE.md`](./AUDIT_SCOPE.md).
 
 > Honesty up front: a surfacing pass can't prove a bug. Each target below is **a specific hypothesis +
 > the on-chain signal that made it worth your time**, not a confirmed finding. The 1-in-30-to-100 that

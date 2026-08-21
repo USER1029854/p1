@@ -10,6 +10,9 @@ simulated, or proven exploitable; that is the next stage's job.
 - **[`AUDIT_TARGETS.md`](./AUDIT_TARGETS.md)** — **start here.** One consolidated, prioritized,
   audit-ready worksheet: each row is a contract address + the exact vulnerability hypothesis to check.
   Pick a target, load the address, start auditing.
+- **[`AUDIT_SCOPE.md`](./AUDIT_SCOPE.md)** — the **full source-bearing surface per target**
+  (entry, implementation, upgrade authority, oracle/minter/vault, dependencies). Scope is never one
+  address — the MAYAChain drain chained 6 bugs across 6 files; audit the whole interacting surface.
 - **[`CANDIDATE_QUEUE.md`](./CANDIDATE_QUEUE.md)** — the reasoning: candidates grouped into systems and
   families (by shared codebase / fork lineage), each flagged by the exact shape that caught it.
 - **[`ADDRESS_BOOK.md`](./ADDRESS_BOOK.md)** — the deeper cumulative address reference the worksheet

@@ -9,6 +9,8 @@ findings). The user takes a contract address from here and starts an audit.
 - **`AUDIT_TARGETS.md`** — THE start-here file: one consolidated, prioritized, audit-ready worksheet.
   Each row = a contract address + the exact vulnerability hypothesis to check. This is what the user
   opens to begin auditing.
+- **`AUDIT_SCOPE.md`** — the full source-bearing contract surface to load per target (impl, upgrade
+  authority, oracle/minter/vault, deps). Scope the whole surface, not one address (the MAYAChain lesson).
 - **`ADDRESS_BOOK.md`** — cumulative address reference the worksheet points into (every grounded
   candidate; latest run merged at the bottom).
 - `CANDIDATE_QUEUE.md` — families/shapes reasoning · `SCAN_REPORT.md` — the on-chain scan writeup ·
